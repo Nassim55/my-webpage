@@ -17,6 +17,18 @@ const StickyNavbar = () => {
                     <Nav.Link>
                         <Link
                             activeClass="active"
+                            to="page-1"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >
+                            Page 1
+                            </Link>
+                    </Nav.Link>
+                    <Nav.Link>
+                        <Link
+                            activeClass="active"
                             to="page-2"
                             spy={true}
                             smooth={true}

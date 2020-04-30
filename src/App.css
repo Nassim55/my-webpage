@@ -49,7 +49,7 @@
     background-color: #363645;
     position: relative;
     width: 100%;
-    height: 85vh;
+    height: 90vh;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -57,28 +57,29 @@
     background-color: #FFFFFF;
     position: relative;
     width: 100%;
-    height: 15vh;
+    height: 10vh;
 }
 .page-1 {
-    background-color: #F7CAC9;
+    background-color: #FFFFFF;
     position: relative;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 .page-2 {
-    background-color: #001f3f;
+    background-color: #363645;
     position: relative;
     width: 100%;
     height: 100vh;
 }
 .page-3 {
-    background-color: #F7CAC9;
+    background-color: #FFFFFF;
     position: relative;
     width: 100%;
     height: 100vh;
 }
 .page-4 {
-    background-color: #001f3f;
+    background-color: #363645;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -86,10 +87,25 @@
 
 .intro-container {
     position: absolute;
-    top: 30%;
+    top: 15%;
     bottom: 25%;
     left: 20%;
-    right: 45%;
+    right: 10%;
+}
+.intro-container-left {
+    margin-top: 8%;
+    position: absolute;
+    left: 0;
+    right: 50%;
+}
+.intro-container-right {
+    margin-top: 8%;
+    position: absolute;
+    right: 25;
+    left: 75%;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
 }
 .name-heading {
     color: #FFFFFF;
@@ -119,4 +135,21 @@ linkedin-button {
 }
 .entry-button-text {
     color: white;
+}
+
+.sticky-navbar mr-auto > .active {
+    color: red;
+    background-color: green;
+    border-bottom: 1px solid black;
+}
+
+.card-page-1 {
+    height: 90vh;
+    font-size: 1.1vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.page-1-top-div {
+    height: 8%;
 }

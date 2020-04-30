@@ -28,11 +28,7 @@ const App = () => {
                         className="entry-button"
                         color="primary"
                     >
-                        <h3
-                            className="entry-button-text"
-                        >
-                            View my work...
-                        </h3>
+                        View my work...
                 </Button>{' '}
                 </Link>
             </div>
