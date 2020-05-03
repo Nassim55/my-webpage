@@ -53,7 +53,7 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-.intro-bottom {
+.intro-botton {
     background-color: #FFFFFF;
     position: relative;
     width: 100%;
@@ -61,16 +61,18 @@
 }
 .page-1 {
     background-color: #FFFFFF;
-    position: relative;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    border: solid;
+    border-color: white;
 }
 .page-2 {
-    background-color: #363645;
+    background-color: #F5F5F5;
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    border: solid;
+    border-color: blue;
 }
 .page-3 {
     background-color: #FFFFFF;
@@ -79,7 +81,7 @@
     height: 100vh;
 }
 .page-4 {
-    background-color: #363645;
+    background-color: #F5F5F5;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -129,27 +131,63 @@ linkedin-button {
     color: #FF6D6D;
 }
 
-.entry-button {
-    font-family: 'Roboto', sans-serif;
-
-}
-.entry-button-text {
-    color: white;
-}
-
 .sticky-navbar mr-auto > .active {
     color: red;
     background-color: green;
     border-bottom: 1px solid black;
 }
 
+
+/*
 .card-page-1 {
     height: 90vh;
-    font-size: 1.1vw;
+    font-size: 1.05vw;
     margin-left: 20vw;
     margin-right: 20vw;
+    overflow: scroll;
 }
+*/
 
 .page-1-top-div {
     height: 8%;
+}
+
+.container-page-1 {
+    min-height: 90vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+@media only screen and (max-width: 767px) {
+    .container-page-1 {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+
+.top-container-page-1 {
+    display: flex;
+}
+.top-left-container-page-1 {
+    width: 30%;
+}
+.top-right-container-page-1 {
+    width: 70%;
+}
+
+.my-photo {
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+    -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+    -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+.card-top-right-page-1 {
+    margin-left: 5%;
+    padding: 2% 5%;
+    font-family: 'Roboto', sans-serif;
 }

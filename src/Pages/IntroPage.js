@@ -27,7 +27,7 @@ const IntroPage = () => {
                         className="profile-paragraph"
                         style={fade}
                     >
-                        Welcome to my software developer portfolio
+                        Welcome to my development portfolio
                 </animated.p>
                     <div
                         className="linkedin-and-git"

@@ -10,7 +10,8 @@ const StickyNavbar = () => {
             variant="light"
             bg="light"
             sticky="top">
-            <Navbar.Brand href="#">Navbar</Navbar.Brand>
+            <Navbar.Brand></Navbar.Brand>
+            <Navbar.Brand></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
@@ -21,9 +22,9 @@ const StickyNavbar = () => {
                             spy={true}
                             smooth={true}
                             offset={0}
-                            duration={500}
+                            duration={1500}
                         >
-                            Page 1
+                            About
                             </Link>
                     </Nav.Link>
                     <Nav.Link>
@@ -33,9 +34,9 @@ const StickyNavbar = () => {
                             spy={true}
                             smooth={true}
                             offset={0}
-                            duration={500}
+                            duration={1500}
                         >
-                            Page 2
+                            Projects
                             </Link>
                     </Nav.Link>
                     <Nav.Link>
@@ -45,7 +46,7 @@ const StickyNavbar = () => {
                             spy={true}
                             smooth={true}
                             offset={0}
-                            duration={500}
+                            duration={1500}
                         >
                             Page 3
                             </Link>
@@ -57,9 +58,9 @@ const StickyNavbar = () => {
                             spy={true}
                             smooth={true}
                             offset={0}
-                            duration={500}
+                            duration={1500}
                         >
-                            Page 4
+                            Contact
                             </Link>
                     </Nav.Link>
                 </Nav>

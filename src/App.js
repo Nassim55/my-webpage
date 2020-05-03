@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import 'antd/dist/antd.css';
 import StickyNavbar from './Components/StickyNavbar';
@@ -7,31 +7,15 @@ import PageOne from './Pages/PageOne';
 import PageTwo from './Pages/PageTwo';
 import PageThree from './Pages/PageThree';
 import PageFour from './Pages/PageFour';
+import IntroButton from './Components/IntroButton';
 import { useSpring, animated } from 'react-spring';
-import { Link } from "react-scroll";
-import Button from 'react-bootstrap/Button'
 
 const App = () => {
+
     return (
         <div className="App">
             <IntroPage />
-            <div className="intro-bottom">
-                <Link
-                    activeClass="active"
-                    to="page-1"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={500}
-                >
-                    <Button
-                        className="entry-button"
-                        color="primary"
-                    >
-                        View my work...
-                </Button>{' '}
-                </Link>
-            </div>
+            <IntroButton />
             <StickyNavbar />
             <PageOne />
             <PageTwo />
