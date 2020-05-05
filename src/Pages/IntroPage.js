@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "react-scroll";
 import Button from 'react-bootstrap/Button'
 import { useSpring, animated } from 'react-spring';
+import IntroButton from '../Components/IntroButton';
 
 const IntroPage = () => {
     const fade = useSpring({ from: { opacity: 0 }, opacity: 1 });
@@ -29,26 +30,26 @@ const IntroPage = () => {
                     >
                         Welcome to my development portfolio
                 </animated.p>
-                    <div
-                        className="linkedin-and-git"
-                    >
-                        <Button
-                            className="linkedin-button"
-                            href="https://www.linkedin.com/in/nassim-chenouf-2b7845135/"
-                            target="_blank"
-                        >
-                            Linkedin
-                    </Button>{' '}
-                        <Button
-                            className="github-button"
-                            href="https://github.com/Nassim55"
-                            target="_blank"
-                            color="primary"
-                        >
-                            GitHub
-                    </Button>{' '}
+                    <div className="linkedin-and-git">
+                        <div className="linkedin-button">
+                            <a
+                                className="linkedin-button-a-tag"
+                                href="https://www.linkedin.com/in/nassim-chenouf-2b7845135/"
+                                target="_blank">
+                                Linkedin
+                            </a>
+                        </div>
+                        <div className="github-button">
+                            <a
+                                className="github-button-a-tag"
+                                href="https://github.com/Nassim55"
+                                target="_blank">
+                                GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
+                <IntroButton />
             </div>
         </div>
     );
