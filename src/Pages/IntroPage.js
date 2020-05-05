@@ -10,27 +10,15 @@ const IntroPage = () => {
     return (
         <div
             className="intro-page"
-            id="intro-page"
-        >
-            <div
-                className="intro-container"
-            >
-                <div
-                    className="intro-container-left"
-                >
-                    <animated.h1
-                        className="name-heading"
-                        style={fade}
-                    >
-                        Nassim Chenouf
-                </animated.h1>
+            id="intro-page">
+            <div className="intro-container">
+                <div className="intro-container-left">
                     <animated.p
                         className="profile-paragraph"
-                        style={fade}
-                    >
-                        Welcome to my development portfolio
-                </animated.p>
-                    <div className="linkedin-and-git">
+                        style={fade}>
+                        Hello, I'm <span className="my-name">Nassim</span>.<br /> Welcome to my software development portfolio!
+                    </animated.p>
+                    {/* <div className="linkedin-and-git">
                         <div className="linkedin-button">
                             <a
                                 className="linkedin-button-a-tag"
@@ -47,7 +35,7 @@ const IntroPage = () => {
                                 GitHub
                             </a>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <IntroButton />
             </div>

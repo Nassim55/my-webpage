@@ -48,7 +48,7 @@ const StickyNavbar = () => {
                             offset={0}
                             duration={1500}
                         >
-                            Page 3
+                            Blog (Tools I use for web development)
                             </Link>
                     </Nav.Link>
                     <Nav.Link>
