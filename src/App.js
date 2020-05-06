@@ -7,8 +7,6 @@ import PageOne from './Pages/PageOne';
 import PageTwo from './Pages/PageTwo';
 import PageThree from './Pages/PageThree';
 import PageFour from './Pages/PageFour';
-import IntroButton from './Components/IntroButton';
-import { useSpring, animated } from 'react-spring';
 
 const App = () => {
 

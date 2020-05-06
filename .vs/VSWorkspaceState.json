@@ -4,8 +4,9 @@
     "\\public",
     "\\src",
     "\\src\\Components",
+    "\\src\\Images",
     "\\src\\Pages"
   ],
-  "SelectedNode": "\\src\\Components\\StickyNavbar.js",
+  "SelectedNode": "\\src\\Pages\\PageOne.js",
   "PreviewInSolutionExplorer": false
 }

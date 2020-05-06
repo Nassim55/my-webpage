@@ -18,7 +18,9 @@ const IntroButton = () => {
                     <div id="dub-arrow">
                         <img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" />
                     </div>
-                    <a>VIEW MY WORK</a>
+                    <a className="intro-button-text">
+                        VIEW MY WORK
+                    </a>
                 </div>
             </Link>
         </div>

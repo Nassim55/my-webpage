@@ -1,11 +1,14 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from "react-scroll";
+import '../App.css';
+
 
 const StickyNavbar = () => {
     return (
         <Navbar
             className="sticky-navbar"
+            id="sticky-navbar-id"
             expand="lg"
             variant="light"
             bg="light"
@@ -15,7 +18,8 @@ const StickyNavbar = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link>
+                    <Nav.Link
+                        id="sticky-nav-links-id-1">
                         <Link
                             activeClass="active"
                             to="page-1"
@@ -27,7 +31,8 @@ const StickyNavbar = () => {
                             About
                             </Link>
                     </Nav.Link>
-                    <Nav.Link>
+                    <Nav.Link
+                        id="sticky-nav-links-id-2">
                         <Link
                             activeClass="active"
                             to="page-2"
@@ -39,7 +44,8 @@ const StickyNavbar = () => {
                             Projects
                             </Link>
                     </Nav.Link>
-                    <Nav.Link>
+                    <Nav.Link
+                        id="sticky-nav-links-id-3">
                         <Link
                             activeClass="active"
                             to="page-3"
@@ -48,10 +54,11 @@ const StickyNavbar = () => {
                             offset={0}
                             duration={1500}
                         >
-                            Blog (Tools I use for web development)
+                            Blog
                             </Link>
                     </Nav.Link>
-                    <Nav.Link>
+                    <Nav.Link
+                        id="sticky-nav-links-id-4">
                         <Link
                             activeClass="active"
                             to="page-4"
