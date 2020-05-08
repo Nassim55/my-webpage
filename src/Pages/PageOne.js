@@ -7,6 +7,8 @@ import pythonLogo from '../Images/python.svg';
 import htmlLogo from '../Images/html5.svg';
 import cssLogo from '../Images/css3.svg';
 import reactLogo from '../Images/react.svg';
+import SimpleSwiper from '../Components/SimpleSwiper';
+
 
 const PageOne = () => {
     return (
@@ -16,32 +18,7 @@ const PageOne = () => {
                 <div className="technologies-title">
                     Languages I've worked with
                 </div>
-                <div className="technologies-bar">
-                    <img
-                        className="javascript-logo"
-                        src={javascriptLogo}
-                        alt="JavaScript" />
-                    <img
-                        className="react-logo"
-                        src={reactLogo}
-                        alt="React" />
-                    <img
-                        className="html-logo"
-                        src={htmlLogo}
-                        alt="HTML" />
-                    <img
-                        className="css-logo"
-                        src={cssLogo}
-                        alt="CSS" />
-                    <img
-                        className="python-logo"
-                        src={pythonLogo}
-                        alt="Python" />
-                    <img
-                        className="javascript-logo"
-                        src={javascriptLogo}
-                        alt="JavaScript" />
-                </div>
+                <SimpleSwiper />
                 <div className="top-container-page-1">
                     <div className="top-left-container-page-1">
                         "I'm a Graduate Aerospace Engineering student from the University

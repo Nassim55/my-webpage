@@ -1,12 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
     "\\src",
     "\\src\\Components",
-    "\\src\\Images",
+    "\\src\\css",
     "\\src\\Pages"
   ],
-  "SelectedNode": "\\src\\Pages\\PageOne.js",
+  "SelectedNode": "\\src\\Pages\\IntroPage.js",
   "PreviewInSolutionExplorer": false
 }
