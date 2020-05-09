@@ -22,10 +22,8 @@ const PageOne = () => {
                     <div className="top-right-container-page-1">
                         <p>
                             <span className="quotation-marks">"&nbsp;&nbsp;&nbsp;</span>
-                            
                             I'm a Graduate Aerospace Engineering student from the University
                             of Leeds. Passionate about building interesting new software.
-                            
                             <span className="quotation-marks">&nbsp;&nbsp;&nbsp;"</span>
                         </p>
                     </div>

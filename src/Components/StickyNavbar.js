@@ -10,7 +10,7 @@ const StickyNavbar = () => {
             className="sticky-navbar"
             id="sticky-navbar-id"
             expand="lg"
-            variant="light"
+            variant="dark"
             bg="light"
             sticky="top">
             <Navbar.Brand></Navbar.Brand>
