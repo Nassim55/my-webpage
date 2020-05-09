@@ -30,6 +30,7 @@ const SimpleSwiper = () => {
         },
         autoplay: {
             delay: 0,
+            disableOnInteraction: false,
         },
 
     }
