@@ -1,12 +1,5 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
-import IntroButton from '../Components/IntroButton';
 import myImage from './me-circle-cropped.png';
-import javascriptLogo from '../Images/javascript.svg';
-import pythonLogo from '../Images/python.svg';
-import htmlLogo from '../Images/html5.svg';
-import cssLogo from '../Images/css3.svg';
-import reactLogo from '../Images/react.svg';
 import SimpleSwiper from '../Components/SimpleSwiper';
 
 

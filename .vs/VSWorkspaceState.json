@@ -1,11 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\public",
     "\\src",
     "\\src\\Components",
     "\\src\\css",
     "\\src\\Pages"
   ],
-  "SelectedNode": "\\src\\Pages\\IntroPage.js",
+  "SelectedNode": "\\src\\Components\\SimpleSwiper.js",
   "PreviewInSolutionExplorer": false
 }

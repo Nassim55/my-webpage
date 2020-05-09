@@ -360,3 +360,98 @@
 .swiper {
     height: 300px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.technology-logo-card {
+    border: solid;
+    background-color: #D2DBDD;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    -webkit-justify-content: center;
+    max-width: 820px;
+    z-index: -1;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+
+
+
+
+
+
+.card {
+    margin-right: 25px;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: #fff;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+.card__img {
+    visibility: visible;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.card__info {
+    z-index: 2;
+    background-color: #fff;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 10px;
+}
+
+.card__category {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #868686;
+}
+#javascript-card,
+#react-card,
+#html-card,
+#css-card,
+#python-card {
+    width: 200px;
+}
+
+#javascript-card-image,
+#react-card-image,
+#html-card-image,
+#css-card-image,
+#python-card-image {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
