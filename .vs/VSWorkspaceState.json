@@ -5,9 +5,8 @@
     "\\src",
     "\\src\\Components",
     "\\src\\css",
-    "\\src\\Images",
     "\\src\\Pages"
   ],
-  "SelectedNode": "\\src\\Images\\react.svg",
+  "SelectedNode": "\\src\\Pages\\PageOne.js",
   "PreviewInSolutionExplorer": false
 }

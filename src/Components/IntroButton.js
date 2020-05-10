@@ -1,8 +1,5 @@
-import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import { Link } from "react-scroll";
-import Button from 'react-bootstrap/Button'
-import { useSpring, animated } from 'react-spring';
 
 const IntroButton = () => {
     return (

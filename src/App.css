@@ -101,67 +101,6 @@
 }
 
 
-/* Buttons */
-.linkedin-and-git {
-    text-align: left;
-    color: #FF6D6D;
-}
-.linkedin-button {
-    color: #fff;
-    background-color: #FF6D6D;
-    text-align: center;
-    padding: 5px 10px;
-    transition: all 0.5s;
-    border-radius: 10px;
-    display: inline-block;
-    margin: 0.2em;
-
-}
-    .linkedin-button:hover {
-        background-color: #f24e4e;
-        text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-    }
-.linkedin-button-a-tag {
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    text-decoration: none;
-}
-    .linkedin-button-a-tag:hover {
-        text-decoration: none;
-        color: #fff;
-    }
-.github-button {
-    color: #fff;
-    background-color: #FF6D6D;
-    text-align: center;
-    padding: 5px 10px;
-    transition: all 0.5s;
-    border-radius: 10px;
-    display: inline-block;
-    margin: 0.2em;
-}
-    .github-button:hover {
-        background-color: #f24e4e;
-        text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-    }
-.github-button-a-tag {
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-}
-    .github-button-a-tag:hover {
-        text-decoration: none;
-        color: #fff;
-    }
-
 
 
 /*Page One CSS*/
@@ -183,15 +122,16 @@
         margin-right: 0 !important;
     }
 }
-.top-container-page-1 {
+.bottom-container-page-1 {
     display: flex;
-    margin-left: 3%;
-    margin-right: 5%;
     margin-top: 3.5em;
+    overflow-x: hidden;
+    padding: 4%;
+    overflow-x: hidden;
 }
 
 /* ----------------------------------------------------------------- Would like image and right div to animate in from each side */
-.top-right-container-page-1 {
+.bottom-right-container-page-1 {
     width: 55%;
     font-family: 'Raleway', sans-serif;
     color: #252934;
@@ -203,7 +143,7 @@
     box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
     line-height: 1rem;
 }
-.top-left-container-page-1 {
+.bottom-left-container-page-1 {
     width: 45%;
     margin-right: 5%;
 

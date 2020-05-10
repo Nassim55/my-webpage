@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-import { Link } from "react-scroll";
-import Button from 'react-bootstrap/Button'
+import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import IntroButton from '../Components/IntroButton';
 
