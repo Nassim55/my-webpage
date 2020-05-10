@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-import ReactDOM from 'react-dom';
 import { useSpring, animated } from 'react-spring';
 
 import myImage from './me-circle-cropped.png';
