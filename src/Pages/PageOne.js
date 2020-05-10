@@ -5,7 +5,7 @@ import { useSpring, animated } from 'react-spring';
 import myImage from './me-circle-cropped.png';
 import SimpleSwiper from '../Components/SimpleSwiper';
 
-
+// Write this down:
 const useOnScreen = (options) => {
     const ref = useRef();
     const [visible, setVisible] = useState(false);
@@ -36,6 +36,8 @@ const PageOne = () => {
         x: ref.current ? 0 : -600
     });
 
+    //CONTACT Me button at bottom of paragraph
+
     return (
         <div className="page-1" id="page-1">
             <div className="page-1-top-div"></div>
@@ -61,8 +63,9 @@ const PageOne = () => {
                         }}>
                         <p>
                             <span className="quotation-marks">"&nbsp;&nbsp;&nbsp;</span>
-                            I'm a Graduate Aerospace Engineering student from the University
-                            of Leeds. Passionate about building interesting new software.
+                            I'm an Aerospace Engineering graduate from the University
+                            of Leeds. Passionate about building interesting and creative
+                            software. Check out the languages I'm familiar with in the card stack above.
                             <span className="quotation-marks">&nbsp;&nbsp;&nbsp;"</span>
                         </p>
                     </animated.div>
