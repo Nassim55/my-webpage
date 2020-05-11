@@ -124,7 +124,7 @@
 }
 .bottom-container-page-1 {
     display: flex;
-    margin-top: 1em;
+    margin-bottom: 1em;
     overflow-x: hidden;
     padding: 4%;
     overflow-x: hidden;
@@ -161,6 +161,29 @@
     font-size: 1.6rem;
     font-weight: 900;
 }
+
+
+
+
+
+/*Page 2 CSS*/
+.link-todoList {
+    width: 55%;
+    font-family: 'Raleway', sans-serif;
+    color: #252934;
+    text-align: left;
+    padding: 2%;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
+    line-height: 1rem;
+}
+
+
+
+
+
 
 
 

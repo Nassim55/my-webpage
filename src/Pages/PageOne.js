@@ -41,7 +41,7 @@ const PageOne = () => {
         <div className="page-1" id="page-1">
             <div className="page-1-top-div"></div>
             <div className="container-page-1">
-                <SimpleSwiper className="simple-swiper" />
+                
                 <div
                     className="bottom-container-page-1"
                     ref={ref}>
@@ -64,11 +64,12 @@ const PageOne = () => {
                             <span className="quotation-marks">"&nbsp;&nbsp;&nbsp;</span>
                             I'm an Aerospace Engineering graduate from the University
                             of Leeds. Passionate about building interesting and creative
-                            software. Check out the languages I'm familiar with in the card stack above.
+                            software. Check out the languages I'm familiar with in the card stack below.
                             <span className="quotation-marks">&nbsp;&nbsp;&nbsp;"</span>
                         </p>
                     </animated.div>
                 </div>
+                <SimpleSwiper className="simple-swiper" />
             </div>
         </div>
     );
