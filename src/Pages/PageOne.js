@@ -64,7 +64,7 @@ const PageOne = () => {
                             <span className="quotation-marks">"&nbsp;&nbsp;&nbsp;</span>
                             I'm an Aerospace Engineering graduate from the University
                             of Leeds. Passionate about building interesting and creative
-                            software. Check out the languages I'm familiar with in the card stack below.
+                            software. Check out the languages I'm familiar with below.
                             <span className="quotation-marks">&nbsp;&nbsp;&nbsp;"</span>
                         </p>
                     </animated.div>
