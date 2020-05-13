@@ -3,7 +3,6 @@ import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from "react-scroll";
 import '../App.css';
 
-
 const StickyNavbar = () => {
     return (
         <Navbar

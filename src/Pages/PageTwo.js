@@ -8,7 +8,7 @@ const PageTwo = () => {
                 <div className="card-top-right-page-1">
                     <a
                         className="link-todoList"
-                        href="https://stupefied-agnesi-b3712a.netlify.app/"
+                        href="https://epic-lichterman-75a3e1.netlify.app/"
                         target="_blank">
                     Click me
                     </a>

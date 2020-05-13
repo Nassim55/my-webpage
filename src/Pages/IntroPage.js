@@ -28,12 +28,14 @@ const useOnScreen = (options) => {
 
 
 const IntroPage = () => {
-    const fade = useSpring({ from: { opacity: 0 }, opacity: 1 });
+    //const fade = useSpring({ from: { opacity: 0 }, opacity: 1 });
 
     const [ref, visible] = useOnScreen();
     const { x } = useSpring({
         x: ref.current ? 0 : -1000
     });
+
+    const AnimatedIntroButton = animated(IntroButton);
 
     return (
         <div
@@ -52,7 +54,7 @@ const IntroPage = () => {
                         Hello, I'm <span className="my-name">Nassim</span>.<br /> Welcome to my software development portfolio!
                     </animated.p>
                 </div>
-                <IntroButton />
+                <AnimatedIntroButton />
             </div>
         </div>
     );
