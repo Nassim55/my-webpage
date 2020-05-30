@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
-import IntroButton from '../Components/IntroButton';
+import IntroButton from '../Components/IntroPageComponents/IntroButton';
 
 const useOnScreen = (options) => {
     const ref = useRef();
@@ -41,19 +41,13 @@ const IntroPage = () => {
         <div
             className="intro-page"
             id="intro-page"
-            ref={ref}
-        >
+            ref={ref}>
             <div className="intro-container">
-                <div className="intro-container-left">
-                    <animated.p
-                        className="profile-paragraph"
-                        style={{
-                            transform: x.interpolate(x => `translate3d(0, ${x}px, 0)`)
-                        }}
-                    >
-                        Hello, I'm <span className="my-name">Nassim</span>.<br /> Welcome to my software development portfolio!
-                    </animated.p>
-                </div>
+                <animated.p
+                    className="profile-paragraph"
+                    style={{transform: x.interpolate(x => `translate3d(0, ${x}px, 0)`)}}>
+                    Hello, I'm <span className="my-name">Nassim</span>.<br /> Welcome to my software development portfolio!
+                </animated.p>
                 <AnimatedIntroButton />
             </div>
         </div>
