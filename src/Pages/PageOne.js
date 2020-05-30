@@ -76,12 +76,3 @@ const PageOne = () => {
 };
 
 export default PageOne;
-
-
-
-//const [isToggled, setToggled] = useState(false);
-    //const { x } = useSpring({
-    //    x: isToggled ? 0 : -200
-    //});
-
-    //onClick={() => setToggled(!isToggled)}

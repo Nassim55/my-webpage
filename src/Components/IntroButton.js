@@ -25,14 +25,3 @@ const IntroButton = () => {
 };
 
 export default IntroButton;
-
-
-
-/*
-
-<div class="button" id="button-7">
-    <div id="dub-arrow"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" /></div>
-    <a href="#">Let's Go!</a>
-</div>
-
-*/

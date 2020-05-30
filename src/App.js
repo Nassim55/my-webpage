@@ -9,6 +9,7 @@ import PageThree from './Pages/PageThree';
 import PageFour from './Pages/PageFour';
 
 const App = () => {
+    console.dir(document);
 
     return (
         <div className="App">
