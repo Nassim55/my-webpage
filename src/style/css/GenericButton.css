@@ -1,0 +1,35 @@
+.generic-button-container {
+  width: 100%;
+}
+
+.generic-button-container .generic-button {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid black;
+  margin: 20px 20px 20px 20px;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1em;
+  letter-spacing: 1.5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.generic-button-container .generic-button .generic-button-text {
+  color: black;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=GenericButton.css.map */

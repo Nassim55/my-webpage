@@ -38,10 +38,8 @@ const PageOne = () => {
     //CONTACT Me button at bottom of paragraph
 
     return (
-        <div className="page-1" id="page-1">
-            <div className="page-1-top-div"></div>
-            <div className="container-page-1">
-                
+        <div className="page-1" id="page-1">   
+            <div className="page-content-container">
                 <div
                     className="bottom-container-page-1"
                     ref={ref}>

@@ -18,16 +18,8 @@
     background-color: #fff;
     width: 100%;
     min-height: 100vh;
-    border: solid #fff;
 }
-.page-2 {
-    background-color: #F5F5F5;
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    border: solid;
-    border-color: #F5F5F5;
-}
+
 .page-3 {
     background-color: #FFFFFF;
     position: relative;
@@ -59,20 +51,19 @@
 
 
 /*Page One CSS*/
-
-.page-1-top-div {
-    height: 8%;
-}
-.container-page-1 {
+.page-content-container {
     min-height: 90vh;
     margin-left: 20vw;
     margin-right: 20vw;
-    margin-top: 5em;
+    margin-top: 9em;
     margin-bottom: 5em;
+    border: solid;
 }
 
+
+
 @media only screen and (max-width: 767px) {
-    .container-page-1 {
+    .page-content-container {
         margin-left: 0 !important;
         margin-right: 0 !important;
     }
@@ -118,59 +109,6 @@
     font-size: 1.6rem;
     font-weight: 900;
 }
-
-
-
-
-
-/*Page 2 CSS*/
-.link-todoList {
-    width: 55%;
-    font-family: 'Raleway', sans-serif;
-    color: #252934;
-    text-align: left;
-    padding: 2%;
-    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
-    line-height: 1rem;
-}
-
-.project-container {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    background-image: url(ml-sarcasm.JPG);
-    background-size: cover;
-    background-position: center;
-    height: 35vh;
-    border: solid;
-}
-.project-image {
-    width: 100vw;
-}
-.project-title {
-    position: relative;
-    top: 6em;
-}
-.project-languages {
-    position: relative;
-    top: 6em;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

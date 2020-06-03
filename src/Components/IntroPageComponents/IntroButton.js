@@ -3,12 +3,12 @@ import { Link } from "react-scroll";
 
 const IntroButton = () => {
     const onMouseEnterIntroButton = () => {
-        document.querySelector('.intro-button').style.color = '#252934';
+        document.querySelector('.intro-button-text').style.color = '#252934';
         document.querySelector('.intro-button').style.backgroundColor = '#BFC0C0';
     };
 
     const onMouseLeaveIntroButton = () => {
-        document.querySelector('.intro-button').style.color = '#BFC0C0';
+        document.querySelector('.intro-button-text').style.color = '#BFC0C0';
         document.querySelector('.intro-button').style.backgroundColor = '#252934';
     };
 

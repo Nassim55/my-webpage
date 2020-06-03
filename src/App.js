@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
+
 import './App.css';
 import 'antd/dist/antd.css';
+
+//Page Styles
+import './style/css/IntroPage.css';
+import './style/css/Page2.css'
+
+//Component Styles
+import './style/css/GenericButton.css'
+
 import StickyNavbar from './Components/StickyNavbar';
 import IntroPage from './Pages/IntroPage';
 import PageOne from './Pages/PageOne';
@@ -9,8 +18,6 @@ import PageThree from './Pages/PageThree';
 import PageFour from './Pages/PageFour';
 
 const App = () => {
-    console.dir(document);
-
     return (
         <div className="App">
             <IntroPage />

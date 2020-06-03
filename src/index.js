@@ -7,7 +7,7 @@ import 'react-mdl/extra/material.js';
 import 'antd/dist/antd.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import './style/css/IntroPage.css';
+
 
 ReactDOM.render(
   <React.StrictMode>
