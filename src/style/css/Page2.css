@@ -5,7 +5,24 @@
   min-height: 100vh;
 }
 
-.page-2 .ml .c {
+.page-2 .page-content-container {
+  position: relative;
+  top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-2 .page-content-container .ml {
+  position: absolute;
+  top: 0;
+}
+
+.page-2 .page-content-container .ml .c {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,20 +38,65 @@
   background-position: center;
   height: 35vh;
   width: 100vw;
+}
+
+.page-2 .page-content-container .ml .projects-container-front {
+  background-image: url(../../Images/NeuralNetwork.jpg);
+}
+
+.page-2 .page-content-container .ml .projects-container-back {
   border: solid;
 }
 
-.page-2 .ml .projects-container-front {
-  background-image: url(../../Images/ml-sarcasm.JPG);
-}
-
-.page-2 .ml .projects-container-back .project-title {
+.page-2 .page-content-container .ml .projects-container-back .project-title {
   font-size: 1.4rem;
   font-weight: 500;
   text-transform: uppercase;
 }
 
-.page-2 .ml .projects-container-back .project-languages {
+.page-2 .page-content-container .ml .projects-container-back .project-languages {
+  font-size: 0.8rem;
+  color: #F24E4E;
+}
+
+.page-2 .page-content-container .todo {
+  position: absolute;
+  top: 35vh;
+}
+
+.page-2 .page-content-container .todo .c {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+  width: 100vw;
+}
+
+.page-2 .page-content-container .todo .projects-container-front {
+  background-image: url(../../Images/todo.jpg);
+}
+
+.page-2 .page-content-container .todo .projects-container-back {
+  border: solid;
+}
+
+.page-2 .page-content-container .todo .projects-container-back .project-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.page-2 .page-content-container .todo .projects-container-back .project-languages {
   font-size: 0.8rem;
   color: #F24E4E;
 }

@@ -3,33 +3,73 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    .ml {
-        .c {
+    .page-content-container {
+        position: relative;
+        top: 10vh;
+        display: flex;
+        flex-direction: column;
+        .ml {
             position: absolute;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background-size: cover;
-            background-position: center;
-            height: 35vh;
-            width: 100vw;
-            border: solid;
-        }
-        .projects-container-front {
-            background-image: url(../../Images/ml-sarcasm.JPG);
-        }
-        .projects-container-back {
-            .project-title {
-                font-size: 1.4rem;
-                font-weight: 500;
-                text-transform: uppercase;
+            top: 0;
+            .c {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-size: cover;
+                background-position: center;
+                height: 35vh;
+                width: 100vw;
             }
-            .project-languages {
-                font-size: 0.8rem;
-                color: #F24E4E;
+            .projects-container-front {
+                background-image: url(../../Images/NeuralNetwork.jpg);
             }
-            #button-ml-project {
-            
+            .projects-container-back {
+                border: solid;
+                .project-title {
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+                .project-languages {
+                    font-size: 0.8rem;
+                    color: #F24E4E;
+                }
+                #button-ml-project {
+                
+                }
+            }
+        }
+        .todo {
+            position: absolute;
+            top: 35vh;
+            .c {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-size: cover;
+                background-position: center;
+                height: 35vh;
+                width: 100vw;
+            }
+            .projects-container-front {
+                background-image: url(../../Images/todo.jpg);
+            }
+            .projects-container-back {
+                border: solid;
+                .project-title {
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+                .project-languages {
+                    font-size: 0.8rem;
+                    color: #F24E4E;
+                }
+                #button-ml-project {
+                
+                }
             }
         }
     }

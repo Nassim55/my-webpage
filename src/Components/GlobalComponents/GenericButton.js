@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GenericButton = () => {
+const GenericButton = (props) => {
     const onMouseEnterIntroButton = () => {
         document.querySelector('.generic-button-text').style.color = '#252934';
         document.querySelector('.generic-button').style.backgroundColor = '#BFC0C0';
@@ -16,9 +16,12 @@ const GenericButton = () => {
             <div 
             className="generic-button"
             onMouseEnter={onMouseEnterIntroButton}
-            onMouseLeave={onMouseLeaveIntroButton}>
-                <a className="generic-button-text">
-                    VIEW MY WORK
+            onMouseLeave={onMouseLeaveIntroButton} >
+                <a 
+                className="generic-button-text"
+                href={props.href}
+                target="_blank">
+                    {props.text}
                 </a>
             </div>
         </div>
