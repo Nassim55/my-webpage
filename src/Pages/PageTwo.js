@@ -9,11 +9,19 @@ const PageTwo = () => {
                 projectClassName={'ml'}
                 projectTitle={'SENTIMENT ANALYSIS'}
                 projectLanguages={'React, Python, TensorFlow, Django'}
+                projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
                 />
                 <ProjectCard 
                 projectClassName={'todo'}
                 projectTitle={'TODO LIST'}
                 projectLanguages={'React'}
+                projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
+                />
+                <ProjectCard 
+                projectClassName={'project-3'}
+                projectTitle={'PROJECT THREE'}
+                projectLanguages={'React'}
+                projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
                 />
             </div>
         </div>

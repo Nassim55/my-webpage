@@ -8,7 +8,7 @@ const ProjectCard = (props) => {
     const { transform, opacity } = useSpring({
         opacity: isToggled1 ? 1 : 0,
         transform: `perspective(600px) rotateX(${isToggled1 ? 180 : 0}deg)`,
-        config: { mass: 5, tension: 500, friction: 80 }
+        config: { mass: 12, tension: 500, friction: 80 }
     });
 
     const AnimatedGenericButton = animated(GenericButton)
@@ -29,8 +29,7 @@ const ProjectCard = (props) => {
                     {props.projectLanguages}
                 </animated.div>
                 <AnimatedGenericButton
-                id="button-ml-project"
-                href={'https://goofy-perlman-2c3af1.netlify.app/'}
+                href={props.projectHref}
                 text={'FIND OUT MORE'} />
             </animated.div>
             <animated.div
