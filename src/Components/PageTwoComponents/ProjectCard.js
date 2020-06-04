@@ -19,7 +19,7 @@ const ProjectCard = (props) => {
         onClick={() => setIsToggled1(!isToggled1)}>
             <animated.div
             className="c projects-container-back"
-            style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }}>
+            style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(${props.rotationDirection})`) }}>
                 <animated.div 
                 className="project-title">
                     {props.projectTitle}

@@ -25,9 +25,9 @@ const IntroButton = () => {
                 className="intro-button"
                 onMouseEnter={onMouseEnterIntroButton}
                 onMouseLeave={onMouseLeaveIntroButton}>
-                    <a className="intro-button-text">
+                    <div className="intro-button-text">
                         VIEW MY WORK
-                    </a>
+                    </div>
                 </div>
             </Link>
         </div>

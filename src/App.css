@@ -252,3 +252,15 @@
     box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
     line-height: 1rem;
 }
+
+
+
+
+.test-use-gesture {
+    position: relative;
+    left: 25vw;
+    height: 25vh;
+    width: 25vw;
+    background-color: #f24e4e;
+    border: solid;
+}

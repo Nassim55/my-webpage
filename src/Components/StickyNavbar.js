@@ -19,55 +19,55 @@ const StickyNavbar = () => {
                 <Nav className="mr-auto">
                     <Nav.Link
                         id="sticky-nav-links-id-1">
-                        <Link
-                            activeClass="active"
-                            to="page-1"
-                            spy={true}
-                            smooth={true}
-                            offset={0}
-                            duration={1500}
-                        >
-                            About
-                            </Link>
+                    <Link
+                        activeClass="active"
+                        to="page-1"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={1500}
+                    >
+                        About
+                        </Link>
                     </Nav.Link>
                     <Nav.Link
-                        id="sticky-nav-links-id-2">
-                        <Link
-                            activeClass="active"
-                            to="page-2"
-                            spy={true}
-                            smooth={true}
-                            offset={0}
-                            duration={1500}
-                        >
-                            Projects
-                            </Link>
+                    id="sticky-nav-links-id-2">
+                    <Link
+                        activeClass="active"
+                        to="page-2"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={1500}
+                    >
+                        Projects
+                    </Link>
                     </Nav.Link>
                     <Nav.Link
                         id="sticky-nav-links-id-3">
-                        <Link
-                            activeClass="active"
-                            to="page-3"
-                            spy={true}
-                            smooth={true}
-                            offset={0}
-                            duration={1500}
-                        >
-                            Blog
-                            </Link>
+                    <Link
+                        activeClass="active"
+                        to="page-3"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={1500}
+                    >
+                        Blog
+                        </Link>
                     </Nav.Link>
                     <Nav.Link
                         id="sticky-nav-links-id-4">
-                        <Link
-                            activeClass="active"
-                            to="page-4"
-                            spy={true}
-                            smooth={true}
-                            offset={0}
-                            duration={1500}
-                        >
-                            Contact
-                            </Link>
+                    <Link
+                        activeClass="active"
+                        to="page-4"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={1500}
+                    >
+                        Contact
+                        </Link>
                     </Nav.Link>
                 </Nav>
             </Navbar.Collapse>

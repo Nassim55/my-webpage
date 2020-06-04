@@ -3,6 +3,7 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
+  height: 150vh;
 }
 
 .page-2 .page-content-container {
@@ -125,7 +126,7 @@
 }
 
 .page-2 .page-content-container .project-3 .projects-container-front {
-  background-image: url(../../Images/todo.jpg);
+  background-image: url(../../Images/MarsRover.jpg);
 }
 
 .page-2 .page-content-container .project-3 .projects-container-back {
