@@ -5,7 +5,8 @@ import 'antd/dist/antd.css';
 
 //Page Styles
 import './style/css/IntroPage.css';
-import './style/css/Page2.css'
+import './style/css/Page2.css';
+import './style/css/Page3.css';
 
 //Component Styles
 import './style/css/GenericButton.css'

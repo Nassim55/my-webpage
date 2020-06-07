@@ -45,6 +45,18 @@
   background-image: url(../../Images/NeuralNetwork.jpg);
 }
 
+.page-2 .page-content-container .ml .projects-container-front .project-title-front {
+  position: relative;
+  margin-bottom: 20%;
+  opacity: 1;
+  background-color: black;
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  mix-blend-mode: overlay;
+}
+
 .page-2 .page-content-container .ml .projects-container-back {
   border: solid;
 }
@@ -87,6 +99,18 @@
   background-image: url(../../Images/todo.jpg);
 }
 
+.page-2 .page-content-container .todo .projects-container-front .project-title-front {
+  position: relative;
+  margin-bottom: 20%;
+  opacity: 1;
+  background-color: black;
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  mix-blend-mode: overlay;
+}
+
 .page-2 .page-content-container .todo .projects-container-back {
   border: solid;
 }
@@ -127,6 +151,18 @@
 
 .page-2 .page-content-container .project-3 .projects-container-front {
   background-image: url(../../Images/MarsRover.jpg);
+}
+
+.page-2 .page-content-container .project-3 .projects-container-front .project-title-front {
+  position: relative;
+  margin-bottom: 20%;
+  opacity: 1;
+  background-color: black;
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  mix-blend-mode: overlay;
 }
 
 .page-2 .page-content-container .project-3 .projects-container-back {

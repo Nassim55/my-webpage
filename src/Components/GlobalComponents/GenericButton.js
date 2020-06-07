@@ -11,16 +11,27 @@ const GenericButton = (props) => {
         document.querySelector('.generic-button').style.backgroundColor = '#252934';
     };
 
+    const styleGenericButtonText = {
+        color: props.textColour
+    };
+
+    const styleGenericButtonContainer = {
+        borderColor: props.borderColour,
+        backgroundColor: props.backgroundColour
+    };
+
     return (
         <div className="generic-button-container">
             <div 
             className="generic-button"
             onMouseEnter={onMouseEnterIntroButton}
-            onMouseLeave={onMouseLeaveIntroButton} >
+            onMouseLeave={onMouseLeaveIntroButton} 
+            style={styleGenericButtonContainer}>
                 <a 
                 className="generic-button-text"
                 href={props.href}
-                target="_blank">
+                target="_blank"
+                style={styleGenericButtonText}>
                     {props.text}
                 </a>
             </div>
