@@ -1,0 +1,102 @@
+.Navbar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: mediumaquamarine;
+  border: solid;
+}
+
+.Navbar .toggle-button {
+  border: solid;
+  padding: 0.3em;
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 3em;
+  height: 2em;
+}
+
+.Navbar .toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.Navbar .navbar-links {
+  border: solid;
+}
+
+.Navbar .navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Navbar .navbar-links ul li {
+  list-style: none;
+}
+
+.Navbar .navbar-links ul li a {
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .Navbar {
+    min-height: 8vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .Navbar .toggle-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .Navbar .navbar-links {
+    width: 100%;
+    display: none;
+  }
+  .Navbar .navbar-links ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .Navbar .navbar-links ul li {
+    text-align: center;
+  }
+  .Navbar .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+  .Navbar .navbar-links.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */

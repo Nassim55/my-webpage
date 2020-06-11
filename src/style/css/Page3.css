@@ -20,7 +20,7 @@
   background-color: #ffffff;
   position: absolute;
   width: 50%;
-  height: 50%;
+  height: 40%;
   will-change: transform;
   border-radius: 12px;
   -webkit-box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
@@ -31,9 +31,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 60%;
+  margin-top: 1.5em;
+  height: 75%;
   width: 100%;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+}
+
+.page-3 .swipe-card .swipe-card-title {
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 /*# sourceMappingURL=Page3.css.map */

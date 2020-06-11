@@ -1,44 +1,50 @@
-import React, { useRef } from 'react'
-import clamp from 'lodash-es/clamp'
-import { useSprings, animated } from 'react-spring'
+import React, { useRef, useState } from 'react'
+
+import { useSprings, animated, to as interpolate } from 'react-spring'
 import { useDrag } from 'react-use-gesture'
 
-const pages = [
-    'https://images.pexels.com/photos/62689/pexels-photo-62689.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-    'https://images.pexels.com/photos/296878/pexels-photo-296878.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-    'https://images.pexels.com/photos/1509428/pexels-photo-1509428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-    'https://images.pexels.com/photos/351265/pexels-photo-351265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-    'https://images.pexels.com/photos/924675/pexels-photo-924675.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
-]
+const to = i => ({ x: 0, y: i * -4, scale: 1, rot: -10 + Math.random() * 20, delay: i * 100 });
+const from = i => ({ x: 0, rot: 0, scale: 1.5, y: -1000 });
+
+const trans = (r, s) => `perspective(1500px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`;
 
 const CarouselUseSprings = (props) => {
     const index = useRef(0);
-    
+
+    const [gone] = useState(() => new Set())
+
     const [animationProps, set] = useSprings(props.languageLogos.length, i => ({
-        x: i * window.innerWidth,
-        display: 'block'
+        ...to(i),
+        from: from(i) 
     }));
     
-    const bind = useDrag(({ down, movement: [mx], direction: [xDir], distance, cancel }) => {
-        if (down && distance > window.innerWidth / 2) {
-            cancel((index.current = clamp(index.current + (xDir > 0 ? -1 : 1), 0, props.languageLogos.length - 1)));
-        };
+    const bind = useDrag(({ down, movement: [mx], direction: [xDir], velocity }) => {
+        const trigger = velocity > 0.2;
+        const dir = xDir < 0 ? -1 : 1;
+        if (!down && trigger) gone.add(index.current);  
         set(i => {
-            if (i < index.current - 1 || i > index.current + 1) {
-                return {display: 'none'};
-            };
-            const x = (i - index.current) * window.innerWidth + (down ? mx : 0);
-            return { x, display: 'block' };
+            console.log(`index.current: ${index.current}, i: ${i}`)
+            if (index.current !== i) return;
+            const isGone = gone.has(index.current);
+            const x = isGone ? (200 + window.innerWidth) * dir : down ? mx : 0;
+            const rot = mx / 100 + (isGone ? dir * 10 * velocity : 0);
+            const scale = down ? 1.1 : 1;
+            return { x, rot, scale, delay: undefined, config: { friction: 50, tension: down ? 800 : isGone ? 200 : 500 } };
         });
+        if (!down && gone.size === props.languageLogos.length) setTimeout(() => gone.clear() || set(i => to(i)), 600);
     });
 
     return (
-        animationProps.map(({ x, display }, i) =>(
+        animationProps.map(({ x, y, rot, scale }, i) =>(
             <animated.div
             className="swipe-card"
             {...bind()}
             key={i}
-            style={{ x, display}}>
+            style={{ 
+                x,
+                y,
+                transform: interpolate([rot, scale], trans)
+            }}>
                 <animated.div
                 className="swipe-card-image"
                 style={{

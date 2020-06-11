@@ -2,7 +2,13 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 
 import myImage from './me-circle-cropped.png';
-import SimpleSwiper from '../Components/SimpleSwiper';
+
+import CarouselUseSprings from '../Components/PageOneComponents/CarouselUseSprings';
+
+import javascriptLogo from '../Images/javascript.svg';
+import pythonLogo from '../Images/python.svg';
+import htmlLogo from '../Images/html5.svg';
+import cssLogo from '../Images/css3.svg';
 
 // Write this down:
 const useOnScreen = (options) => {
@@ -41,10 +47,10 @@ const PageOne = () => {
         <div className="page-1" id="page-1">   
             <div className="page-content-container">
                 <div
-                    className="bottom-container-page-1"
+                    className="top-container-page-1"
                     ref={ref}>
                     <animated.div
-                        className="bottom-left-container-page-1"
+                        className="top-left-container-page-1"
                         style={{
                             transform: x.interpolate(x => `translate3d(${x}px, 0, 0)`)
                         }}>
@@ -54,7 +60,7 @@ const PageOne = () => {
                             alt="me" />
                     </animated.div>
                     <animated.div
-                        className="bottom-right-container-page-1"
+                        className="top-right-container-page-1"
                         style={{
                             transform: x.interpolate(x => `translate3d(${-x}px, 0, 0)`)
                         }}>
@@ -67,7 +73,10 @@ const PageOne = () => {
                         </p>
                     </animated.div>
                 </div>
-                <SimpleSwiper className="simple-swiper" />
+                <CarouselUseSprings 
+                languageTitles={['JavaScript', 'Python', 'HTML', 'CSS']}
+                languageLogos={[javascriptLogo, pythonLogo, htmlLogo,cssLogo]}
+                />
             </div>
         </div>
     );
