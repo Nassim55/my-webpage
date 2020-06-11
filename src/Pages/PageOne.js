@@ -10,7 +10,8 @@ import pythonLogo from '../Images/python.svg';
 import htmlLogo from '../Images/html5.svg';
 import cssLogo from '../Images/css3.svg';
 
-// Write this down:
+import { DownOutlined } from '@ant-design/icons';
+
 const useOnScreen = (options) => {
     const ref = useRef();
     const [visible, setVisible] = useState(false);
@@ -73,10 +74,20 @@ const PageOne = () => {
                         </p>
                     </animated.div>
                 </div>
-                <CarouselUseSprings 
-                languageTitles={['JavaScript', 'Python', 'HTML', 'CSS']}
-                languageLogos={[javascriptLogo, pythonLogo, htmlLogo,cssLogo]}
-                />
+                <div className="middle-container-page-1">
+                    <CarouselUseSprings 
+                    languageTitles={['JavaScript', 'Python', 'HTML', 'CSS']}
+                    languageLogos={[javascriptLogo, pythonLogo, htmlLogo,cssLogo]}
+                    />
+                </div>
+                <div className="bottom-container-page-1">
+                    <DownOutlined 
+                    className="arrow-to-next-page"
+                    style={{
+                        fontSize: '2em'
+                    }}/>
+                    <div className="text-to-next-page">Find Out More</div>
+                </div>
             </div>
         </div>
     );

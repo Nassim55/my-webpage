@@ -1,25 +1,31 @@
 .page-1 {
+  position: relative;
   background-color: #fff;
   width: 100%;
   min-height: 100vh;
 }
 
 .page-1 .page-content-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: max-content 45% max-content;
+      grid-template-rows: -webkit-max-content 45% -webkit-max-content;
+      grid-template-rows: max-content 45% max-content;
   min-height: 90vh;
   margin-left: 20vw;
   margin-right: 20vw;
   margin-top: 9em;
-  margin-bottom: 5em;
 }
 
 .page-1 .page-content-container .top-container-page-1 {
+  position: relative;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 1em;
-  overflow-x: hidden;
   padding: 4%;
-  overflow-x: hidden;
 }
 
 .page-1 .page-content-container .top-container-page-1 .top-left-container-page-1 {
@@ -29,8 +35,6 @@
 
 .page-1 .page-content-container .top-container-page-1 .top-left-container-page-1 .my-photo {
   width: 100%;
-  width: 100%;
-  background-color: #fff;
   border-radius: 50%;
   -webkit-box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
@@ -59,18 +63,33 @@
   font-weight: 900;
 }
 
-.page-1 .page-content-container .swipe-card {
+.page-1 .page-content-container .middle-container-page-1 {
+  position: relative;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-1 .page-content-container .middle-container-page-1 .swipe-card {
+  position: relative;
   background-color: #ffffff;
   position: absolute;
   width: 50%;
-  height: 40%;
+  height: 100%;
   will-change: transform;
   border-radius: 12px;
   -webkit-box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-.page-1 .page-content-container .swipe-card .swipe-card-image {
+.page-1 .page-content-container .middle-container-page-1 .swipe-card .swipe-card-image {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -79,8 +98,20 @@
   width: 100%;
 }
 
-.page-1 .page-content-container .swipe-card .swipe-card-title {
+.page-1 .page-content-container .middle-container-page-1 .swipe-card .swipe-card-title {
   font-size: 1.4rem;
   font-weight: 500;
+}
+
+.page-1 .page-content-container .bottom-container-page-1 {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  padding-top: 1em;
+}
+
+.page-1 .page-content-container .bottom-container-page-1 .text-to-next-page {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=Page1.css.map */

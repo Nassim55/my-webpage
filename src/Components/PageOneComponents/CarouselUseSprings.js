@@ -12,6 +12,7 @@ const CarouselUseSprings = (props) => {
     const index = useRef(0);
 
     const [gone] = useState(() => new Set())
+    
 
     const [animationProps, set] = useSprings(props.languageLogos.length, i => ({
         ...to(i),
@@ -19,11 +20,11 @@ const CarouselUseSprings = (props) => {
     }));
     
     const bind = useDrag(({ down, movement: [mx], direction: [xDir], velocity }) => {
+        console.log(gone);
         const trigger = velocity > 0.2;
         const dir = xDir < 0 ? -1 : 1;
         if (!down && trigger) gone.add(index.current);  
         set(i => {
-            console.log(`index.current: ${index.current}, i: ${i}`)
             if (index.current !== i) return;
             const isGone = gone.has(index.current);
             const x = isGone ? (200 + window.innerWidth) * dir : down ? mx : 0;

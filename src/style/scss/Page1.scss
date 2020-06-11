@@ -2,28 +2,28 @@
 @import './functions';
 
 .page-1 {
+    position: relative;
     background-color: #fff;
     width: 100%;
     min-height: 100vh;
     .page-content-container {
+        display: grid;
+        grid-template-rows: max-content 45% max-content;
         min-height: 90vh;
         margin-left: 20vw;
         margin-right: 20vw;
         margin-top: 9em;
-        margin-bottom: 5em;
         .top-container-page-1 {
+            position: relative;
+            grid-row-start: 1;
+            grid-row-end: 2;
             display: flex;
-            margin-bottom: 1em;
-            overflow-x: hidden;
             padding: 4%;
-            overflow-x: hidden;
             .top-left-container-page-1 {
                 width: 45%;
                 margin-right: 5%;
                 .my-photo {
                     width: 100%;
-                    width: 100%;
-                    background-color: #fff;
                     border-radius: 50%;
                     box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
                 }
@@ -48,25 +48,43 @@
                 }
             }
         }
-        .swipe-card {
-            background-color: #ffffff;
-            position: absolute;
-            width: 50%;
-            height: 40%;
-            will-change: transform;
-            border-radius: 12px;
-            box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
-            .swipe-card-image {
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center center;
-                margin-top: 1.5em;
-                height: 75%;
-                width: 100%;
+        .middle-container-page-1{
+            position: relative;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            display: flex;
+            justify-content: center;
+            .swipe-card {
+                position: relative;
+                background-color: #ffffff;
+                position: absolute;
+                width: 50%;
+                height: 100%;
+                will-change: transform;
+                border-radius: 12px;
+                box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+                overflow: hidden;
+                .swipe-card-image {
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    margin-top: 1.5em;
+                    height: 75%;
+                    width: 100%;
+                }
+                .swipe-card-title {
+                    font-size: fontSize(projectTitleBack);
+                    font-weight: fontWeight(projectTitleBack);
+                }
             }
-            .swipe-card-title {
-                font-size: fontSize(projectTitleBack);
-                font-weight: fontWeight(projectTitleBack);
+        }
+        .bottom-container-page-1 {
+            grid-row-start: 3;
+            padding-top: 1em;
+            .text-to-next-page {
+                font-size: fontSize(buttonText);
+                font-weight: fontWeight(buttonText);
+                text-transform: uppercase;
             }
         }
     }

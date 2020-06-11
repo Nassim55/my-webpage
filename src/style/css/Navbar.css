@@ -3,22 +3,23 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: mediumaquamarine;
+  background-color: #252934;
+  opacity: 0.95;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
   border: solid;
 }
 
 .Navbar .toggle-button {
-  border: solid;
+  position: relative;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  margin-right: 0.6rem;
+}
+
+.Navbar .toggle-button .hamburger {
+  border: solid #BFC0C0;
   padding: 0.3em;
-  position: absolute;
-  top: 0.75rem;
-  right: 1rem;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -27,19 +28,19 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 3em;
+  width: 2.5em;
   height: 2em;
 }
 
-.Navbar .toggle-button .bar {
-  height: 3px;
+.Navbar .toggle-button .hamburger .bar {
+  height: 2px;
   width: 100%;
-  background-color: black;
+  background-color: #BFC0C0;
   border-radius: 10px;
 }
 
 .Navbar .navbar-links {
-  border: solid;
+  border: solid white;
 }
 
 .Navbar .navbar-links ul {
@@ -58,27 +59,27 @@
   text-decoration: none;
   padding: 1rem;
   display: block;
+  color: #BFC0C0;
 }
 
 @media (max-width: 768px) {
   .Navbar {
-    min-height: 8vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
-  .Navbar .toggle-button {
+  .Navbar .toggle-button .hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   .Navbar .navbar-links {
-    width: 100%;
     display: none;
+    width: 100%;
   }
   .Navbar .navbar-links ul {
     -webkit-box-orient: vertical;

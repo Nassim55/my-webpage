@@ -14,7 +14,6 @@ import './style/css/GenericButton.css'
 import './style/css/Navbar.css'
 
 import StickyNavbar from './Components/StickyNavbar';
-import Navbar from './Components/GlobalComponents/Navbar';
 import IntroPage from './Pages/IntroPage';
 import PageOne from './Pages/PageOne';
 import PageTwo from './Pages/PageTwo';
@@ -29,7 +28,6 @@ const App = () => {
             <PageOne />
             <PageTwo />
             <PageThree />
-            <Navbar />
             <PageFour />
 
         </div>

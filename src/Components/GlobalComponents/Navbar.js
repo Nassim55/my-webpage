@@ -10,9 +10,11 @@ const Navbar = () => {
     return (
         <nav className="Navbar">
             <div className="toggle-button" onClick={toggleNavbar} >
-                <span className="bar"></span>
-                <span className="bar"></span>
-                <span className="bar"></span>
+                <div className="hamburger">
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                </div>
             </div>
             <div className="navbar-links">
                 <ul>
