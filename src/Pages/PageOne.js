@@ -76,7 +76,7 @@ const PageOne = () => {
                 </div>
                 <div className="middle-container-page-1">
                     <CarouselUseSprings 
-                    languageTitles={['JavaScript', 'Python', 'HTML', 'CSS']}
+                    languageTitles={['CSS', 'HTML', 'JavaScript', 'Python']}
                     languageLogos={[cssLogo, htmlLogo, javascriptLogo , pythonLogo]}
                     />
                 </div>
