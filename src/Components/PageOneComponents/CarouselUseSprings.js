@@ -22,8 +22,8 @@ const CarouselUseSprings = (props) => {
     }));
     
     // Create a gesture, we're interested in down-state, delta (current-pos - click-pos), direction and velocity
-    const bind = useDrag(({ args: [index], down, movement: [mx], direction: [xDir], velocity }) => {
-        console.log(index)        
+    const bind = useDrag(({ args: [index], down, movement: [mx, my], direction: [xDir], velocity }) => {
+        console.log(my)        
 
         // If you flick hard enough it should trigger the card to fly out
         const trigger = velocity > 0.2;
@@ -45,13 +45,15 @@ const CarouselUseSprings = (props) => {
             // When a card is gone it flys out left or right, otherwise goes back to zero
             const x = isGone ? (200 + window.innerWidth) * dir : down ? mx : 0;
 
+            const y = my;
+
             // How much the card tilts, flicking it harder makes it rotate faster
             const rot = mx / 100 + (isGone ? dir * 10 * velocity : 0);
 
             // Active cards lift up a bit
             const scale = down ? 1.1 : 1;
 
-            return { x, rot, scale, delay: undefined, config: { friction: 50, tension: down ? 800 : isGone ? 200 : 500 } };
+            return { x, y, rot, scale, delay: undefined, config: { friction: 50, tension: down ? 800 : isGone ? 200 : 500 } };
         });
         if (!down && gone.size === props.languageLogos.length) setTimeout(() => gone.clear() || set(i => to(i)), 600);
     });
@@ -65,7 +67,8 @@ const CarouselUseSprings = (props) => {
             style={{ 
                 x,
                 y,
-                transform: interpolate([rot, scale], trans)
+                transform: interpolate([rot, scale], trans),
+                touchAction: 'none'
             }}>
                 <animated.div
                 className="swipe-card-image"
