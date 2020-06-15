@@ -19,8 +19,8 @@ const IntroButton = () => {
                 to="page-1"
                 spy={true}
                 smooth={true}
-                offset={0}
-                duration={1500}>
+                offset={-50}
+                duration={500}>
                 <div 
                 className="intro-button"
                 onMouseEnter={onMouseEnterIntroButton}

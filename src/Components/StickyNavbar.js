@@ -17,15 +17,15 @@ const StickyNavbar = () => {
                 <Nav className="mr-auto">
                     <Nav.Link
                         id="sticky-nav-links-id-1">
-                    <Link
-                        activeClass="active"
-                        to="page-1"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={1500}
-                    >
-                        About
+                        <Link
+                            activeClass="active"
+                            to="page-1"
+                            spy={true}
+                            smooth={true}
+                            offset={-50}
+                            duration={500}
+                        >
+                            About
                         </Link>
                     </Nav.Link>
                     <Nav.Link
@@ -36,7 +36,7 @@ const StickyNavbar = () => {
                         spy={true}
                         smooth={true}
                         offset={0}
-                        duration={1500}
+                        duration={500}
                     >
                         Projects
                     </Link>
@@ -49,7 +49,7 @@ const StickyNavbar = () => {
                         spy={true}
                         smooth={true}
                         offset={0}
-                        duration={1500}
+                        duration={500}
                     >
                         Blog
                         </Link>
@@ -62,7 +62,7 @@ const StickyNavbar = () => {
                         spy={true}
                         smooth={true}
                         offset={0}
-                        duration={1500}
+                        duration={500}
                     >
                         Contact
                         </Link>

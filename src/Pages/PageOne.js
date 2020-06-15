@@ -12,6 +12,8 @@ import cssLogo from '../Images/css3.svg';
 
 import { DownOutlined } from '@ant-design/icons';
 
+import { Link } from "react-scroll";
+
 const useOnScreen = (options) => {
     const ref = useRef();
     const [visible, setVisible] = useState(false);
@@ -46,48 +48,57 @@ const PageOne = () => {
 
     return (
         <div className="page-1" id="page-1">   
-            <div className="page-content-container">
-                <div
-                    className="top-container-page-1"
-                    ref={ref}>
-                    <animated.div
-                        className="top-left-container-page-1"
-                        style={{
-                            transform: x.interpolate(x => `translate3d(${x}px, 0, 0)`)
-                        }}>
-                        <img
-                            className="my-photo"
-                            src={myImage}
-                            alt="me" />
-                    </animated.div>
-                    <animated.div
-                        className="top-right-container-page-1"
-                        style={{
-                            transform: x.interpolate(x => `translate3d(${-x}px, 0, 0)`)
-                        }}>
-                        <p>
-                            <span className="quotation-marks">"&nbsp;&nbsp;&nbsp;</span>
-                            I'm an Aerospace Engineering graduate from the University
-                            of Leeds. Passionate about building interesting and creative
-                            software. Check out the languages I'm familiar with below.
-                            <span className="quotation-marks">&nbsp;&nbsp;&nbsp;"</span>
-                        </p>
-                    </animated.div>
-                </div>
-                <div className="middle-container-page-1">
-                    <CarouselUseSprings 
-                    languageTitles={['CSS', 'HTML', 'JavaScript', 'Python']}
-                    languageLogos={[cssLogo, htmlLogo, javascriptLogo , pythonLogo]}
-                    />
-                </div>
-                <div className="bottom-container-page-1">
+            <div
+                className="top-container-page-1"
+                ref={ref}>
+                <animated.div
+                    className="top-left-container-page-1"
+                    style={{
+                        transform: x.interpolate(x => `translate3d(${x}px, 0, 0)`)
+                    }}>
+                    <img
+                        className="my-photo"
+                        src={myImage}
+                        alt="me" />
+                </animated.div>
+                <animated.div
+                    className="top-right-container-page-1"
+                    style={{
+                        transform: x.interpolate(x => `translate3d(${-x}px, 0, 0)`)
+                    }}>
+                    <p>
+                        <span className="quotation-marks">"&nbsp;&nbsp;&nbsp;</span>
+                        I'm an Aerospace Engineering graduate from the University
+                        of Leeds. Interested in creative software engineering that 
+                        focuses on the application of machine learning techniques.
+                        Check out technologies I'm familiar with by swiping the 
+                        card stack below.
+                        <span className="quotation-marks">&nbsp;&nbsp;&nbsp;"</span>
+                    </p>
+                </animated.div>
+            </div>
+            <div className="middle-container-page-1">
+                <CarouselUseSprings 
+                languageTitles={['CSS', 'HTML', 'JavaScript', 'Python']}
+                languageLogos={[cssLogo, htmlLogo, javascriptLogo , pythonLogo]}
+                />
+            </div>
+            <div className="bottom-container-page-1">
+                <Link
+                className="down-page-button"
+                activeClass="active"
+                to="page-2"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}>
+                    <div className="text-to-next-page">Find Out More</div>
                     <DownOutlined 
                     className="arrow-to-next-page"
                     style={{
-                        fontSize: '2em'
+                        fontSize: '1.2rem'
                     }}/>
-                    <div className="text-to-next-page">Find Out More</div>
-                </div>
+                </Link>
             </div>
         </div>
     );
