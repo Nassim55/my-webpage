@@ -14,7 +14,8 @@ const ProjectCard = (props) => {
     const AnimatedGenericButton = animated(GenericButton)
 
     return (
-        <div 
+        <div
+        id={props.projectId} 
         className={props.projectClassName}
         onClick={() => setIsToggled(!isToggled)}>
             <animated.div

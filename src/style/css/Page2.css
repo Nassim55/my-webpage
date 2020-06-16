@@ -1,14 +1,25 @@
 .page-2 {
-  background-color: #F5F5F5;
   position: relative;
+  background-color: #fff;
   width: 100%;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 150vh;
 }
 
-.page-2 .page-content-container {
+.page-2 .project-card-page-2 {
   position: relative;
-  top: 10vh;
+  margin-bottom: 3vh;
+}
+
+.page-2 .project-card-page-2 .c {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,167 +27,69 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+  width: 90vw;
+  margin-left: 5vw;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 12px;
+  -webkit-box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
 }
 
-.page-2 .page-content-container .ml {
-  position: absolute;
+.page-2 .project-card-page-2 .projects-container-front .project-title-front {
+  position: relative;
+  margin-bottom: 20%;
+  opacity: 1;
+  background-color: black;
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  mix-blend-mode: overlay;
+}
+
+.page-2 .project-card-page-2 .projects-container-back {
+  border: solid;
+}
+
+.page-2 .project-card-page-2 .projects-container-back .project-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.page-2 .project-card-page-2 .projects-container-back .project-languages {
+  font-size: 0.8rem;
+  color: #F24E4E;
+}
+
+.page-2 #ml {
   top: 0;
 }
 
-.page-2 .page-content-container .ml .c {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-size: cover;
-  background-position: center;
-  height: 35vh;
-  width: 100vw;
-}
-
-.page-2 .page-content-container .ml .projects-container-front {
+.page-2 #ml .projects-container-front {
   background-image: url(../../Images/NeuralNetwork.jpg);
 }
 
-.page-2 .page-content-container .ml .projects-container-front .project-title-front {
-  position: relative;
-  margin-bottom: 20%;
-  opacity: 1;
-  background-color: black;
-  color: white;
-  font-size: 2.2rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  mix-blend-mode: overlay;
-}
-
-.page-2 .page-content-container .ml .projects-container-back {
-  border: solid;
-}
-
-.page-2 .page-content-container .ml .projects-container-back .project-title {
-  font-size: 1.4rem;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.page-2 .page-content-container .ml .projects-container-back .project-languages {
-  font-size: 0.8rem;
-  color: #F24E4E;
-}
-
-.page-2 .page-content-container .todo {
-  position: absolute;
+.page-2 #todo {
   top: 35vh;
 }
 
-.page-2 .page-content-container .todo .c {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-size: cover;
-  background-position: center;
-  height: 35vh;
-  width: 100vw;
-}
-
-.page-2 .page-content-container .todo .projects-container-front {
+.page-2 #todo .projects-container-front {
   background-image: url(../../Images/todo.jpg);
 }
 
-.page-2 .page-content-container .todo .projects-container-front .project-title-front {
-  position: relative;
-  margin-bottom: 20%;
-  opacity: 1;
-  background-color: black;
-  color: white;
-  font-size: 2.2rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  mix-blend-mode: overlay;
-}
-
-.page-2 .page-content-container .todo .projects-container-back {
-  border: solid;
-}
-
-.page-2 .page-content-container .todo .projects-container-back .project-title {
-  font-size: 1.4rem;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.page-2 .page-content-container .todo .projects-container-back .project-languages {
-  font-size: 0.8rem;
-  color: #F24E4E;
-}
-
-.page-2 .page-content-container .project-3 {
-  position: absolute;
+.page-2 #project-3 {
   top: 70vh;
 }
 
-.page-2 .page-content-container .project-3 .c {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-size: cover;
-  background-position: center;
-  height: 35vh;
-  width: 100vw;
-}
-
-.page-2 .page-content-container .project-3 .projects-container-front {
+.page-2 #project-3 .projects-container-front {
   background-image: url(../../Images/MarsRover.jpg);
-}
-
-.page-2 .page-content-container .project-3 .projects-container-front .project-title-front {
-  position: relative;
-  margin-bottom: 20%;
-  opacity: 1;
-  background-color: black;
-  color: white;
-  font-size: 2.2rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  mix-blend-mode: overlay;
-}
-
-.page-2 .page-content-container .project-3 .projects-container-back {
-  border: solid;
-}
-
-.page-2 .page-content-container .project-3 .projects-container-back .project-title {
-  font-size: 1.4rem;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.page-2 .page-content-container .project-3 .projects-container-back .project-languages {
-  font-size: 0.8rem;
-  color: #F24E4E;
 }
 /*# sourceMappingURL=Page2.css.map */

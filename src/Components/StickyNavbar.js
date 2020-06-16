@@ -35,7 +35,7 @@ const StickyNavbar = () => {
                         to="page-2"
                         spy={true}
                         smooth={true}
-                        offset={0}
+                        offset={-50}
                         duration={500}
                     >
                         Projects
