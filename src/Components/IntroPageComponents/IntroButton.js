@@ -19,7 +19,7 @@ const IntroButton = () => {
                 to="page-1"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={0}
                 duration={500}>
                 <div 
                 className="intro-button"

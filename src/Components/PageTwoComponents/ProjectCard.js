@@ -40,12 +40,6 @@ const ProjectCard = (props) => {
                 <animated.div className="project-title-front">
                     {props.projectTitle}
                 </animated.div>
-                <AnimatedGenericButton
-                className="fip-card-arrow"
-                text={'FIND OUT MORE'}
-                textColour={'black'}
-                borderColour={'black'}
-                backgroundColour={'white'} />
             </animated.div>
         </div>
     );

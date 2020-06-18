@@ -5,14 +5,33 @@
     position: relative;
     background-color: #fff;
     width: 100%;
-    min-height: 100vh;
     display: grid;
-    grid-template-rows: max-content 40% max-content;
+    grid-template-rows: max-content max-content max-content 40% max-content;
     overflow-x: hidden;
+    height: 100vh;
+    .page-title-grouping {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        .page-title {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            color: #252934;
+        }
+        .underline-page-title {
+            background: #252934;
+            height: 4px;
+            width: 70px;
+        }
+    }
     .top-container-page-1 {
         position: relative;
-        grid-row-start: 1;
-        grid-row-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
         display: flex;
         padding: 4%;
         .top-left-container-page-1 {
@@ -46,10 +65,11 @@
     }
     .middle-container-page-1{
         position: relative;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
         display: flex;
         justify-content: center;
+
         .swipe-card {
             position: relative;
             background-color: #ffffff;
@@ -76,7 +96,7 @@
     }
     .bottom-container-page-1 {
         position: relative;
-        grid-row-start: 3;
+        grid-row-start: 5;
         padding-top: 1em;
         display: flex;
         justify-content: center;

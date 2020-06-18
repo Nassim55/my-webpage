@@ -2,7 +2,6 @@
   position: relative;
   background-color: #fff;
   width: 100%;
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,12 +9,54 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 150vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200vh;
+}
+
+.page-2 .page-title-grouping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.page-2 .page-title-grouping .page-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #252934;
+}
+
+.page-2 .page-title-grouping .underline-page-title {
+  background: #252934;
+  height: 4px;
+  width: 70px;
 }
 
 .page-2 .project-card-page-2 {
   position: relative;
-  margin-bottom: 3vh;
+  width: 100%;
+  height: 35vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .page-2 .project-card-page-2 .c {
@@ -32,11 +73,8 @@
           justify-content: center;
   background-size: cover;
   background-position: center;
-  height: 35vh;
-  width: 90vw;
-  margin-left: 5vw;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  height: 92%;
+  width: 90%;
   border-radius: 12px;
   -webkit-box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
@@ -69,24 +107,12 @@
   color: #F24E4E;
 }
 
-.page-2 #ml {
-  top: 0;
-}
-
 .page-2 #ml .projects-container-front {
   background-image: url(../../Images/NeuralNetwork.jpg);
 }
 
-.page-2 #todo {
-  top: 35vh;
-}
-
 .page-2 #todo .projects-container-front {
   background-image: url(../../Images/todo.jpg);
-}
-
-.page-2 #project-3 {
-  top: 70vh;
 }
 
 .page-2 #project-3 .projects-container-front {

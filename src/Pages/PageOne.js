@@ -47,7 +47,18 @@ const PageOne = () => {
     //CONTACT Me button at bottom of paragraph
 
     return (
-        <div className="page-1" id="page-1">   
+        <div className="page-1" id="page-1">
+            <div className="page-title-grouping">
+                <div
+                id="page-1-title"
+                className="page-title">
+                    About
+                </div>
+                <div
+                id="underline-page-1-title"
+                className="underline-page-title">
+                </div> 
+            </div>  
             <div
                 className="top-container-page-1"
                 ref={ref}>
@@ -72,7 +83,7 @@ const PageOne = () => {
                         of Leeds. Interested in creative software engineering that 
                         focuses on the application of machine learning techniques.
                         Check out technologies I'm familiar with by swiping the 
-                        card stack below.
+                        card stack.
                         <span className="quotation-marks">&nbsp;&nbsp;&nbsp;"</span>
                     </p>
                 </animated.div>
@@ -90,14 +101,9 @@ const PageOne = () => {
                 to="page-2"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={0}
                 duration={500}>
                     <div className="text-to-next-page">Find Out More</div>
-                    <DownOutlined 
-                    className="arrow-to-next-page"
-                    style={{
-                        fontSize: '1.2rem'
-                    }}/>
                 </Link>
             </div>
         </div>

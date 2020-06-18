@@ -2,22 +2,8 @@
     text-align: center;
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
 }
-
-.website-content {
-    margin-top: 0%;
-}
-
-
-
-.page-4 {
-    background-color: #F5F5F5;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-}
-
-
 
 .page-content-container {
     min-height: 90vh;
@@ -26,25 +12,6 @@
     margin-top: 9em;
     margin-bottom: 5em;
 }
-
-@media only screen and (max-width: 767px) {
-    .page-content-container {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-}
-
-@media screen and (min-width:1000px) {
-    h1 {
-        font-size: 2.2em;
-    }
-
-    #container {
-        width: 50%;
-    }
-}
-
-
 
 .sticky-navbar,
 #sticky-navbar-id {
@@ -59,7 +26,6 @@
 #sticky-nav-links-id-3,
 #sticky-nav-links-id-4 {
     color: #BFC0C0 !important;
-    font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1em;
