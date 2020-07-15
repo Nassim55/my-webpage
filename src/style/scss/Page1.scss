@@ -70,13 +70,12 @@
         grid-row-end: 5;
         display: flex;
         justify-content: center;
+        height: 90%;
         .swipe-card {
-            position: relative;
             background-color: #ffffff;
             position: absolute;
             height: 100%;
-            width: 160px;
-            will-change: transform;
+            width: 150px;
             border-radius: 12px;
             box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
             overflow: hidden;
@@ -97,10 +96,8 @@
     .bottom-container-page-1 {
         position: relative;
         grid-row-start: 5;
-        padding-top: 1em;
         display: flex;
         justify-content: center;
-        margin-top: 0.5rem;
         .down-page-button{
             width: fit-content;
             display: flex;
