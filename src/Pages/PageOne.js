@@ -82,8 +82,7 @@ const PageOne = () => {
                         I'm an Aerospace Engineering graduate from the University
                         of Leeds. Interested in creative software engineering that 
                         focuses on the application of machine learning techniques.
-                        Check out technologies I'm familiar with by swiping the 
-                        card stack.
+                        Swipe the card stack to see technologies I'm familiar with.
                         <span className="quotation-marks">&nbsp;&nbsp;&nbsp;"</span>
                     </p>
                 </animated.div>
