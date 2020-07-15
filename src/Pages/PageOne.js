@@ -79,7 +79,7 @@ const PageOne = () => {
                     }}>
                     <p>
                         <span className="quotation-marks">"&nbsp;&nbsp;&nbsp;</span>
-                        I'm an Aerospace Engineering graduate from the University
+                        Aerospace Engineering graduate from the University
                         of Leeds. Interested in creative software engineering that 
                         focuses on the application of machine learning techniques.
                         Swipe the card stack to see technologies I'm familiar with.
