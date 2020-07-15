@@ -83,7 +83,7 @@ const PageOne = () => {
                         of Leeds. Interested in creative software engineering that 
                         focuses on the application of machine learning techniques.
                         Check out technologies I'm familiar with by swiping the 
-                        card stack below.
+                        card stack.
                         <span className="quotation-marks">&nbsp;&nbsp;&nbsp;"</span>
                     </p>
                 </animated.div>
