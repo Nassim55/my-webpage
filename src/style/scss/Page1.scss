@@ -9,6 +9,7 @@
     grid-template-rows: max-content max-content max-content 40% max-content;
     overflow-x: hidden;
     height: 100vh;
+    padding-bottom: 10vh;
     .page-title-grouping {
         display: flex;
         flex-direction: column;
@@ -18,7 +19,7 @@
         .page-title {
             font-family: 'Raleway', sans-serif;
             font-weight: 600;
-            font-size: 2.5rem;
+            font-size: 2rem;
             text-transform: uppercase;
             color: #252934;
         }
@@ -74,8 +75,8 @@
             position: relative;
             background-color: #ffffff;
             position: absolute;
-            width: 50%;
             height: 100%;
+            width: 160px;
             will-change: transform;
             border-radius: 12px;
             box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
@@ -85,7 +86,7 @@
                 background-repeat: no-repeat;
                 background-position: center center;
                 margin-top: 1.5em;
-                height: 75%;
+                height: 70%;
                 width: 100%;
             }
             .swipe-card-title {
@@ -100,6 +101,7 @@
         padding-top: 1em;
         display: flex;
         justify-content: center;
+        margin-top: 0.5rem;
         .down-page-button{
             width: fit-content;
             display: flex;

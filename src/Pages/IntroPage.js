@@ -46,7 +46,7 @@ const IntroPage = () => {
                 <animated.p
                     className="profile-paragraph"
                     style={{transform: x.interpolate(x => `translate3d(0, ${x}px, 0)`)}}>
-                    Hello, I'm <span className="my-name">Nassim</span>.<br /> Welcome to my software development portfolio!
+                    Hello, I'm <span className="my-name">Nassim</span>.<br /> Welcome to my software engineering portfolio!
                 </animated.p>
                 <AnimatedIntroButton />
             </div>
