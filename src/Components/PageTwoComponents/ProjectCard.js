@@ -34,10 +34,12 @@ const ProjectCard = (props) => {
             className="c projects-container-front"
             id="ml-sarcasm-project-container-front"
             style={{opacity: opacity.interpolate(o => 1 - o), transform }}>
-                <animated.div className="project-title-front">
-                    {props.projectTitle}
-                </animated.div>
                 <img className="project-image-front" src={props.imageSrc}></img>
+                <animated.div className="project-title-front">
+                    <animated.div>
+                        {props.projectTitle}
+                    </animated.div>
+                </animated.div>
             </animated.div>
         </div>
     );

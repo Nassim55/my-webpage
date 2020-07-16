@@ -3,6 +3,7 @@ import ProjectCard from '../Components/PageTwoComponents/ProjectCard';
 
 import marsroverImage from '../Images/marsrover.jpg'; 
 import honeycombImage from '../Images/honeycombs.jpg';
+import neuralnetworkImage from '../Images/neuralnetwork.svg';
 
 const Page3 = () => {
     return (
@@ -38,10 +39,11 @@ const Page3 = () => {
             />
             <ProjectCard
             projectClassName={'project-card-page-2'}
-            projectTitle={'SENTIMENT ANALYSIS ARTIFICIAL NEURAL NETWORK'}
+            projectTitle={'ARTIFICIAL NEURAL NETWORK'}
             projectLanguages={'React, Python, TensorFlow, Django'}
             projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
             rotationDirection = {'180deg'}
+            imageSrc = {neuralnetworkImage}
             />
         </div>
     );
