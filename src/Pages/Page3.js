@@ -23,6 +23,7 @@ const Page3 = () => {
             projectClassName={'project-card-page-2'}
             projectTitle={'AUTONOMOUS MARS ROVER'}
             projectLanguages={'Matlab, SolidWorks'}
+            projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
             rotationDirection = {'180deg'}
             imageSrc = {marsroverImage}
             />
@@ -31,6 +32,7 @@ const Page3 = () => {
             projectClassName={'project-card-page-2'}
             projectTitle={'HYPERSONIC WING DESIGN'}
             projectLanguages={'Python, SolidWorks, ANSYS Fluent'}
+            projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
             rotationDirection = {'180deg'}
             imageSrc = {honeycombImage}
             />
