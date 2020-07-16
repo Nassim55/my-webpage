@@ -27,7 +27,7 @@ const useOnScreen = (options) => {
 }
 
 
-const IntroPage = () => {
+const Page1 = () => {
     //const fade = useSpring({ from: { opacity: 0 }, opacity: 1 });
 
     const [ref, visible] = useOnScreen();
@@ -54,4 +54,4 @@ const IntroPage = () => {
     );
 };
 
-export default IntroPage;
+export default Page1;

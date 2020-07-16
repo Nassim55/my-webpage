@@ -1,8 +1,8 @@
 import React from 'react';
 import ProjectCard from '../Components/PageTwoComponents/ProjectCard';
-import { MdFirstPage } from "react-icons/md";
 
-const PageTwo = () => {
+
+const Page3 = () => {
     return (
         <div className="page-2" id="page-2">
             <div className="page-title-grouping">
@@ -46,4 +46,4 @@ const PageTwo = () => {
     );
 };
 
-export default PageTwo;
+export default Page3;

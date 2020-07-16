@@ -1,28 +1,17 @@
 import React from 'react';
-import './App.css';
 
-// Page Components
-import IntroPage from './Pages/IntroPage';
-import PageOne from './Pages/PageOne';
-import PageTwo from './Pages/PageTwo';
-import PageThree from './Pages/PageThree';
-
-//Page Styles
-import './style/css/IntroPage.css';
-import './style/css/Page1.css';
-import './style/css/Page2.css';
-import './style/css/Page3.css';
-
-//Component Styles
-import './style/css/GenericButton.css'
+import Page1 from './Pages/Page1';
+import Page2 from './Pages/Page2';
+import Page3 from './Pages/Page3';
+import Page4 from './Pages/Page4';
 
 const App = () => {
     return (
         <div className="App">
-            <IntroPage />
-            <PageOne />
-            <PageTwo />
-            <PageThree />
+            <Page1 />
+            <Page2 />
+            <Page3 />
+            <Page4 />
         </div>
     );
 }

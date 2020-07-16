@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 
-import myImage from './me-circle-cropped.png';
+import myImage from '../Images/me-circle-cropped.png';
 
 import CarouselUseSprings from '../Components/PageOneComponents/CarouselUseSprings';
 
@@ -9,8 +9,6 @@ import javascriptLogo from '../Images/javascript.svg';
 import pythonLogo from '../Images/python.svg';
 import htmlLogo from '../Images/html5.svg';
 import cssLogo from '../Images/css3.svg';
-
-import { DownOutlined } from '@ant-design/icons';
 
 import { Link } from "react-scroll";
 
@@ -38,7 +36,7 @@ const useOnScreen = (options) => {
     return [ref, visible];
 }
 
-const PageOne = () => {
+const Page2 = () => {
     const [ref, visible] = useOnScreen({ rootMargin: '-150px' });
     const { x } = useSpring({
         x: ref.current ? 0 : -600
@@ -79,10 +77,10 @@ const PageOne = () => {
                     }}>
                     <p>
                         <span className="quotation-marks">"&nbsp;&nbsp;&nbsp;</span>
-                        Aerospace Engineering graduate from the University
+                        I'm an Aerospace Engineering graduate from the University
                         of Leeds. Interested in creative software engineering that 
                         focuses on the application of machine learning techniques.
-                        Swipe the card stack to see technologies I'm familiar with.
+                        Swipe the card stack below to see the technologies I'm familiar with.
                         <span className="quotation-marks">&nbsp;&nbsp;&nbsp;"</span>
                     </p>
                 </animated.div>
@@ -109,4 +107,4 @@ const PageOne = () => {
     );
 };
 
-export default PageOne;
+export default Page2;

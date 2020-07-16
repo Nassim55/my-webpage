@@ -2,12 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import 'react-mdl/extra/material.css';
-import 'react-mdl/extra/material.js';
-import 'antd/dist/antd.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css';
 
+import './index.css';
+import './App.css';
+import './style/css/style.css';
+import './style/css/GenericButton.css'
+
+import 'react-mdl/extra/material.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>

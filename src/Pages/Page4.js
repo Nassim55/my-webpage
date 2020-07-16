@@ -2,7 +2,7 @@ import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 
 
-const PageThree = () => {
+const Page4 = () => {
     return (
         <div
         className="page-3"
@@ -42,4 +42,4 @@ const PageThree = () => {
     );
 };
 
-export default PageThree;
+export default Page4;
