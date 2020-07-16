@@ -164,6 +164,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 90%;
+  padding-top: 1rem;
 }
 
 .page-1 .middle-container-page-1 .swipe-card {
@@ -175,15 +176,25 @@
   -webkit-box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .page-1 .middle-container-page-1 .swipe-card .swipe-card-image {
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
   margin-top: 1.5em;
   height: 70%;
-  width: 100%;
+  width: 90%;
 }
 
 .page-1 .middle-container-page-1 .swipe-card .swipe-card-title {

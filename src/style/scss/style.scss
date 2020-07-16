@@ -130,6 +130,7 @@
         display: flex;
         justify-content: center;
         height: 90%;
+        padding-top: 1rem;
         .swipe-card {
             background-color: #ffffff;
             position: absolute;
@@ -138,13 +139,16 @@
             border-radius: 12px;
             box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .swipe-card-image {
-                background-size: cover;
+                background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center center;
                 margin-top: 1.5em;
                 height: 70%;
-                width: 100%;
+                width: 90%;
             }
             .swipe-card-title {
                 font-size: fontSize(projectTitleBack);
