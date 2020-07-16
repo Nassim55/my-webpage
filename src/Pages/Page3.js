@@ -28,7 +28,7 @@ const Page3 = () => {
             className="project-card-page-2"
             projectId={'todo'}
             projectClassName={'project-card-page-2'}
-            projectTitle={'TODO LIST'}
+            projectTitle={'HYPERSONIC WING DESIGN'}
             projectLanguages={'React'}
             projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
             rotationDirection = {'180deg'}
@@ -37,7 +37,7 @@ const Page3 = () => {
             className="project-card-page-2"
             projectId={'project-3'}
             projectClassName={'project-card-page-2'}
-            projectTitle={'MARS ROVER'}
+            projectTitle={'AUTONOMOUS MARS ROVER'}
             projectLanguages={'Matlab, SolidWorks'}
             projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
             rotationDirection = {'180deg'}

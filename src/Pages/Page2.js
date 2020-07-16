@@ -5,8 +5,11 @@ import myImage from '../Images/me-circle-cropped.png';
 
 import CarouselUseSprings from '../Components/PageOneComponents/CarouselUseSprings';
 
-import javascriptLogo from '../Images/javascript.svg';
 import pythonLogo from '../Images/python.svg';
+import javascriptLogo from '../Images/javascript.svg';
+import reactLogo from '../Images/react2.svg';
+import tensorflowLogo from '../Images/tensorflow.svg';
+import djangoLogo from '../Images/django.svg';
 import htmlLogo from '../Images/html5.svg';
 import cssLogo from '../Images/css3.svg';
 
@@ -87,8 +90,8 @@ const Page2 = () => {
             </div>
             <div className="middle-container-page-1">
                 <CarouselUseSprings 
-                languageTitles={['CSS', 'HTML', 'JavaScript', 'Python']}
-                languageLogos={[cssLogo, htmlLogo, javascriptLogo , pythonLogo]}
+                languageTitles={['CSS', 'HTML', 'Django', 'TensorFlow', 'React', 'JavaScript', 'Python']}
+                languageLogos={[cssLogo, htmlLogo, djangoLogo, tensorflowLogo, reactLogo, javascriptLogo , pythonLogo]}
                 />
             </div>
             <div className="bottom-container-page-1">
@@ -100,7 +103,7 @@ const Page2 = () => {
                 smooth={true}
                 offset={0}
                 duration={500}>
-                    <div className="text-to-next-page">Find Out More</div>
+                    <div className="text-to-next-page">View my Projects</div>
                 </Link>
             </div>
         </div>
