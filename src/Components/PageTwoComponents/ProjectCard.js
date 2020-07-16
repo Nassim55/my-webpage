@@ -29,9 +29,6 @@ const ProjectCard = (props) => {
                 className="project-languages">
                     {props.projectLanguages}
                 </animated.div>
-                <AnimatedGenericButton
-                href={props.projectHref}
-                text={'GO TO SITE'} />
             </animated.div>
             <animated.div
             className="c projects-container-front"
@@ -40,6 +37,7 @@ const ProjectCard = (props) => {
                 <animated.div className="project-title-front">
                     {props.projectTitle}
                 </animated.div>
+                <img className="project-image-front" src={props.imageSrc}></img>
             </animated.div>
         </div>
     );

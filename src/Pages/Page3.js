@@ -1,6 +1,9 @@
 import React from 'react';
 import ProjectCard from '../Components/PageTwoComponents/ProjectCard';
 
+import marsroverImage from '../Images/marsrover.jpg';
+import honeycombImage from '../Images/honeycombs.jpg';
+
 
 const Page3 = () => {
     return (
@@ -16,29 +19,28 @@ const Page3 = () => {
                 className="underline-page-title">
                 </div>
             </div>
-            <ProjectCard
-            projectId={'ml'}
-            projectClassName={'project-card-page-2'}
-            projectTitle={'SENTIMENT ANALYSIS'}
-            projectLanguages={'React, Python, TensorFlow, Django'}
-            projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
-            rotationDirection = {'180deg'}
-            />
-            <ProjectCard
-            className="project-card-page-2"
-            projectId={'todo'}
-            projectClassName={'project-card-page-2'}
-            projectTitle={'HYPERSONIC WING DESIGN'}
-            projectLanguages={'React'}
-            projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
-            rotationDirection = {'180deg'}
-            />
             <ProjectCard 
             className="project-card-page-2"
-            projectId={'project-3'}
             projectClassName={'project-card-page-2'}
             projectTitle={'AUTONOMOUS MARS ROVER'}
             projectLanguages={'Matlab, SolidWorks'}
+            projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
+            rotationDirection = {'180deg'}
+            imageSrc = {marsroverImage}
+            />
+            <ProjectCard
+            className="project-card-page-2"
+            projectClassName={'project-card-page-2'}
+            projectTitle={'HYPERSONIC WING DESIGN'}
+            projectLanguages={'Python, SolidWorks, ANSYS Fluent'}
+            projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
+            rotationDirection = {'180deg'}
+            imageSrc = {honeycombImage}
+            />
+            <ProjectCard
+            projectClassName={'project-card-page-2'}
+            projectTitle={'SENTIMENT ANALYSIS ARTIFICIAL NEURAL NETWORK'}
+            projectLanguages={'React, Python, TensorFlow, Django'}
             projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
             rotationDirection = {'180deg'}
             />

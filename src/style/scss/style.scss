@@ -213,24 +213,28 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-size: cover;
-            background-position: center;
             height: 92%;
             width: 90%;
             border-radius: 12px;
             box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
         }
         .projects-container-front {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            object-fit: contain;
             .project-title-front {
                 position: relative;
-                margin-bottom: 20%;
-                opacity: 1;
-                background-color: black;
-                color: white;  
+                color: #F24E4E; 
                 font-size: fontSize(projectTitleFront);
                 font-weight: fontWeight(projectTitleFront);
                 text-transform: uppercase;
-                mix-blend-mode: overlay;
+                height: 20%;
+            }
+            .project-image-front {
+                position: relative;
+                height: auto;
+                width: 80%;
             }
         }
         .projects-container-back {
@@ -244,21 +248,6 @@
                 font-size: 0.8rem;
                 color: #F24E4E;
             }
-        }
-    }
-    #ml {
-        .projects-container-front {
-            background-image: url(../../Images/NeuralNetwork.jpg);
-        }
-    }
-    #todo {
-        .projects-container-front {
-            background-image: url(../../Images/todo.jpg);
-        }
-    }
-    #project-3 {
-        .projects-container-front {
-            background-image: url(../../Images/MarsRover.jpg);
         }
     }
 }
