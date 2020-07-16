@@ -1,9 +1,8 @@
 import React from 'react';
 import ProjectCard from '../Components/PageTwoComponents/ProjectCard';
 
-import marsroverImage from '../Images/marsrover.jpg';
+import marsroverImage from '../Images/marsrover.jpg'; 
 import honeycombImage from '../Images/honeycombs.jpg';
-
 
 const Page3 = () => {
     return (
