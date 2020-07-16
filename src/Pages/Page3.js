@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectCard from '../Components/PageTwoComponents/ProjectCard';
 
-//import marsroverImage from '../Images/marsrover.jpg';
+import marsroverImage from '../Images/marsrover.jpg';
 import honeycombImage from '../Images/honeycombs.jpg';
 
 
@@ -26,7 +26,7 @@ const Page3 = () => {
             projectLanguages={'Matlab, SolidWorks'}
             projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
             rotationDirection = {'180deg'}
-            //imageSrc = {marsroverImage}
+            imageSrc = {marsroverImage}
             />
             <ProjectCard
             className="project-card-page-2"
