@@ -147,15 +147,20 @@
 
 .page-1 .top-container-page-1 .top-left-container-page-1 .navigation-button-container {
   margin-top: 1rem;
+  -webkit-box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 7.5%;
 }
 
 .page-1 .top-container-page-1 .top-left-container-page-1 .navigation-button-container .navigation-button {
-  margin-top: 0.3rem;
+  margin-top: 0.5rem;
   color: white;
   background-color: #f24e4e;
   font-weight: 500;
+  font-size: 1.15rem;
   border-radius: 1.625rem;
-  height: 1.8rem;
+  height: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

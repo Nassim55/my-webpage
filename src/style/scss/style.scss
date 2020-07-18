@@ -106,13 +106,17 @@
             }
             .navigation-button-container{
                 margin-top: 1rem;
+                box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
+                border-radius: 12px;
+                padding: 7.5%;
                 .navigation-button {
-                    margin-top: 0.3rem;
+                    margin-top: 0.5rem;
                     color: white;
                     background-color: #f24e4e;
                     font-weight: 500;
+                    font-size: 1.15rem;
                     border-radius: 1.625rem;
-                    height: 1.8rem;
+                    height: 2rem;
                     display: flex;
                     justify-content: center;
                     align-items: center;
