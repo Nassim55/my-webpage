@@ -355,6 +355,8 @@
   position: relative;
   height: 80%;
   width: auto;
+  max-width: 100%;
+  border: solid;
 }
 
 .page-2 .project-card-page-2 .projects-container-back {
