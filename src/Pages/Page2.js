@@ -61,7 +61,7 @@ const Page2 = () => {
                 id="underline-page-1-title"
                 className="underline-page-title">
                 </div> 
-            </div>  
+            </div>
             <div
                 className="top-container-page-1"
                 ref={ref}>
@@ -74,6 +74,32 @@ const Page2 = () => {
                         className="my-photo"
                         src={myImage}
                         alt="me" />
+                    <div className="navigation-button-container">
+                        <Link
+                        className="down-page-button"
+                        activeClass="active"
+                        to="page-2"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}>
+                            <div className="navigation-button">
+                                Projects
+                            </div>
+                        </Link>
+                        <Link
+                        className="down-page-button"
+                        activeClass="active"
+                        to="page-3"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}>
+                            <div className="navigation-button">
+                                Contact
+                            </div>
+                        </Link>
+                    </div>
                 </animated.div>
                 <animated.div
                     className="top-right-container-page-1"
@@ -83,8 +109,8 @@ const Page2 = () => {
                     <p>
                         <span className="quotation-marks">"&nbsp;&nbsp;&nbsp;</span>
                         I'm an Aerospace Engineering graduate from the University
-                        of Leeds. Interested in creative software engineering that 
-                        focuses on the application of machine learning techniques.
+                        of Leeds. Interested in creative software engineering projects that 
+                        focuse on the application of machine learning and data science.
                         Swipe the card stack below to see the technologies I'm familiar with.
                         <span className="quotation-marks">&nbsp;&nbsp;&nbsp;"</span>
                     </p>
@@ -96,6 +122,13 @@ const Page2 = () => {
                 languageLogos={[gitLogo, sassLogo, cssLogo, htmlLogo, djangoLogo, tensorflowLogo, reactLogo, javascriptLogo , pythonLogo]}
                 />
             </div>
+        </div>
+    );
+};
+
+export default Page2;
+
+/*
             <div className="bottom-container-page-1">
                 <Link
                 className="down-page-button"
@@ -108,8 +141,4 @@ const Page2 = () => {
                     <div className="text-to-next-page">View my Projects</div>
                 </Link>
             </div>
-        </div>
-    );
-};
-
-export default Page2;
+*/
