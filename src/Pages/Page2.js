@@ -113,8 +113,8 @@ const Page2 = () => {
                     <p>
                         <span className="quotation-marks">"&nbsp;&nbsp;&nbsp;</span>
                         I'm an Aerospace Engineering graduate from the University
-                        of Leeds. Interested in creative software engineering projects that 
-                        focuse on the application of machine learning and data science.
+                        of Leeds. Interested in creative software engineering that 
+                        focuses on the application of machine learning and data science.
                         Swipe the card stack below to see the technologies I'm familiar with.
                         <span className="quotation-marks">&nbsp;&nbsp;&nbsp;"</span>
                     </p>
