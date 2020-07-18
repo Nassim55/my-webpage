@@ -13,6 +13,7 @@ import djangoLogo from '../Images/django.svg';
 import htmlLogo from '../Images/html5.svg';
 import cssLogo from '../Images/css3.svg';
 import sassLogo from '../Images/sass.svg';
+import gitLogo from '../Images/git.svg';
 
 import { Link } from "react-scroll";
 
@@ -91,8 +92,8 @@ const Page2 = () => {
             </div>
             <div className="middle-container-page-1">
                 <CarouselUseSprings 
-                languageTitles={['SASS', 'CSS', 'HTML', 'Django', 'TensorFlow', 'React', 'JavaScript', 'Python']}
-                languageLogos={[sassLogo, cssLogo, htmlLogo, djangoLogo, tensorflowLogo, reactLogo, javascriptLogo , pythonLogo]}
+                languageTitles={['Git', 'SASS', 'CSS', 'HTML', 'Django', 'TensorFlow', 'React', 'JavaScript', 'Python']}
+                languageLogos={[gitLogo, sassLogo, cssLogo, htmlLogo, djangoLogo, tensorflowLogo, reactLogo, javascriptLogo , pythonLogo]}
                 />
             </div>
             <div className="bottom-container-page-1">
