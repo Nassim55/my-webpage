@@ -31,6 +31,7 @@
   position: absolute;
   bottom: 0%;
   width: 100%;
+  margin-bottom: 3rem;
 }
 
 .intro-page .intro-container .intro-button-container .intro-button {
