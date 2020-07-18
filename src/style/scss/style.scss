@@ -109,6 +109,21 @@
                 box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
                 border-radius: 12px;
                 padding: 7.5%;
+                .navigation-container-title-grouping {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 0.75rem;
+                    font-size: 1.15rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    .underline-navigation {
+                        background: #252934;
+                        height: 2px;
+                        width: 60px;
+                    }
+                }
                 .navigation-button {
                     margin-top: 0.5rem;
                     color: white;

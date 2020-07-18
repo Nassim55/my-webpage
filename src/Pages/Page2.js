@@ -75,6 +75,10 @@ const Page2 = () => {
                         src={myImage}
                         alt="me" />
                     <div className="navigation-button-container">
+                        <div className="navigation-container-title-grouping">
+                            Contents
+                            <div className="underline-navigation"></div> 
+                        </div>      
                         <Link
                         className="down-page-button"
                         activeClass="active"
