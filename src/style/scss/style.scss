@@ -181,7 +181,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 120vh;
+    height: 155vh;
     .page-title-grouping {
         display: flex;
         flex-direction: column;
@@ -238,8 +238,8 @@
             }
             .project-image-front {
                 position: relative;
-                height: auto;
-                width: 80%;
+                height: 80%;
+                width: auto;
             }
         }
         .projects-container-back {
