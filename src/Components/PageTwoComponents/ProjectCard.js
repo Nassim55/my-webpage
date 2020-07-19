@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
+import { MdZoomOutMap } from "react-icons/md";
 
 const ProjectCard = (props) => {
     const [isToggled, setIsToggled] = useState(false);
@@ -36,12 +37,15 @@ const ProjectCard = (props) => {
             className="c projects-container-front"
             id="ml-sarcasm-project-container-front"
             style={{opacity: opacity.interpolate(o => 1 - o), transform }}>
+                <div className="expand-icon-container">
+                    <MdZoomOutMap className="expand-icon-project-card"/>
+                </div>
                 <img className="project-image-front" src={props.imageSrc}></img>
                 <div className="project-title-front">
                     {props.projectTitle}
                 </div>
             </animated.div>
-
+            
         </div>
     );
 }

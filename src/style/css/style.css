@@ -389,6 +389,24 @@
   max-width: 100%;
 }
 
+.page-2 .project-card-page-2 .projects-container-front .expand-icon-container {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  padding: 0.5rem;
+  top: 0;
+}
+
+.page-2 .project-card-page-2 .projects-container-front .expand-icon-container .expand-icon-project-card {
+  font-size: 2rem;
+  z-index: 1;
+}
+
 .page-2 .project-card-page-2 .projects-container-back {
   position: relative;
   z-index: 999;

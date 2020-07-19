@@ -261,6 +261,19 @@
                 width: auto;
                 max-width: 100%;
             }
+            .expand-icon-container {
+                position: absolute;
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+                padding: 0.5rem;
+                top: 0;
+                .expand-icon-project-card {
+                    font-size: 2rem;
+                    z-index: 1;
+
+                }
+            }
         }
         .projects-container-back {
             position: relative;
