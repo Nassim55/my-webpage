@@ -429,6 +429,7 @@
 .page-2 .project-card-page-2 .projects-container-back .project-information-container {
   overflow-y: scroll;
   width: 95%;
+  height: 25vh;
 }
 
 .page-2 .project-card-page-2 .projects-container-back .project-information-container .project-information-text {
