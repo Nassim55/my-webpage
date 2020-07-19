@@ -25,10 +25,14 @@ const ProjectCard = (props) => {
                 className="project-title">
                     {props.projectTitle}
                 </animated.div>
-                <animated.div 
-                className="project-languages">
+                <animated.div className="project-languages">
                     {props.projectLanguages}
                 </animated.div>
+                    <animated.div className="project-information-container">
+                        <animated.p className="project-information-text">
+                            {props.projectInfo}
+                        </animated.p>
+                    </animated.div>
             </animated.div>
             <animated.div
             className="c projects-container-front"

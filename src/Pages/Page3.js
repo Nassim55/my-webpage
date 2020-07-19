@@ -6,6 +6,8 @@ import uavImage from '../Images/uav.jpg';
 import honeycombImage from '../Images/honeycombs.jpg';
 import neuralnetworkImage from '../Images/neuralnetwork.svg';
 
+let hypersonicText = 'The effectivity of thermal management using a honeycomb sandwich panel as the skin structure for a hypersonic aircraft wing was assessed using both theoretical and finite-element methods. Two different honeycomb models, hexagonal core and square core, were analysed and results were compared to a conventional solid skin structure. Results showed that heat transfer through a honeycomb core is noticeably reduced relative to a solid structure with core cell geometry not having a significant effect on temperature distribution. Additionally a static structural analysis was carried out to determine the effect of thermal loads. Conclusions drawn from this were that the hexagonal honeycomb displayed lower stress values and was therefore the optimal honeycomb structure for use as the skin. Furthermore, by using a hexagonal honeycomb, it was shown that material volume was reduced by approximately 67% relative to a conventional solid skin structure.'
+
 const Page3 = () => {
     return (
         <div className="page-2" id="page-2">
@@ -43,6 +45,7 @@ const Page3 = () => {
             projectLanguages={'Python, SolidWorks, ANSYS Fluent'}
             projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
             rotationDirection = {'180deg'}
+            projectInfo = {hypersonicText}
             imageSrc = {honeycombImage}
             />
             <ProjectCard

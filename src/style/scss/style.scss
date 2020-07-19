@@ -265,15 +265,28 @@
             }
         }
         .projects-container-back {
-            border: solid;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
             .project-title {
                 font-size: fontSize(projectTitleBack);
                 font-weight: fontWeight(projectTitleBack);
                 text-transform: uppercase;
+                margin-top: 1rem;
             }
             .project-languages {
                 font-size: 0.8rem;
                 color: #F24E4E;
+            }
+            .project-information-container {
+                overflow-y: scroll;
+                width: 95%;
+                .project-information-text {
+                    padding-left: 10%;
+                    padding-right: 10%;
+                }
             }
         }
     }

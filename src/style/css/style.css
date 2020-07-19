@@ -269,7 +269,7 @@
 }
 
 .page-1 .middle-container-page-1 .swipe-card .swipe-card-title {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
@@ -398,18 +398,42 @@
 }
 
 .page-2 .project-card-page-2 .projects-container-back {
-  border: solid;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .page-2 .project-card-page-2 .projects-container-back .project-title {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 500;
   text-transform: uppercase;
+  margin-top: 1rem;
 }
 
 .page-2 .project-card-page-2 .projects-container-back .project-languages {
   font-size: 0.8rem;
   color: #F24E4E;
+}
+
+.page-2 .project-card-page-2 .projects-container-back .project-information-container {
+  overflow-y: scroll;
+  width: 95%;
+}
+
+.page-2 .project-card-page-2 .projects-container-back .project-information-container .project-information-text {
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .page-3 {
