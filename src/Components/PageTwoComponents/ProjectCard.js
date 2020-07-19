@@ -5,7 +5,8 @@ import { MdZoomOutMap } from "react-icons/md";
 const ProjectCard = (props) => {
     const [isToggled, setIsToggled] = useState(false);
 
-    const { transform, opacity } = useSpring({
+    const { zIndex, transform, opacity } = useSpring({
+        zIndex: isToggled ? 1 : 0,
         opacity: isToggled ? 1 : 0,
         transform: `perspective(600px) rotateX(${isToggled ? 180 : 0}deg)`,
         config: { mass: 12, tension: 500, friction: 80 }
@@ -19,7 +20,10 @@ const ProjectCard = (props) => {
 
             <animated.div
             className="c projects-container-back"
-            style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(${props.rotationDirection})`) }}>
+            style={{ 
+                zIndex,
+                opacity,
+                transform: transform.interpolate(t => `${t} rotateX(${props.rotationDirection})`) }}>
                 <div className="project-information-container">
                     <p className="project-information-text">
                         {props.projectInfo}
@@ -30,7 +34,10 @@ const ProjectCard = (props) => {
             <animated.div
             className="c projects-container-front"
             id="ml-sarcasm-project-container-front"
-            style={{opacity: opacity.interpolate(o => 1 - o), transform }}>
+            style={{
+                zIndex: zIndex.interpolate(o => 1 - o),
+                opacity: opacity.interpolate(o => 1 - o),
+                transform }}>
                 <div className="expand-icon-container">
                     <MdZoomOutMap className="expand-icon-project-card"/>
                 </div>

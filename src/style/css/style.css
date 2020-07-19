@@ -415,7 +415,6 @@
 
 .page-2 .project-card-page-2 .projects-container-back {
   position: relative;
-  z-index: 998;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
