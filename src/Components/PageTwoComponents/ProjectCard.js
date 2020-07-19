@@ -20,12 +20,6 @@ const ProjectCard = (props) => {
             <animated.div
             className="c projects-container-back"
             style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(${props.rotationDirection})`) }}>
-                <div className="project-title">
-                    {props.projectTitle}
-                </div>
-                <div className="project-languages">
-                    {props.projectLanguages}
-                </div>
                 <div className="project-information-container">
                     <p className="project-information-text">
                         {props.projectInfo}
@@ -43,6 +37,9 @@ const ProjectCard = (props) => {
                 <img className="project-image-front" src={props.imageSrc}></img>
                 <div className="project-title-front">
                     {props.projectTitle}
+                </div>
+                <div className="project-languages">
+                    {props.projectLanguages}
                 </div>
             </animated.div>
             
