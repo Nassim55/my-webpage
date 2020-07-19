@@ -288,6 +288,11 @@
       -ms-flex-align: center;
           align-items: center;
   height: 155vh;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .page-2 .page-title-grouping {
