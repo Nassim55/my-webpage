@@ -80,7 +80,6 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  min-height: 100vh;
 }
 
 .page-1 .page-title-grouping {
@@ -118,6 +117,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 4%;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -126,6 +128,7 @@
 
 .page-1 .top-container-page-1 .top-left-container-page-1 {
   width: 30%;
+  max-width: 150px;
   margin-right: 4%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,6 +206,9 @@
 
 .page-1 .top-container-page-1 .top-right-container-page-1 {
   width: 70%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   font-family: 'Raleway', sans-serif;
   color: #252934;
   text-align: left;
@@ -210,10 +216,8 @@
   -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
   border-radius: 12px;
-  overflow: hidden;
   -webkit-box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
-  line-height: 1rem;
   font-size: 2rem;
 }
 
@@ -372,7 +376,7 @@
 .page-2 .project-card-page-2 .projects-container-front .project-title-front {
   position: relative;
   color: #252934;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
   width: 100%;
@@ -425,7 +429,6 @@
 
 .page-2 .project-card-page-2 .projects-container-back .project-information-container {
   overflow-y: scroll;
-  -webkit-appearance: none;
   width: 95%;
   height: 100%;
 }
