@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
-import { MdZoomOutMap } from "react-icons/md";
+import { MdZoomOutMap, MdRotateLeft } from "react-icons/md";
 
 const ProjectCard = (props) => {
     const [isToggled, setIsToggled] = useState(false);
@@ -15,8 +15,7 @@ const ProjectCard = (props) => {
     return (
         <div
         id={props.projectId} 
-        className={props.projectClassName}
-        onClick={() => setIsToggled(!isToggled)}>
+        className={props.projectClassName}>
 
             <animated.div
             className="c projects-container-back"
@@ -29,6 +28,11 @@ const ProjectCard = (props) => {
                         {props.projectInfo}
                     </p>
                 </div>
+                <div className="flip-back-button-container">
+                    <MdRotateLeft
+                    className="flip-back-button"
+                    onClick={() => setIsToggled(!isToggled)} />
+                </div>
             </animated.div>
 
             <animated.div
@@ -38,8 +42,8 @@ const ProjectCard = (props) => {
                 zIndex: zIndex.interpolate(o => 1 - o),
                 opacity: opacity.interpolate(o => 1 - o),
                 transform }}>
-                <div className="expand-icon-container">
-                    <MdZoomOutMap className="expand-icon-project-card"/>
+                <div className="expand-image-icon-container">
+                    <MdZoomOutMap className="expand-image-icon"/>
                 </div>
                 <img className="project-image-front" src={props.imageSrc}></img>
                 <div className="project-title-front">
@@ -47,6 +51,13 @@ const ProjectCard = (props) => {
                 </div>
                 <div className="project-languages">
                     {props.projectLanguages}
+                </div>
+                <div className="learn-more-button-container">
+                    <div 
+                    className="learn-more-button"
+                    onClick={() => setIsToggled(!isToggled)}>
+                        Learn More
+                    </div>
                 </div>
             </animated.div>
             
