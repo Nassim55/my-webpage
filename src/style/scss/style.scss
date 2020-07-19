@@ -68,6 +68,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     overflow-x: hidden;
     height: max-content;
     .page-title-grouping {
@@ -75,6 +76,7 @@
         flex-direction: column;
         align-items: center;
         height: max-content;
+        margin-top: 1rem;
         .page-title {
             font-family: 'Raleway', sans-serif;
             font-weight: 600;
@@ -94,6 +96,7 @@
         justify-content: space-between;
         padding: 4%;
         height: max-content;
+        max-width: 370px;
         .top-left-container-page-1 {
             width: 30%;
             max-width: 150px;
@@ -207,8 +210,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
+        margin-top: 1rem;
+        margin-bottom: 1em;
         .page-title {
             font-family: 'Raleway', sans-serif;
             font-weight: 600;
@@ -236,6 +239,7 @@
             justify-content: center;
             height: 215px;
             width: 90%;
+            max-width: 350px;
             border-radius: 12px;
             box-shadow: 4px 7px 13px 3px rgba(0, 0, 0,0.1);
         }

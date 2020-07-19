@@ -76,6 +76,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow-x: hidden;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -96,6 +99,7 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  margin-top: 1rem;
 }
 
 .page-1 .page-title-grouping .page-title {
@@ -124,6 +128,7 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  max-width: 370px;
 }
 
 .page-1 .top-container-page-1 .top-left-container-page-1 {
@@ -305,8 +310,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 1rem;
+  margin-bottom: 1em;
 }
 
 .page-2 .page-title-grouping .page-title {
@@ -352,6 +357,7 @@
           justify-content: center;
   height: 215px;
   width: 90%;
+  max-width: 350px;
   border-radius: 12px;
   -webkit-box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
