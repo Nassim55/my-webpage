@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
-import GenericButton from '../GlobalComponents/GenericButton';
 
 const ProjectCard = (props) => {
     const [isToggled, setIsToggled] = useState(false);
@@ -11,40 +10,38 @@ const ProjectCard = (props) => {
         config: { mass: 12, tension: 500, friction: 80 }
     });
 
-    const AnimatedGenericButton = animated(GenericButton)
-
     return (
         <div
         id={props.projectId} 
         className={props.projectClassName}
         onClick={() => setIsToggled(!isToggled)}>
+
             <animated.div
             className="c projects-container-back"
             style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(${props.rotationDirection})`) }}>
-                <animated.div 
-                className="project-title">
+                <div className="project-title">
                     {props.projectTitle}
-                </animated.div>
-                <animated.div className="project-languages">
+                </div>
+                <div className="project-languages">
                     {props.projectLanguages}
-                </animated.div>
-                    <animated.div className="project-information-container">
-                        <animated.p className="project-information-text">
-                            {props.projectInfo}
-                        </animated.p>
-                    </animated.div>
+                </div>
+                <div className="project-information-container">
+                    <p className="project-information-text">
+                        {props.projectInfo}
+                    </p>
+                </div>
             </animated.div>
+
             <animated.div
             className="c projects-container-front"
             id="ml-sarcasm-project-container-front"
             style={{opacity: opacity.interpolate(o => 1 - o), transform }}>
                 <img className="project-image-front" src={props.imageSrc}></img>
-                <animated.div className="project-title-front">
-                    <animated.div>
-                        {props.projectTitle}
-                    </animated.div>
-                </animated.div>
+                <div className="project-title-front">
+                    {props.projectTitle}
+                </div>
             </animated.div>
+
         </div>
     );
 }
