@@ -28,14 +28,16 @@ const useOnScreen = (options) => {
 
 
 const Page1 = () => {
-    //const fade = useSpring({ from: { opacity: 0 }, opacity: 1 });
-
     const [ref, visible] = useOnScreen();
     const { x } = useSpring({
         x: ref.current ? 0 : -1000
     });
 
     const AnimatedIntroButton = animated(IntroButton);
+
+    useEffect(() => {
+        window.scrollTo(0,1);
+    })
 
     return (
         <div
