@@ -24,12 +24,12 @@ const IntroButton = () => {
                 spy={true}
                 smooth={true}
                 offset={0}
-                duration={500}
-                onClick={enterFullScreen}>
+                duration={500}>
                 <div 
                 className="intro-button"
                 onMouseEnter={onMouseEnterIntroButton}
-                onMouseLeave={onMouseLeaveIntroButton}>
+                onMouseLeave={onMouseLeaveIntroButton}
+                onClick={enterFullScreen}>
                     <div className="intro-button-text">
                         VIEW MY WORK
                     </div>
