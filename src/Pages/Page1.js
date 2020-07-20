@@ -35,10 +35,6 @@ const Page1 = () => {
 
     const AnimatedIntroButton = animated(IntroButton);
 
-    useEffect(() => {
-        window.scrollTo(0,1);
-    })
-
     return (
         <div
             className="intro-page"
