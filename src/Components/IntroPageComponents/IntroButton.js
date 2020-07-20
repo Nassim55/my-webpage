@@ -12,6 +12,10 @@ const IntroButton = () => {
         document.querySelector('.intro-button').style.backgroundColor = '#252934';
     };
 
+    const enterFullScreen = () => {
+        document.body.requestFullscreen();
+    };
+
     return (
         <div className="intro-button-container">
             <Link
@@ -20,7 +24,8 @@ const IntroButton = () => {
                 spy={true}
                 smooth={true}
                 offset={0}
-                duration={500}>
+                duration={500}
+                onClick={enterFullScreen}>
                 <div 
                 className="intro-button"
                 onMouseEnter={onMouseEnterIntroButton}
