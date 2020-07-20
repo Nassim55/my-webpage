@@ -4,7 +4,6 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import './index.css';
-import './App.css';
 import './style/css/style.css';
 import './style/css/GenericButton.css'
 
