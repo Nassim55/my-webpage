@@ -22,43 +22,77 @@ const Page3 = () => {
                 className="underline-page-title">
                 </div>
             </div>
-            <ProjectCard 
-            className="project-card-page-2"
-            projectClassName={'project-card-page-2'}
-            projectTitle={'AUTONOMOUS MARS ROVER'}
-            projectLanguages={'SolidWorks, Matlab, LabView'}
-            projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
-            rotationDirection = {'180deg'}
-            projectInfo = {hypersonicText}
-            imageSrc = {marsroverImage}
-            />
-            <ProjectCard
-            projectClassName={'project-card-page-2'}
-            projectTitle={'UNMANNED AERIAL VEHICLE'}
-            projectLanguages={'SolidWorks, Matlab'}
-            rotationDirection = {'180deg'}
-            projectInfo = {hypersonicText}
-            imageSrc = {uavImage}
-            />
-            <ProjectCard
-            className="project-card-page-2"
-            projectClassName={'project-card-page-2'}
-            projectTitle={'HYPERSONIC THERMAL MANAGEMENT'}
-            projectLanguages={'Python, SolidWorks, Ansys Fluent'}
-            projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
-            rotationDirection = {'180deg'}
-            projectInfo = {hypersonicText}
-            imageSrc = {honeycombImage}
-            />
-            <ProjectCard
-            projectClassName={'project-card-page-2'}
-            projectTitle={'ARTIFICIAL NEURAL NETWORK'}
-            projectLanguages={'Python, TensorFlow, Django, React'}
-            projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
-            rotationDirection = {'180deg'}
-            projectInfo = {hypersonicText}
-            imageSrc = {neuralnetworkImage}
-            />
+            <div className="project-card-container">
+                <ProjectCard 
+                className="project-card-page-2"
+                projectClassName={'project-card-page-2'}
+                projectTitle={'AUTONOMOUS MARS ROVER'}
+                projectLanguages={'SolidWorks, Matlab, LabView'}
+                projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
+                rotationDirection = {'180deg'}
+                projectInfo = {hypersonicText}
+                imageSrc = {marsroverImage}
+                />
+                <ProjectCard
+                projectClassName={'project-card-page-2'}
+                projectTitle={'UNMANNED AERIAL VEHICLE'}
+                projectLanguages={'SolidWorks, Matlab'}
+                rotationDirection = {'180deg'}
+                projectInfo = {hypersonicText}
+                imageSrc = {uavImage}
+                />
+                <ProjectCard
+                className="project-card-page-2"
+                projectClassName={'project-card-page-2'}
+                projectTitle={'HYPERSONIC THERMAL MANAGEMENT'}
+                projectLanguages={'Python, SolidWorks, Ansys Fluent'}
+                projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
+                rotationDirection = {'180deg'}
+                projectInfo = {hypersonicText}
+                imageSrc = {honeycombImage}
+                />
+                <ProjectCard
+                projectClassName={'project-card-page-2'}
+                projectTitle={'ARTIFICIAL NEURAL NETWORK'}
+                projectLanguages={'Python, TensorFlow, Django, React'}
+                projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
+                rotationDirection = {'180deg'}
+                projectInfo = {hypersonicText}
+                imageSrc = {neuralnetworkImage}
+                />
+                <ProjectCard
+                projectClassName={'project-card-page-2'}
+                projectTitle={'SATELLITE ATTITUDE CONTROL'}
+                projectLanguages={'Matlab, Simulink'}
+                projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
+                rotationDirection = {'180deg'}
+                projectInfo = {hypersonicText}
+                />
+                <ProjectCard
+                projectClassName={'project-card-page-2'}
+                projectTitle={'ROLLS-ROYCE DESIGN SIMULATION'}
+                projectLanguages={'Python, TensorFlow, Django, React'}
+                projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
+                rotationDirection = {'180deg'}
+                projectInfo = {hypersonicText}
+                />
+                <ProjectCard
+                projectClassName={'project-card-page-2'}
+                projectTitle={'PLACEHOLDER'}
+                projectLanguages={'Python, TensorFlow, Django, React'}
+                projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
+                rotationDirection = {'180deg'}
+                projectInfo = {hypersonicText}
+                />
+                <ProjectCard
+                projectClassName={'project-card-page-2'}
+                projectTitle={'PLACEHOLDER'}
+                projectLanguages={'Python, TensorFlow, Django, React'}
+                projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
+                rotationDirection = {'180deg'}
+                projectInfo = {hypersonicText}
+                />
+            </div>
         </div>
     );
 };
