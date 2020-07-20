@@ -6,6 +6,7 @@ import Page3 from './Pages/Page3';
 import Page4 from './Pages/Page4';
 
 const App = () => {
+    window.scrollTo(0,1);
     return (
         <div className="App">
             <Page1 />
