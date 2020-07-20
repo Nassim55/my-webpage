@@ -17,5 +17,6 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+window.scrollTo(0,1);
 
 serviceWorker.unregister();

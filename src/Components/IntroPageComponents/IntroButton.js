@@ -12,10 +12,6 @@ const IntroButton = () => {
         document.querySelector('.intro-button').style.backgroundColor = '#252934';
     };
 
-    const enterFullScreen = () => {
-        document.body.requestFullscreen();
-    };
-
     return (
         <div className="intro-button-container">
             <Link
@@ -28,8 +24,7 @@ const IntroButton = () => {
                 <div 
                 className="intro-button"
                 onMouseEnter={onMouseEnterIntroButton}
-                onMouseLeave={onMouseLeaveIntroButton}
-                onClick={enterFullScreen}>
+                onMouseLeave={onMouseLeaveIntroButton}>
                     <div className="intro-button-text">
                         VIEW MY WORK
                     </div>
