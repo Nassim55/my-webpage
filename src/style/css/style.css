@@ -17,6 +17,10 @@
   user-select: none;
 }
 
+.App ::-webkit-scrollbar {
+  display: none;
+}
+
 @media all and (min-width: 480px) {
   .App {
     display: -ms-grid;
@@ -399,7 +403,16 @@
   .App .Projects .project-card-container {
     display: -ms-grid;
     display: grid;
-    grid: 1fr 1fr 1fr 1fr / 50% 50%;
+    grid: 1fr 1fr 1fr 1fr / 1fr 1fr;
+    overflow-y: scroll;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .App .Projects .project-card-container {
+    display: -ms-grid;
+    display: grid;
+    grid: 1fr 1fr 1fr / 1fr 1fr 1fr;
     overflow-y: scroll;
   }
 }

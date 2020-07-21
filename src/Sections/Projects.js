@@ -87,6 +87,14 @@ const Projects = () => {
                 rotationDirection = {'180deg'}
                 projectInfo = {hypersonicText}
                 />
+                <ProjectCard
+                projectClassName={'project-card-page-2'}
+                projectTitle={'PLACEHOLDER'}
+                projectLanguages={'Python, TensorFlow, Django, React'}
+                projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
+                rotationDirection = {'180deg'}
+                projectInfo = {hypersonicText}
+                />
             </div>
         </div>
     );

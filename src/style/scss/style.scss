@@ -21,6 +21,9 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    ::-webkit-scrollbar {
+        display: none;
+    }
     @media all and (min-width: 480px) {
         display: grid;
         grid:  100vh 100vh / 30% 70%;
@@ -265,7 +268,12 @@
             flex-direction: column;
             @media all and (min-width: 480px) and (orientation: landscape) {
                 display: grid;
-                grid:  1fr 1fr 1fr 1fr / 50% 50%;
+                grid:  1fr 1fr 1fr 1fr / 1fr 1fr;
+                overflow-y: scroll;
+            }
+            @media all and (min-width: 1440px) {
+                display: grid;
+                grid:  1fr 1fr 1fr / 1fr 1fr 1fr;
                 overflow-y: scroll;
             }
             .project-card-page-2 {
