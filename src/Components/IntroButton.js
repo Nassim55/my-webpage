@@ -16,7 +16,7 @@ const IntroButton = () => {
         <div className="intro-button-container">
             <Link
                 activeClass="active"
-                to="page-1"
+                to="About"
                 spy={true}
                 smooth={true}
                 offset={0}

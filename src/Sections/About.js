@@ -3,7 +3,7 @@ import { useSpring, animated } from 'react-spring';
 
 import myImage from '../Images/me-circle-cropped.png';
 
-import CarouselUseSprings from '../Components/PageOneComponents/CarouselUseSprings';
+import CarouselProjectCards from '../Components/CarouselProjectCards';
 
 import pythonLogo from '../Images/python.svg';
 import javascriptLogo from '../Images/javascript.svg';
@@ -41,16 +41,14 @@ const useOnScreen = (options) => {
     return [ref, visible];
 }
 
-const Page2 = () => {
+const About = () => {
     const [ref, visible] = useOnScreen({ rootMargin: '-150px' });
     const { x } = useSpring({
         x: ref.current ? 0 : -600
     });
 
-    //CONTACT Me button at bottom of paragraph
-
     return (
-        <div className="page-1" id="page-1">
+        <div className="About">
             <div className="page-title-grouping">
                 <div
                 id="page-1-title"
@@ -82,7 +80,7 @@ const Page2 = () => {
                         <Link
                         className="down-page-button"
                         activeClass="active"
-                        to="page-2"
+                        to="Projects"
                         spy={true}
                         smooth={true}
                         offset={0}
@@ -94,7 +92,7 @@ const Page2 = () => {
                         <Link
                         className="down-page-button"
                         activeClass="active"
-                        to="page-3"
+                        to="Contact"
                         spy={true}
                         smooth={true}
                         offset={0}
@@ -121,7 +119,7 @@ const Page2 = () => {
                 </animated.div>
             </div>
             <div className="middle-container-page-1">
-                <CarouselUseSprings 
+                <CarouselProjectCards 
                 languageTitles={['Git', 'SASS', 'CSS', 'HTML', 'Django', 'TensorFlow', 'React', 'JavaScript', 'Python']}
                 languageLogos={[gitLogo, sassLogo, cssLogo, htmlLogo, djangoLogo, tensorflowLogo, reactLogo, javascriptLogo , pythonLogo]}
                 />
@@ -130,19 +128,4 @@ const Page2 = () => {
     );
 };
 
-export default Page2;
-
-/*
-            <div className="bottom-container-page-1">
-                <Link
-                className="down-page-button"
-                activeClass="active"
-                to="page-2"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}>
-                    <div className="text-to-next-page">View my Projects</div>
-                </Link>
-            </div>
-*/
+export default About;

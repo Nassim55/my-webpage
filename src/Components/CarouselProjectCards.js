@@ -6,7 +6,7 @@ import { useDrag } from 'react-use-gesture'
 
 
 
-const CarouselUseSprings = (props) => {
+const CarouselProjectCards = (props) => {
     const to = i => ({ x: 0, y: i * -4, scale: 1, rot: -12 + Math.random() * 24, delay: i * 100 });
     const from = i => ({ x: 0, rot: 0, scale: 1.5, y: -1000 });
 
@@ -83,8 +83,4 @@ const CarouselUseSprings = (props) => {
     );
 };
 
-export default CarouselUseSprings;
-
-/*
-
-*/
+export default CarouselProjectCards;

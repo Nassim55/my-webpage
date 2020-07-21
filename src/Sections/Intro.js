@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
-import IntroButton from '../Components/IntroPageComponents/IntroButton';
+import IntroButton from '../Components/IntroButton';
 
 const useOnScreen = (options) => {
     const ref = useRef();
@@ -27,7 +27,7 @@ const useOnScreen = (options) => {
 }
 
 
-const Page1 = () => {
+const Intro = () => {
     const [ref, visible] = useOnScreen();
     const { x } = useSpring({
         x: ref.current ? 0 : -1000
@@ -36,10 +36,7 @@ const Page1 = () => {
     const AnimatedIntroButton = animated(IntroButton);
 
     return (
-        <div
-            className="intro-page"
-            id="intro-page"
-            ref={ref}>
+        <div className="Intro" ref={ref}>
             <div className="intro-container">
                 <animated.p
                     className="profile-paragraph"
@@ -52,4 +49,4 @@ const Page1 = () => {
     );
 };
 
-export default Page1;
+export default Intro;

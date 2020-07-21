@@ -26,7 +26,7 @@
   }
 }
 
-.App .intro-page {
+.App .Intro {
   position: relative;
   background-color: #252934;
   width: 100%;
@@ -35,12 +35,12 @@
 }
 
 @media all and (min-width: 480px) {
-  .App .intro-page {
+  .App .Intro {
     grid-area: intro;
   }
 }
 
-.App .intro-page .intro-container {
+.App .Intro .intro-container {
   position: absolute;
   top: 15%;
   bottom: 0%;
@@ -48,7 +48,7 @@
   right: 10%;
 }
 
-.App .intro-page .intro-container .profile-paragraph {
+.App .Intro .intro-container .profile-paragraph {
   font-family: 'Raleway', sans-serif;
   margin-top: 8rem;
   line-height: 120%;
@@ -57,18 +57,18 @@
   text-align: left;
 }
 
-.App .intro-page .intro-container .profile-paragraph .my-name {
+.App .Intro .intro-container .profile-paragraph .my-name {
   color: #f24e4e;
 }
 
-.App .intro-page .intro-container .intro-button-container {
+.App .Intro .intro-container .intro-button-container {
   position: absolute;
   bottom: 0%;
   width: 100%;
   margin-bottom: 5rem;
 }
 
-.App .intro-page .intro-container .intro-button-container .intro-button {
+.App .Intro .intro-container .intro-button-container .intro-button {
   position: relative;
   font-family: 'Raleway', sans-serif;
   display: -webkit-inline-box;
@@ -93,13 +93,13 @@
   cursor: pointer;
 }
 
-.App .intro-page .intro-container .intro-button-container .intro-button .intro-button-text {
+.App .Intro .intro-container .intro-button-container .intro-button .intro-button-text {
   color: #BFC0C0;
   text-decoration: none;
   letter-spacing: 1px;
 }
 
-.App .page-1 {
+.App .About {
   position: relative;
   background-color: #fff;
   width: 100%;
@@ -120,13 +120,13 @@
 }
 
 @media all and (min-width: 480px) {
-  .App .page-1 {
+  .App .About {
     grid-area: about;
     height: 100%;
   }
 }
 
-.App .page-1 .page-title-grouping {
+.App .About .page-title-grouping {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,7 +143,7 @@
   margin-top: 0.8rem;
 }
 
-.App .page-1 .page-title-grouping .page-title {
+.App .About .page-title-grouping .page-title {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 2rem;
@@ -151,13 +151,13 @@
   color: #252934;
 }
 
-.App .page-1 .page-title-grouping .underline-page-title {
+.App .About .page-title-grouping .underline-page-title {
   background: #252934;
   height: 4px;
   width: 70px;
 }
 
-.App .page-1 .top-container-page-1 {
+.App .About .top-container-page-1 {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,7 +172,7 @@
   max-width: 370px;
 }
 
-.App .page-1 .top-container-page-1 .top-left-container-page-1 {
+.App .About .top-container-page-1 .top-left-container-page-1 {
   width: 30%;
   max-width: 150px;
   margin-right: 4%;
@@ -188,14 +188,14 @@
           justify-content: flex-start;
 }
 
-.App .page-1 .top-container-page-1 .top-left-container-page-1 .my-photo {
+.App .About .top-container-page-1 .top-left-container-page-1 .my-photo {
   width: 100%;
   border-radius: 50%;
   -webkit-box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
 }
 
-.App .page-1 .top-container-page-1 .top-left-container-page-1 .navigation-button-container {
+.App .About .top-container-page-1 .top-left-container-page-1 .navigation-button-container {
   margin-top: 1rem;
   -webkit-box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
@@ -204,12 +204,12 @@
 }
 
 @media all and (min-width: 480px) {
-  .App .page-1 .top-container-page-1 .top-left-container-page-1 .navigation-button-container {
+  .App .About .top-container-page-1 .top-left-container-page-1 .navigation-button-container {
     display: none;
   }
 }
 
-.App .page-1 .top-container-page-1 .top-left-container-page-1 .navigation-button-container .navigation-container-title-grouping {
+.App .About .top-container-page-1 .top-left-container-page-1 .navigation-button-container .navigation-container-title-grouping {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,13 +229,13 @@
   text-transform: uppercase;
 }
 
-.App .page-1 .top-container-page-1 .top-left-container-page-1 .navigation-button-container .navigation-container-title-grouping .underline-navigation {
+.App .About .top-container-page-1 .top-left-container-page-1 .navigation-button-container .navigation-container-title-grouping .underline-navigation {
   background: #252934;
   height: 2px;
   width: 60px;
 }
 
-.App .page-1 .top-container-page-1 .top-left-container-page-1 .navigation-button-container .navigation-button {
+.App .About .top-container-page-1 .top-left-container-page-1 .navigation-button-container .navigation-button {
   margin-top: 0.5rem;
   color: white;
   background-color: #f24e4e;
@@ -256,7 +256,7 @@
   padding-bottom: 0.15rem;
 }
 
-.App .page-1 .top-container-page-1 .top-right-container-page-1 {
+.App .About .top-container-page-1 .top-right-container-page-1 {
   width: 70%;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -273,14 +273,14 @@
   font-size: 2rem;
 }
 
-.App .page-1 .top-container-page-1 .top-right-container-page-1 .quotation-marks {
+.App .About .top-container-page-1 .top-right-container-page-1 .quotation-marks {
   white-space: nowrap;
   color: #f24e4e;
   font-size: 1.6rem;
   font-weight: 900;
 }
 
-.App .page-1 .middle-container-page-1 {
+.App .About .middle-container-page-1 {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,7 +295,7 @@
   padding-top: 1rem;
 }
 
-.App .page-1 .middle-container-page-1 .swipe-card {
+.App .About .middle-container-page-1 .swipe-card {
   background-color: #ffffff;
   position: absolute;
   height: 100%;
@@ -316,7 +316,7 @@
           align-items: center;
 }
 
-.App .page-1 .middle-container-page-1 .swipe-card .swipe-card-image {
+.App .About .middle-container-page-1 .swipe-card .swipe-card-image {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -325,12 +325,12 @@
   width: 90%;
 }
 
-.App .page-1 .middle-container-page-1 .swipe-card .swipe-card-title {
+.App .About .middle-container-page-1 .swipe-card .swipe-card-title {
   font-size: 1.1rem;
   font-weight: 500;
 }
 
-.App .page-2 {
+.App .Projects {
   position: relative;
   background-color: #fff;
   width: 100%;
@@ -350,13 +350,13 @@
 }
 
 @media all and (min-width: 480px) {
-  .App .page-2 {
+  .App .Projects {
     grid-area: projects;
     height: 100%;
   }
 }
 
-.App .page-2 .page-title-grouping {
+.App .Projects .page-title-grouping {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,7 +371,7 @@
   margin-bottom: 1em;
 }
 
-.App .page-2 .page-title-grouping .page-title {
+.App .Projects .page-title-grouping .page-title {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 2rem;
@@ -379,13 +379,13 @@
   color: #252934;
 }
 
-.App .page-2 .page-title-grouping .underline-page-title {
+.App .Projects .page-title-grouping .underline-page-title {
   background: #252934;
   height: 4px;
   width: 70px;
 }
 
-.App .page-2 .project-card-container {
+.App .Projects .project-card-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -396,7 +396,7 @@
 }
 
 @media all and (min-width: 480px) and (orientation: landscape) {
-  .App .page-2 .project-card-container {
+  .App .Projects .project-card-container {
     display: -ms-grid;
     display: grid;
     grid: 1fr 1fr 1fr 1fr / 50% 50%;
@@ -404,7 +404,7 @@
   }
 }
 
-.App .page-2 .project-card-container .project-card-page-2 {
+.App .Projects .project-card-container .project-card-page-2 {
   position: relative;
   width: 100%;
   padding: 0.8rem;
@@ -419,7 +419,7 @@
           justify-content: center;
 }
 
-.App .page-2 .project-card-container .project-card-page-2 .c {
+.App .Projects .project-card-container .project-card-page-2 .c {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -439,7 +439,7 @@
           box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
 }
 
-.App .page-2 .project-card-container .project-card-page-2 .projects-container-front {
+.App .Projects .project-card-container .project-card-page-2 .projects-container-front {
   position: absolute;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -449,14 +449,14 @@
           justify-content: flex-end;
 }
 
-.App .page-2 .project-card-container .project-card-page-2 .projects-container-front .project-languages {
+.App .Projects .project-card-container .project-card-page-2 .projects-container-front .project-languages {
   font-size: 0.8rem;
   font-weight: 500;
   color: #F24E4E;
   height: 8%;
 }
 
-.App .page-2 .project-card-container .project-card-page-2 .projects-container-front .project-title-front {
+.App .Projects .project-card-container .project-card-page-2 .projects-container-front .project-title-front {
   position: relative;
   color: #252934;
   font-size: 1rem;
@@ -475,14 +475,14 @@
   height: 8%;
 }
 
-.App .page-2 .project-card-container .project-card-page-2 .projects-container-front .project-image-front {
+.App .Projects .project-card-container .project-card-page-2 .projects-container-front .project-image-front {
   position: relative;
   height: 68%;
   width: auto;
   max-width: 100%;
 }
 
-.App .page-2 .project-card-container .project-card-page-2 .projects-container-front .learn-more-button-container {
+.App .Projects .project-card-container .project-card-page-2 .projects-container-front .learn-more-button-container {
   position: relative;
   height: 16%;
   display: -webkit-box;
@@ -496,7 +496,7 @@
           align-items: center;
 }
 
-.App .page-2 .project-card-container .project-card-page-2 .projects-container-front .learn-more-button-container .learn-more-button {
+.App .Projects .project-card-container .project-card-page-2 .projects-container-front .learn-more-button-container .learn-more-button {
   color: white;
   background-color: #f24e4e;
   font-weight: 500;
@@ -517,7 +517,7 @@
   padding-right: 0.8rem;
 }
 
-.App .page-2 .project-card-container .project-card-page-2 .projects-container-front .expand-image-icon-container {
+.App .Projects .project-card-container .project-card-page-2 .projects-container-front .expand-image-icon-container {
   position: absolute;
   width: 100%;
   top: 0;
@@ -529,13 +529,13 @@
           justify-content: flex-end;
 }
 
-.App .page-2 .project-card-container .project-card-page-2 .projects-container-front .expand-image-icon-container .expand-image-icon {
+.App .Projects .project-card-container .project-card-page-2 .projects-container-front .expand-image-icon-container .expand-image-icon {
   font-size: 2rem;
   margin: 0.5rem;
   z-index: 1000;
 }
 
-.App .page-2 .project-card-container .project-card-page-2 .projects-container-back {
+.App .Projects .project-card-container .project-card-page-2 .projects-container-back {
   position: relative;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -545,21 +545,21 @@
           align-items: center;
 }
 
-.App .page-2 .project-card-container .project-card-page-2 .projects-container-back .project-information-container {
+.App .Projects .project-card-container .project-card-page-2 .projects-container-back .project-information-container {
   overflow-y: scroll;
   width: 95%;
   height: 100%;
   padding-top: 1rem;
 }
 
-.App .page-2 .project-card-container .project-card-page-2 .projects-container-back .project-information-container .project-information-text {
+.App .Projects .project-card-container .project-card-page-2 .projects-container-back .project-information-container .project-information-text {
   overflow-y: scroll;
   padding-bottom: 1rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
 
-.App .page-2 .project-card-container .project-card-page-2 .projects-container-back .flip-back-button-container {
+.App .Projects .project-card-container .project-card-page-2 .projects-container-back .flip-back-button-container {
   position: absolute;
   width: 100%;
   top: 0;
@@ -571,7 +571,7 @@
           justify-content: flex-end;
 }
 
-.App .page-2 .project-card-container .project-card-page-2 .projects-container-back .flip-back-button-container .flip-back-button {
+.App .Projects .project-card-container .project-card-page-2 .projects-container-back .flip-back-button-container .flip-back-button {
   border-radius: 50%;
   color: white;
   background-color: #f24e4e;
@@ -581,7 +581,7 @@
   z-index: 1000;
 }
 
-.App .page-3 {
+.App .Contact {
   position: relative;
   background-color: #252934;
   display: -webkit-box;
@@ -597,12 +597,12 @@
 }
 
 @media all and (min-width: 480px) {
-  .App .page-3 {
+  .App .Contact {
     display: none;
   }
 }
 
-.App .page-3 .page-title-grouping {
+.App .Contact .page-title-grouping {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -617,7 +617,7 @@
   margin-bottom: 0.5em;
 }
 
-.App .page-3 .page-title-grouping .page-title {
+.App .Contact .page-title-grouping .page-title {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 2rem;
@@ -625,13 +625,13 @@
   color: #ffffff;
 }
 
-.App .page-3 .page-title-grouping .underline-page-title {
+.App .Contact .page-title-grouping .underline-page-title {
   background: #ffffff;
   height: 4px;
   width: 70px;
 }
 
-.App .page-3 .social-icons-container {
+.App .Contact .social-icons-container {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;

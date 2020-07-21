@@ -1,17 +1,17 @@
 import React from 'react';
 
-import Page1 from './Pages/Page1';
-import Page2 from './Pages/Page2';
-import Page3 from './Pages/Page3';
-import Page4 from './Pages/Page4';
+import Intro from './Sections/Intro';
+import About from './Sections/About';
+import Projects from './Sections/Projects';
+import Contact from './Sections/Contact';
 
 const App = () => {
     return (
         <div className="App">
-            <Page1 />
-            <Page2 />
-            <Page3 />
-            <Page4 />
+            <Intro />
+            <About />
+            <Projects />
+            <Contact />
         </div>
     );
 }

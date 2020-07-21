@@ -28,7 +28,7 @@
             "intro intro"
             "about projects";
     }
-    .intro-page {
+    .Intro {
         position: relative;
         background-color: #252934;
         width: 100%;
@@ -85,7 +85,7 @@
             }
         }
     }
-    .page-1 {
+    .About {
         position: relative;
         background-color: #fff;
         width: 100%;
@@ -229,7 +229,7 @@
             }
         }
     }
-    .page-2 {
+    .Projects {
         position: relative;
         background-color: #fff;
         width: 100%;
@@ -384,7 +384,7 @@
             }   
         }
     }
-    .page-3 {
+    .Contact {
         position: relative;
         background-color: #252934;
         display: flex;
@@ -422,6 +422,5 @@
             padding: 2%;
             border-radius: 12px;
         }
-    }
-    
+    }   
 }
