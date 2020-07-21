@@ -5,9 +5,10 @@ import { MdZoomOutMap, MdRotateLeft } from "react-icons/md";
 const ProjectCard = (props) => {
     const [isToggled, setIsToggled] = useState(false);
 
-    const { zIndex, transform, opacity } = useSpring({
+    const { zIndex, transform, opacity, height } = useSpring({
         zIndex: isToggled ? 1 : 0,
         opacity: isToggled ? 1 : 0,
+        height: isToggled ? '480px' : '240px',
         transform: `perspective(600px) rotateX(${isToggled ? 180 : 0}deg)`,
         config: { mass: 12, tension: 500, friction: 80 }
     });
@@ -22,6 +23,7 @@ const ProjectCard = (props) => {
             style={{ 
                 zIndex,
                 opacity,
+                height,
                 transform: transform.interpolate(t => `${t} rotateX(${props.rotationDirection})`) }}>
                 <div className="project-information-container">
                     <p className="project-information-text">
