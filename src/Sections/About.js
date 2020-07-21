@@ -4,6 +4,7 @@ import { useSpring, animated } from 'react-spring';
 import myImage from '../Images/me-circle-cropped.png';
 
 import CarouselProjectCards from '../Components/CarouselProjectCards';
+import SectionTitleGrouping from '../Components/SectionTitleGrouping';
 
 import pythonLogo from '../Images/python.svg';
 import javascriptLogo from '../Images/javascript.svg';
@@ -49,17 +50,7 @@ const About = () => {
 
     return (
         <div className="About">
-            <div className="page-title-grouping">
-                <div
-                id="page-1-title"
-                className="page-title">
-                    About
-                </div>
-                <div
-                id="underline-page-1-title"
-                className="underline-page-title">
-                </div> 
-            </div>
+            <SectionTitleGrouping sectionTitle={"About"}/>
             <div
                 className="top-container-page-1"
                 ref={ref}>

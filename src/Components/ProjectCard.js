@@ -14,9 +14,7 @@ const ProjectCard = (props) => {
     });
 
     return (
-        <div
-        id={props.projectId} 
-        className={props.projectClassName}>
+        <div id={props.projectId} className={props.projectClassName}>
 
             <animated.div
             className="c projects-container-back"
@@ -29,6 +27,11 @@ const ProjectCard = (props) => {
                     <p className="project-information-text">
                         {props.projectInfo}
                     </p>
+                    { props.isMarsRover ? 
+                        <video width="100%" height="auto" src={props.videoSrc} controls></video>
+                        : 
+                        null
+                    }
                 </div>
                 <div className="flip-back-button-container">
                     <MdRotateLeft
