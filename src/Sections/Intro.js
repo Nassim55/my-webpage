@@ -37,14 +37,12 @@ const Intro = () => {
 
     return (
         <div className="Intro" ref={ref}>
-            <div className="intro-container">
-                <animated.p
-                    className="profile-paragraph"
-                    style={{transform: x.interpolate(x => `translate3d(0, ${x}px, 0)`)}}>
-                    Hello, I'm <span className="my-name">Nassim</span>.<br /> Welcome to my project portfolio site!
-                </animated.p>
-                <AnimatedIntroButton />
-            </div>
+            <animated.p
+            className="profile-paragraph"
+            style={{transform: x.interpolate(x => `translate3d(0, ${x}px, 0)`)}}>
+                Hello, I'm <span className="my-name">Nassim</span>.<br /> Welcome to my project portfolio site!
+            </animated.p>
+            <AnimatedIntroButton />
         </div>
     );
 };

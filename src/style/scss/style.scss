@@ -26,64 +26,78 @@
     }
     @media all and (min-width: 480px) {
         display: grid;
+        grid:  100vh 100vh / 40% 60%;
+        grid-template-areas: 
+            "intro intro"
+            "about projects";
+    }
+    @media all and (min-width: 769px) {
+        display: grid;
         grid:  100vh 100vh / 30% 70%;
+        grid-template-areas: 
+            "intro intro"
+            "about projects";
+    }
+    @media all and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+        display: grid;
+        grid:  100vh 100vh / 45% 55%;
+        grid-template-areas: 
+            "intro intro"
+            "about projects";
+    }
+    @media all and (min-width: 1366px) {
+        display: grid;
+        grid:  100vh 100vh / 25% 75%;
         grid-template-areas: 
             "intro intro"
             "about projects";
     }
     .Intro {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: #252934;
         width: 100%;
         height: 100vh;
-        z-index: 9999;
         @media all and (min-width: 480px) {
             grid-area: intro;
         }
-        .intro-container {
-            position: absolute;
-            top: 15%;
-            bottom: 0%;
-            left: 10%;
-            right: 10%;
-            .profile-paragraph {
-                font-family: 'Raleway', sans-serif;
-                margin-top: 8rem;
-                line-height: 120%;
-                font-size: fontSize(title);
-                color: #BFC0C0;
-                text-align: left;
-                .my-name {
-                    color: #f24e4e;
-                }
+        .profile-paragraph {
+            line-height: 120%;
+            font-size: fontSize(title);
+            color: #BFC0C0;
+            max-width: 80%;
+            @media all and (min-width: 768px) {
+                font-size: 2.5rem;
             }
-            .intro-button-container {
-                position: absolute;
-                bottom: 0%;
-                width: 100%;
-                margin-bottom: 5rem;
-                .intro-button {
-                    position: relative;
-                    font-family: 'Raleway', sans-serif;
-                    display: inline-flex;
-                    height: 40px;
-                    width: 150px;
-                    border: 2px solid #BFC0C0;
-                    margin: 20px 20px 20px 20px;
+            .my-name {
+                color: #f24e4e;
+            }
+        }
+        .intro-button-container {
+            width: 100%;
+            .intro-button {
+                position: relative;
+                display: inline-flex;
+                height: 40px;
+                width: 150px;
+                border: 2px solid #BFC0C0;
+                margin: 20px 20px 20px 20px;
+                color: #BFC0C0;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 1em;
+                letter-spacing: 1.5px;
+                align-items: center;
+                justify-content: center;
+                border-radius: 12px;
+                cursor: pointer;
+                .intro-button-text {
                     color: #BFC0C0;
-                    text-transform: uppercase;
                     text-decoration: none;
-                    font-size: 1em;
-                    letter-spacing: 1.5px;
-                    align-items: center;
-                    justify-content: center;
-                    overflow: hidden;
-                    cursor: pointer;
-                    .intro-button-text {
-                        color: #BFC0C0;
-                        text-decoration: none;
-                        letter-spacing: 1px;
-                    }
+                    letter-spacing: 1px;
                 }
             }
         }
@@ -107,6 +121,9 @@
             align-items: center;
             height: max-content;
             margin-top: 0.8rem;
+            @media all and (min-width: 480px) {
+                margin-left: 1.5rem;
+            }
             .section-title {
                 font-family: 'Raleway', sans-serif;
                 font-weight: 600;
@@ -120,114 +137,129 @@
                 width: 70px;
             }
         }
-        .top-container-page-1 {
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-            padding: 4%;
-            height: max-content;
-            max-width: 370px;
-            .top-left-container-page-1 {
-                width: 30%;
-                max-width: 150px;
-                margin-right: 4%;
+        .about-content-container {
+            @media all and (min-width: 480px) {
+                box-shadow: 4px 7px 13px 3px rgba(0, 0, 0,0.1);
+                border-radius: 12px;
+                margin-left: 1.5rem;
+                margin-right: 1rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                padding: 3.73%;
+                overflow: hidden;
+            }
+            .profile-picture-contents-intro-container {
+                position: relative;
                 display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                .my-photo {
-                    width: 100%;
-                    border-radius: 50%;
-                    box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
-                }
-                .navigation-button-container{
-                    margin-top: 1rem;
-                    box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
-                    border-radius: 12px;
-                    padding: 7.5%;
-                    @media all and (min-width: 480px) {
-                        display: none;
+                justify-content: space-between;
+                padding: 4%;
+                height: max-content;
+                max-width: 370px;
+                .profile-picture-contents-container {
+                    width: 30%;
+                    max-width: 150px;
+                    margin-right: 4%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    .profile-picture {
+                        width: 100%;
+                        border-radius: 50%;
+                        box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
                     }
-                    .navigation-container-title-grouping {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        margin-bottom: 0.75rem;
-                        font-size: 1.1rem;
-                        font-weight: 600;
-                        text-transform: uppercase;
-                        .underline-navigation {
-                            background: #252934;
-                            height: 2px;
-                            width: 60px;
+                    .contents-container{
+                        margin-top: 1rem;
+                        box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
+                        border-radius: 12px;
+                        padding: 7.5%;
+                        @media all and (min-width: 480px) {
+                            display: none;
+                        }
+                        .SectionTitleGrouping {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            margin-bottom: 0.75rem;
+                            .section-title{
+                                font-size: 1.1rem;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                            }
+    
+                            .section-title-underline {
+                                background: #252934;
+                                height: 2px;
+                                width: 60px;
+                            }
+                        }
+                        .navigation-button {
+                            margin-top: 0.5rem;
+                            color: white;
+                            background-color: #f24e4e;
+                            font-weight: 500;
+                            font-size: 1.1rem;
+                            border-radius: 1.625rem;
+                            height: 2.2rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding-top: 0.15rem;
+                            padding-bottom: 0.15rem;
                         }
                     }
-                    .navigation-button {
-                        margin-top: 0.5rem;
-                        color: white;
-                        background-color: #f24e4e;
-                        font-weight: 500;
-                        font-size: 1.1rem;
-                        border-radius: 1.625rem;
-                        height: 2.2rem;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        padding-top: 0.15rem;
-                        padding-bottom: 0.15rem;
+                }
+                .profile-paragraph-container {
+                    width: 70%;
+                    height: max-content;
+                    font-family: 'Raleway', sans-serif;
+                    color: #252934;
+                    text-align: left;
+                    padding: 3.73%;
+                    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+                    border-radius: 12px;
+                    box-shadow: 4px 7px 13px 3px rgba(0, 0, 0,0.1);
+                    font-size: 2rem;
+                    .quotation-marks {
+                        white-space: nowrap;
+                        color: #f24e4e;
+                        font-size: 1.6rem;
+                        font-weight: 900;
                     }
                 }
             }
-            .top-right-container-page-1 {
-                width: 70%;
-                height: max-content;
-                font-family: 'Raleway', sans-serif;
-                color: #252934;
-                text-align: left;
-                padding: 3.73%;
-                transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
-                border-radius: 12px;
-                box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
-                font-size: 2rem;
-                .quotation-marks {
-                    white-space: nowrap;
-                    color: #f24e4e;
-                    font-size: 1.6rem;
-                    font-weight: 900;
-                }
-            }
-        }
-        .middle-container-page-1 {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            height: 225px;
-            width: 100%;
-            margin-top: 2.5rem;
-            margin-bottom: 2.5rem;
-            padding-top: 1rem;
-            .swipe-card {
-                background-color: #ffffff;
-                position: absolute;
-                height: 100%;
-                width: 150px;
-                border-radius: 12px;
-                box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
-                overflow: hidden;
+            .technology-cards-container {
+                position: relative;
                 display: flex;
-                flex-direction: column;
-                align-items: center;
-                .swipe-card-image {
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    background-position: center center;
-                    margin-top: 1.5em;
-                    height: 70%;
-                    width: 90%;
-                }
-                .swipe-card-title {
-                    font-size: fontSize(projectTitleBack);
-                    font-weight: fontWeight(projectTitleBack);
+                justify-content: center;
+                height: 225px;
+                width: 100%;
+                margin-top: 2rem;
+                margin-bottom: 2.5rem;
+                padding-top: 1rem;
+                .swipe-card {
+                    background-color: #ffffff;
+                    position: absolute;
+                    height: 100%;
+                    width: 150px;
+                    border-radius: 12px;
+                    box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .swipe-card-image {
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        margin-top: 1.5em;
+                        height: 70%;
+                        width: 90%;
+                    }
+                    .swipe-card-title {
+                        font-size: fontSize(projectTitleBack);
+                        font-weight: fontWeight(projectTitleBack);
+                    }
                 }
             }
         }
@@ -249,7 +281,6 @@
             flex-direction: column;
             align-items: center;
             margin-top: 0.8rem;
-            margin-bottom: 1em;
             .section-title {
                 font-family: 'Raleway', sans-serif;
                 font-weight: 600;
@@ -266,15 +297,27 @@
         .project-card-container {
             display: flex;
             flex-direction: column;
-            @media all and (min-width: 480px) and (orientation: landscape) {
+            @media all and (min-width: 768px) and (orientation: landscape) {
                 display: grid;
                 grid:  1fr 1fr 1fr 1fr / 1fr 1fr;
                 overflow-y: scroll;
+                margin-top: 1rem;
             }
-            @media all and (min-width: 1440px) {
+            @media all and (min-width: 768px) and (orientation: portrait) {
+                margin-top: 1rem;
+                overflow-y: scroll;
+            }
+            @media all and (min-width: 1024px) {
+                display: grid;
+                grid:  1fr 1fr 1fr 1fr / 1fr 1fr;
+                overflow-y: scroll;
+                margin-top: 1rem;
+            }
+            @media all and (min-width: 1366px) {
                 display: grid;
                 grid:  1fr 1fr 1fr / 1fr 1fr 1fr;
                 overflow-y: scroll;
+                margin-top: 1rem;
             }
             .project-card-page-2 {
                 position: relative;

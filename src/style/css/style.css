@@ -25,17 +25,56 @@
   .App {
     display: -ms-grid;
     display: grid;
+    grid: 100vh 100vh / 40% 60%;
+        grid-template-areas: "intro intro" "about projects";
+  }
+}
+
+@media all and (min-width: 769px) {
+  .App {
+    display: -ms-grid;
+    display: grid;
     grid: 100vh 100vh / 30% 70%;
+        grid-template-areas: "intro intro" "about projects";
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+  .App {
+    display: -ms-grid;
+    display: grid;
+    grid: 100vh 100vh / 45% 55%;
+        grid-template-areas: "intro intro" "about projects";
+  }
+}
+
+@media all and (min-width: 1366px) {
+  .App {
+    display: -ms-grid;
+    display: grid;
+    grid: 100vh 100vh / 25% 75%;
         grid-template-areas: "intro intro" "about projects";
   }
 }
 
 .App .Intro {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #252934;
   width: 100%;
   height: 100vh;
-  z-index: 9999;
 }
 
 @media all and (min-width: 480px) {
@@ -44,37 +83,29 @@
   }
 }
 
-.App .Intro .intro-container {
-  position: absolute;
-  top: 15%;
-  bottom: 0%;
-  left: 10%;
-  right: 10%;
-}
-
-.App .Intro .intro-container .profile-paragraph {
-  font-family: 'Raleway', sans-serif;
-  margin-top: 8rem;
+.App .Intro .profile-paragraph {
   line-height: 120%;
   font-size: 1.8rem;
   color: #BFC0C0;
-  text-align: left;
+  max-width: 80%;
 }
 
-.App .Intro .intro-container .profile-paragraph .my-name {
+@media all and (min-width: 768px) {
+  .App .Intro .profile-paragraph {
+    font-size: 2.5rem;
+  }
+}
+
+.App .Intro .profile-paragraph .my-name {
   color: #f24e4e;
 }
 
-.App .Intro .intro-container .intro-button-container {
-  position: absolute;
-  bottom: 0%;
+.App .Intro .intro-button-container {
   width: 100%;
-  margin-bottom: 5rem;
 }
 
-.App .Intro .intro-container .intro-button-container .intro-button {
+.App .Intro .intro-button-container .intro-button {
   position: relative;
-  font-family: 'Raleway', sans-serif;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -93,11 +124,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow: hidden;
+  border-radius: 12px;
   cursor: pointer;
 }
 
-.App .Intro .intro-container .intro-button-container .intro-button .intro-button-text {
+.App .Intro .intro-button-container .intro-button .intro-button-text {
   color: #BFC0C0;
   text-decoration: none;
   letter-spacing: 1px;
@@ -147,6 +178,12 @@
   margin-top: 0.8rem;
 }
 
+@media all and (min-width: 480px) {
+  .App .About .SectionTitleGrouping {
+    margin-left: 1.5rem;
+  }
+}
+
 .App .About .SectionTitleGrouping .section-title {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
@@ -161,7 +198,21 @@
   width: 70px;
 }
 
-.App .About .top-container-page-1 {
+@media all and (min-width: 480px) {
+  .App .About .about-content-container {
+    -webkit-box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 3.73%;
+    overflow: hidden;
+  }
+}
+
+.App .About .about-content-container .profile-picture-contents-intro-container {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,7 +227,7 @@
   max-width: 370px;
 }
 
-.App .About .top-container-page-1 .top-left-container-page-1 {
+.App .About .about-content-container .profile-picture-contents-intro-container .profile-picture-contents-container {
   width: 30%;
   max-width: 150px;
   margin-right: 4%;
@@ -192,14 +243,14 @@
           justify-content: flex-start;
 }
 
-.App .About .top-container-page-1 .top-left-container-page-1 .my-photo {
+.App .About .about-content-container .profile-picture-contents-intro-container .profile-picture-contents-container .profile-picture {
   width: 100%;
   border-radius: 50%;
   -webkit-box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
 }
 
-.App .About .top-container-page-1 .top-left-container-page-1 .navigation-button-container {
+.App .About .about-content-container .profile-picture-contents-intro-container .profile-picture-contents-container .contents-container {
   margin-top: 1rem;
   -webkit-box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
@@ -208,12 +259,12 @@
 }
 
 @media all and (min-width: 480px) {
-  .App .About .top-container-page-1 .top-left-container-page-1 .navigation-button-container {
+  .App .About .about-content-container .profile-picture-contents-intro-container .profile-picture-contents-container .contents-container {
     display: none;
   }
 }
 
-.App .About .top-container-page-1 .top-left-container-page-1 .navigation-button-container .navigation-container-title-grouping {
+.App .About .about-content-container .profile-picture-contents-intro-container .profile-picture-contents-container .contents-container .SectionTitleGrouping {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,18 +279,21 @@
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 0.75rem;
+}
+
+.App .About .about-content-container .profile-picture-contents-intro-container .profile-picture-contents-container .contents-container .SectionTitleGrouping .section-title {
   font-size: 1.1rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.App .About .top-container-page-1 .top-left-container-page-1 .navigation-button-container .navigation-container-title-grouping .underline-navigation {
+.App .About .about-content-container .profile-picture-contents-intro-container .profile-picture-contents-container .contents-container .SectionTitleGrouping .section-title-underline {
   background: #252934;
   height: 2px;
   width: 60px;
 }
 
-.App .About .top-container-page-1 .top-left-container-page-1 .navigation-button-container .navigation-button {
+.App .About .about-content-container .profile-picture-contents-intro-container .profile-picture-contents-container .contents-container .navigation-button {
   margin-top: 0.5rem;
   color: white;
   background-color: #f24e4e;
@@ -260,7 +314,7 @@
   padding-bottom: 0.15rem;
 }
 
-.App .About .top-container-page-1 .top-right-container-page-1 {
+.App .About .about-content-container .profile-picture-contents-intro-container .profile-paragraph-container {
   width: 70%;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -272,19 +326,19 @@
   -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
   border-radius: 12px;
-  -webkit-box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
-          box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
   font-size: 2rem;
 }
 
-.App .About .top-container-page-1 .top-right-container-page-1 .quotation-marks {
+.App .About .about-content-container .profile-picture-contents-intro-container .profile-paragraph-container .quotation-marks {
   white-space: nowrap;
   color: #f24e4e;
   font-size: 1.6rem;
   font-weight: 900;
 }
 
-.App .About .middle-container-page-1 {
+.App .About .about-content-container .technology-cards-container {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -294,12 +348,12 @@
           justify-content: center;
   height: 225px;
   width: 100%;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   margin-bottom: 2.5rem;
   padding-top: 1rem;
 }
 
-.App .About .middle-container-page-1 .swipe-card {
+.App .About .about-content-container .technology-cards-container .swipe-card {
   background-color: #ffffff;
   position: absolute;
   height: 100%;
@@ -320,7 +374,7 @@
           align-items: center;
 }
 
-.App .About .middle-container-page-1 .swipe-card .swipe-card-image {
+.App .About .about-content-container .technology-cards-container .swipe-card .swipe-card-image {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -329,7 +383,7 @@
   width: 90%;
 }
 
-.App .About .middle-container-page-1 .swipe-card .swipe-card-title {
+.App .About .about-content-container .technology-cards-container .swipe-card .swipe-card-title {
   font-size: 1.1rem;
   font-weight: 500;
 }
@@ -372,7 +426,6 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 0.8rem;
-  margin-bottom: 1em;
 }
 
 .App .Projects .SectionTitleGrouping .section-title {
@@ -399,21 +452,40 @@
           flex-direction: column;
 }
 
-@media all and (min-width: 480px) and (orientation: landscape) {
+@media all and (min-width: 768px) and (orientation: landscape) {
   .App .Projects .project-card-container {
     display: -ms-grid;
     display: grid;
     grid: 1fr 1fr 1fr 1fr / 1fr 1fr;
     overflow-y: scroll;
+    margin-top: 1rem;
   }
 }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: 768px) and (orientation: portrait) {
+  .App .Projects .project-card-container {
+    margin-top: 1rem;
+    overflow-y: scroll;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .App .Projects .project-card-container {
+    display: -ms-grid;
+    display: grid;
+    grid: 1fr 1fr 1fr 1fr / 1fr 1fr;
+    overflow-y: scroll;
+    margin-top: 1rem;
+  }
+}
+
+@media all and (min-width: 1366px) {
   .App .Projects .project-card-container {
     display: -ms-grid;
     display: grid;
     grid: 1fr 1fr 1fr / 1fr 1fr 1fr;
     overflow-y: scroll;
+    margin-top: 1rem;
   }
 }
 

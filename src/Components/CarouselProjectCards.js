@@ -43,7 +43,7 @@ const CarouselProjectCards = (props) => {
             const isGone = gone.has(index);
 
             // When a card is gone it flys out left or right, otherwise goes back to zero
-            const x = isGone ? (200 + window.innerWidth) * dir : down ? mx : 0;
+            const x = isGone ? (200 + document.querySelector('.technology-cards-container').clientWidth) * dir : down ? mx : 0;
 
             const y = my;
 

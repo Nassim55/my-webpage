@@ -51,69 +51,47 @@ const About = () => {
     return (
         <div className="About">
             <SectionTitleGrouping sectionTitle={"About"}/>
-            <div
-                className="top-container-page-1"
-                ref={ref}>
-                <animated.div
-                    className="top-left-container-page-1"
+            <div className="about-content-container">
+                <div className="profile-picture-contents-intro-container" ref={ref}>
+                    <animated.div className="profile-picture-contents-container"
                     style={{
                         transform: x.interpolate(x => `translate3d(${x}px, 0, 0)`)
                     }}>
-                    <img
-                        className="my-photo"
-                        src={myImage}
-                        alt="me" />
-                    <div className="navigation-button-container">
-                        <div className="navigation-container-title-grouping">
-                            Contents
-                            <div className="underline-navigation"></div> 
-                        </div>      
-                        <Link
-                        className="down-page-button"
-                        activeClass="active"
-                        to="Projects"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}>
-                            <div className="navigation-button">
-                                Projects
-                            </div>
-                        </Link>
-                        <Link
-                        className="down-page-button"
-                        activeClass="active"
-                        to="Contact"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}>
-                            <div className="navigation-button">
-                                Contact
-                            </div>
-                        </Link>
-                    </div>
-                </animated.div>
-                <animated.div
-                    className="top-right-container-page-1"
+                        <img className="profile-picture" src={myImage} alt="profile-picture" />
+                        <div className="contents-container">
+                            <SectionTitleGrouping sectionTitle={"Contents"}/>   
+                            <Link activeClass="active" to="Projects" spy={true} smooth={true} duration={250}>
+                                <div className="navigation-button">
+                                    Projects
+                                </div>
+                            </Link>
+                            <Link activeClass="active" to="Contact" spy={true} smooth={true} duration={250}>
+                                <div className="navigation-button">
+                                    Contact
+                                </div>
+                            </Link>
+                        </div>
+                    </animated.div>
+                    <animated.div className="profile-paragraph-container"
                     style={{
                         transform: x.interpolate(x => `translate3d(${-x}px, 0, 0)`)
                     }}>
-                    <p>
-                        <span className="quotation-marks">"&nbsp;&nbsp;&nbsp;</span>
-                        I'm an Aerospace Engineering graduate from the University
-                        of Leeds. Interested in software engineering that 
-                        focuses on the application of machine learning and data science.
-                        Swipe the card stack below to see the technologies I'm familiar with.
-                        <span className="quotation-marks">&nbsp;&nbsp;&nbsp;"</span>
-                    </p>
-                </animated.div>
-            </div>
-            <div className="middle-container-page-1">
-                <CarouselProjectCards 
-                languageTitles={['Git', 'SASS', 'CSS', 'HTML', 'Django', 'TensorFlow', 'React', 'JavaScript', 'Python']}
-                languageLogos={[gitLogo, sassLogo, cssLogo, htmlLogo, djangoLogo, tensorflowLogo, reactLogo, javascriptLogo , pythonLogo]}
-                />
+                        <p>
+                            <span className="quotation-marks">"&nbsp;&nbsp;&nbsp;</span>
+                            I'm an Aerospace Engineering graduate from the University
+                            of Leeds. Interested in software engineering that 
+                            focuses on the application of machine learning and data science.
+                            Swipe the card stack below to see the technologies I'm familiar with.
+                            <span className="quotation-marks">&nbsp;&nbsp;&nbsp;"</span>
+                        </p>
+                    </animated.div>
+                </div>
+                <div className="technology-cards-container">
+                    <CarouselProjectCards 
+                    languageTitles={['Git', 'SASS', 'CSS', 'HTML', 'Django', 'TensorFlow', 'React', 'JavaScript', 'Python']}
+                    languageLogos={[gitLogo, sassLogo, cssLogo, htmlLogo, djangoLogo, tensorflowLogo, reactLogo, javascriptLogo , pythonLogo]}
+                    />
+                </div>
             </div>
         </div>
     );
