@@ -15,6 +15,8 @@ import htmlLogo from '../Images/html5.svg';
 import cssLogo from '../Images/css3.svg';
 import sassLogo from '../Images/sass.svg';
 import gitLogo from '../Images/git.svg';
+import matlabLogo from '../Images/matlab.svg';
+import solidworksLogo from '../Images/solidworks.svg';
 
 import { Link } from "react-scroll";
 
@@ -88,8 +90,8 @@ const About = () => {
                 </div>
                 <div className="technology-cards-container">
                     <CarouselProjectCards 
-                    languageTitles={['Git', 'SASS', 'CSS', 'HTML', 'Django', 'TensorFlow', 'React', 'JavaScript', 'Python']}
-                    languageLogos={[gitLogo, sassLogo, cssLogo, htmlLogo, djangoLogo, tensorflowLogo, reactLogo, javascriptLogo , pythonLogo]}
+                    languageTitles={['SolidWorks', 'Matlab', 'Git', 'SASS', 'CSS', 'HTML', 'Django', 'TensorFlow', 'React', 'JavaScript', 'Python']}
+                    languageLogos={[solidworksLogo, matlabLogo, gitLogo, sassLogo, cssLogo, htmlLogo, djangoLogo, tensorflowLogo, reactLogo, javascriptLogo , pythonLogo]}
                     />
                 </div>
             </div>
