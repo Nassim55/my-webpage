@@ -17,82 +17,54 @@ const Projects = () => {
             <SectionTitleGrouping sectionTitle={"Projects"}/>
             <div className="project-card-container">
                 <ProjectCard 
-                className="project-card-page-2"
-                projectClassName={'project-card-page-2'}
-                projectTitle={'AUTONOMOUS MARS ROVER'}
+                projectTitle={'autonomous mars rover'}
                 projectLanguages={'SolidWorks, Matlab, LabView'}
-                projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
-                rotationDirection = {'180deg'}
                 projectInfo = {hypersonicText}
                 imageSrc = {marsroverImage}
                 videoSrc = {marsroverVideo}
                 isMarsRover = {true}
                 />
                 <ProjectCard
-                projectClassName={'project-card-page-2'}
-                projectTitle={'UNMANNED AERIAL VEHICLE'}
+                projectTitle={'unmanned aerial vehicle'}
                 projectLanguages={'SolidWorks, Matlab'}
-                rotationDirection = {'180deg'}
                 projectInfo = {hypersonicText}
                 imageSrc = {uavImage}
                 />
                 <ProjectCard
-                className="project-card-page-2"
-                projectClassName={'project-card-page-2'}
-                projectTitle={'HYPERSONIC THERMAL MANAGEMENT'}
+                projectTitle={'hypersonic thermal management'}
                 projectLanguages={'Python, SolidWorks, Ansys Fluent'}
-                projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
-                rotationDirection = {'180deg'}
                 projectInfo = {hypersonicText}
                 imageSrc = {honeycombImage}
                 />
                 <ProjectCard
-                projectClassName={'project-card-page-2'}
-                projectTitle={'ARTIFICIAL NEURAL NETWORK'}
+                projectTitle={'artificial neural network'}
                 projectLanguages={'Python, TensorFlow, Django, React'}
-                projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
-                rotationDirection = {'180deg'}
                 projectInfo = {hypersonicText}
                 imageSrc = {neuralnetworkImage}
                 />
                 <ProjectCard
-                projectClassName={'project-card-page-2'}
-                projectTitle={'SATELLITE ATTITUDE CONTROL'}
+                projectTitle={'satellite attitude control'}
                 projectLanguages={'Matlab, Simulink'}
-                projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
-                rotationDirection = {'180deg'}
                 projectInfo = {hypersonicText}
                 />
                 <ProjectCard
-                projectClassName={'project-card-page-2'}
-                projectTitle={'ROLLS-ROYCE DESIGN SIMULATION'}
-                projectLanguages={'Python, TensorFlow, Django, React'}
-                projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
-                rotationDirection = {'180deg'}
+                projectTitle={'aerospace eng. interactive learning site'}
+                projectLanguages={'Placeholder'}
                 projectInfo = {hypersonicText}
                 />
                 <ProjectCard
-                projectClassName={'project-card-page-2'}
-                projectTitle={'PLACEHOLDER'}
-                projectLanguages={'Python, TensorFlow, Django, React'}
-                projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
-                rotationDirection = {'180deg'}
+                projectTitle={'rolls-royce design simulation'}
+                projectLanguages={'Placeholder'}
                 projectInfo = {hypersonicText}
                 />
                 <ProjectCard
-                projectClassName={'project-card-page-2'}
-                projectTitle={'PLACEHOLDER'}
-                projectLanguages={'Python, TensorFlow, Django, React'}
-                projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
-                rotationDirection = {'180deg'}
+                projectTitle={'placeholder'}
+                projectLanguages={'Placeholder'}
                 projectInfo = {hypersonicText}
                 />
                 <ProjectCard
-                projectClassName={'project-card-page-2'}
-                projectTitle={'PLACEHOLDER'}
-                projectLanguages={'Python, TensorFlow, Django, React'}
-                projectHref = {'https://goofy-perlman-2c3af1.netlify.app/'}
-                rotationDirection = {'180deg'}
+                projectTitle={'placeholder'}
+                projectLanguages={'Placeholder'}
                 projectInfo = {hypersonicText}
                 />
             </div>

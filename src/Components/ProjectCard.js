@@ -14,7 +14,7 @@ const ProjectCard = (props) => {
     });
 
     return (
-        <div id={props.projectId} className={props.projectClassName}>
+        <div id={props.projectId} className="project-card-page-2">
 
             <animated.div
             className="c projects-container-back"
@@ -22,7 +22,7 @@ const ProjectCard = (props) => {
                 zIndex,
                 opacity,
                 height,
-                transform: transform.interpolate(t => `${t} rotateX(${props.rotationDirection})`) }}>
+                transform: transform.interpolate(t => `${t} rotateX(180deg)`) }}>
                 <div className="project-information-container">
                     <p className="project-information-text">
                         {props.projectInfo}
@@ -34,9 +34,7 @@ const ProjectCard = (props) => {
                     }
                 </div>
                 <div className="flip-back-button-container">
-                    <MdRotateLeft
-                    className="flip-back-button"
-                    onClick={() => setIsToggled(!isToggled)} />
+                    <MdRotateLeft className="flip-back-button" onClick={() => setIsToggled(!isToggled)} />
                 </div>
             </animated.div>
 
