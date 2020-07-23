@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ProjectCard from '../Components/ProjectCard';
 import SectionTitleGrouping from '../Components/SectionTitleGrouping';
 
-import marsroverImage from '../Images/marsrover.jpg'; 
+import marsroverImage from '../Images/marsrover.jpg';
+import marsRoverAnnotatedImage from '../Images/marsroverAnnotated.jpg';
 import uavImage from '../Images/uav.jpg';
 import honeycombImage from '../Images/honeycombs.jpg';
 import neuralnetworkImage from '../Images/neuralnetwork.svg';
@@ -21,6 +22,7 @@ const Projects = () => {
                 projectLanguages={'SolidWorks, Matlab, LabView'}
                 projectInfo = {hypersonicText}
                 imageSrc = {marsroverImage}
+                enlargedImageSrc = {marsRoverAnnotatedImage}
                 videoSrc = {marsroverVideo}
                 isMarsRover = {true}
                 />
@@ -29,18 +31,21 @@ const Projects = () => {
                 projectLanguages={'SolidWorks, Matlab'}
                 projectInfo = {hypersonicText}
                 imageSrc = {uavImage}
+                enlargedImageSrc = {uavImage}
                 />
                 <ProjectCard
                 projectTitle={'hypersonic thermal management'}
                 projectLanguages={'Python, SolidWorks, Ansys Fluent'}
                 projectInfo = {hypersonicText}
                 imageSrc = {honeycombImage}
+                enlargedImageSrc = {honeycombImage}
                 />
                 <ProjectCard
                 projectTitle={'artificial neural network'}
                 projectLanguages={'Python, TensorFlow, Django, React'}
                 projectInfo = {hypersonicText}
                 imageSrc = {neuralnetworkImage}
+                enlargedImageSrc = {neuralnetworkImage}
                 />
                 <ProjectCard
                 projectTitle={'satellite attitude control'}

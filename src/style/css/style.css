@@ -504,8 +504,35 @@
           justify-content: center;
 }
 
+.App .Projects .project-card-container .project-card-page-2 .container-project-image-expanded {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  visibility: visible;
+  height: 100vh;
+  width: 100vw;
+}
+
+.App .Projects .project-card-container .project-card-page-2 .container-project-image-expanded .project-image-expanded {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 999;
+  width: auto;
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  visibility: visible;
+}
+
 .App .Projects .project-card-container .project-card-page-2 .c {
-  position: relative;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
