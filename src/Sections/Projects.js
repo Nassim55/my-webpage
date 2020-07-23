@@ -34,6 +34,11 @@ const Projects = () => {
                 enlargedImageSrc = {uavImage}
                 />
                 <ProjectCard
+                projectTitle={'aerospace eng. interactive learning site'}
+                projectLanguages={'Placeholder'}
+                projectInfo = {hypersonicText}
+                />
+                <ProjectCard
                 projectTitle={'hypersonic thermal management'}
                 projectLanguages={'Python, SolidWorks, Ansys Fluent'}
                 projectInfo = {hypersonicText}
@@ -50,11 +55,6 @@ const Projects = () => {
                 <ProjectCard
                 projectTitle={'satellite attitude control'}
                 projectLanguages={'Matlab, Simulink'}
-                projectInfo = {hypersonicText}
-                />
-                <ProjectCard
-                projectTitle={'aerospace eng. interactive learning site'}
-                projectLanguages={'Placeholder'}
                 projectInfo = {hypersonicText}
                 />
                 <ProjectCard
