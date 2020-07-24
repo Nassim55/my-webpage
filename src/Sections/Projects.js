@@ -10,7 +10,7 @@ import neuralnetworkImage from '../Images/neuralnetwork.svg';
 
 import marsroverVideo from '../Videos/mars_rover.mov';
 
-import {hypersonicText, aerospaceText} from '../Components/projectTexts';
+import {uavText, hypersonicText, aerospaceText} from '../Components/projectTexts';
 
 const Projects = () => {
     return (
@@ -29,7 +29,7 @@ const Projects = () => {
                 <ProjectCard
                 projectTitle={'unmanned aerial vehicle'}
                 projectLanguages={'SolidWorks, Matlab'}
-                projectInfo = {hypersonicText}
+                projectInfo = {uavText}
                 imageSrc = {uavImage}
                 enlargedImageSrc = {uavImage}
                 />

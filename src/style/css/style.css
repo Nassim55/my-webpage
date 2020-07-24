@@ -669,6 +669,7 @@
   overflow-y: scroll;
   padding-left: 2rem;
   padding-right: 2rem;
+  text-align: left;
 }
 
 .App .Projects .project-card-container .project-card-page-2 .projects-container-back .flip-back-button-container {
