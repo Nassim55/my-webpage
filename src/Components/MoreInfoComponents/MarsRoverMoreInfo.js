@@ -12,7 +12,7 @@ const paragraph2 = `Temperatures on the surface of Mars can drop to minus 107 de
     temperatures. A minimalist aluminium alloy design was employed providing reduced weight and 
     sufficient structural integrity. To provide grip on rough and uneven surfaces, U-shaped runners were 
     designed to sit on the wheel edges. Additionally, the large wheel diameter was chosen in order to avoid
-    the buggy struggling with steps and bumps.`;
+    the buggy struggling with bumps.`;
 
 const paragraph3 = `A butterfly style minimalist suspension system was designed allowing independent 
     oscillations in each of the four wheels. To avoid fouling, the DC motors were...`;
