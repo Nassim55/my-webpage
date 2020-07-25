@@ -2,6 +2,8 @@ import React from 'react';
 import marsroverVideo from '../../Videos/mars_rover.mov';
 import marsRoverMotors from '../../Images/motorsNoBackground.jpg'
 import marsRoverWheels from '../../Images/wheelsNoBackground.jpg'
+import marsroverImage from '../../Images/marsrover.jpg';
+import realMarsroverImage from '../../Images/RealMarsRoverFlipped.jpg';
 
 const paragraph1 = `Team project involving the design and build of an autonomous rover tasked to 
     compete in an assessed trial across an obstacle course. The rover was assessed on factors including:
@@ -28,6 +30,9 @@ const MarsRoverMoreInfo = () => {
             <img className="project-information-image" src={marsRoverWheels} />
             <p className="project-information-text">{paragraph3}</p>
             <img className="project-information-image-rectangle" src={marsRoverMotors} />
+            <p className="project-information-text">{paragraph3}</p>
+            <img className="project-information-image-rectangle" src={marsroverImage} />
+            <img className="project-information-image-rectangle" src={realMarsroverImage} />
         </div>
     );
 };
