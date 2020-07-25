@@ -10,6 +10,7 @@ import pythonLogo from '../Images/python.svg';
 import javascriptLogo from '../Images/javascript.svg';
 import reactLogo from '../Images/react2.svg';
 import tensorflowLogo from '../Images/tensorflow.svg';
+import scikitLearnLogo from '../Images/scikitlearn.svg';
 import djangoLogo from '../Images/django.svg';
 import htmlLogo from '../Images/html5.svg';
 import cssLogo from '../Images/css3.svg';
@@ -90,8 +91,8 @@ const About = () => {
                 </div>
                 <div className="technology-cards-container">
                     <CarouselProjectCards 
-                    languageTitles={['SolidWorks', 'Matlab', 'Git', 'SASS', 'CSS', 'HTML', 'Django', 'TensorFlow', 'React', 'JavaScript', 'Python']}
-                    languageLogos={[solidworksLogo, matlabLogo, gitLogo, sassLogo, cssLogo, htmlLogo, djangoLogo, tensorflowLogo, reactLogo, javascriptLogo , pythonLogo]}
+                    languageTitles={['SolidWorks', 'Matlab', 'Git', 'SASS', 'CSS', 'HTML', 'Django', 'Scikit-Learn', 'TensorFlow', 'React', 'JavaScript', 'Python']}
+                    languageLogos={[solidworksLogo, matlabLogo, gitLogo, sassLogo, cssLogo, htmlLogo, djangoLogo, scikitLearnLogo, tensorflowLogo, reactLogo, javascriptLogo , pythonLogo]}
                     />
                 </div>
             </div>
