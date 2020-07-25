@@ -30,7 +30,7 @@ const Projects = () => {
                 <ProjectCard
                 isAerospaceSite = {true}
                 projectTitle={'aerospace eng. interactive learning site'}
-                projectLanguages={'Placeholder'}
+                projectLanguages={'React, Python, Django'}
                 />
                 <ProjectCard
                 isHypersonic = {true}
@@ -51,15 +51,15 @@ const Projects = () => {
                 />
                 <ProjectCard
                 projectTitle={'rolls-royce design simulation'}
-                projectLanguages={'Placeholder'}
+                projectLanguages={'Witness Simulation Modelling'}
                 />
                 <ProjectCard
-                projectTitle={'placeholder'}
-                projectLanguages={'Placeholder'}
+                projectTitle={'Hydroelectric Turbine'}
+                projectLanguages={'SolidWorks'}
                 />
                 <ProjectCard
-                projectTitle={'placeholder'}
-                projectLanguages={'Placeholder'}
+                projectTitle={'Random RUn'}
+                projectLanguages={'React Native'}
                 />
             </div>
         </div>
