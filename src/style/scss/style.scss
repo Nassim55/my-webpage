@@ -423,23 +423,47 @@
                 }
                 .projects-container-back {
                     position: relative;
-                    justify-content: start;
-                    align-items: center;
-                    .project-information-container {
-                        margin-top: 1rem;
+                    display: grid;
+                    grid:  auto auto / 85% 15%;
+                    grid-template-areas: 
+                        "title button"
+                        "info info";
+                    .project-title-back {
+                        position: relative;
+                        grid-area: title;
+                        color: #252934;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                        margin-left: 1rem;
                         margin-bottom: 1rem;
-                        border-radius: 12px;
-                        box-shadow: 4px 7px 13px 3px rgba(0, 0, 0,0.1);
+                    }
+                    .flip-back-button-container {
+                        position: relative;
+                        grid-area: button;
+                        margin-top: 1rem;
+                        margin-right: 1rem;
+                        margin-bottom: 1rem;
+                        .flip-back-button {
+                            border-radius: 50%;
+                            color: white;
+                            background-color: #f24e4e;
+                            padding: 0.2rem;
+                            font-size: 2.2rem;
+                        }
+                    }
+                    .project-information-container {
                         overflow-y: scroll;
-                        width: 90%;
-                        height: 100%;
                         padding-top: 1rem;
                         padding-bottom: 1rem;
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                        grid-area: info;
                         .project-information-text {
                             overflow-y: scroll;
-                            padding-left: 2rem;;
-                            padding-right: 2rem;
-                            text-align: left;
+                            width: 100%;
                         }
                         .project-information-image {
                             box-shadow: 4px 7px 13px 3px rgba(0, 0, 0,0.1);
@@ -448,27 +472,19 @@
                             height: auto;
                             margin-bottom: 2rem;
                         }
+                        .project-information-image-rectangle {
+                            box-shadow: 4px 7px 13px 3px rgba(0, 0, 0,0.1);
+                            border-radius: 12px;
+                            width: 90%;
+                            height: auto;
+                            margin-bottom: 2rem;
+                        }
                         .project-information-video {
                             box-shadow: 4px 7px 13px 3px rgba(0, 0, 0,0.1);
                             border-radius: 12px;
                             width: 90%;
                             height: auto;
-                        }
-                    }
-                    .flip-back-button-container {
-                        position: absolute;
-                        width: 100%;
-                        top: 0;
-                        display: flex;
-                        justify-content: flex-end;
-                        .flip-back-button {
-                            border-radius: 50%;
-                            color: white;
-                            background-color: #f24e4e;
-                            padding: 0.2rem;
-                            font-size: 2.2rem;
-                            margin: 0.5rem;
-                            z-index: 1000;
+                            margin-bottom: 2rem;
                         }
                     }
                 }

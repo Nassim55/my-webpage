@@ -649,32 +649,66 @@
 
 .App .Projects .project-card-container .project-card-page-2 .projects-container-back {
   position: relative;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  grid: auto auto / 85% 15%;
+      grid-template-areas: "title button" "info info";
+}
+
+.App .Projects .project-card-container .project-card-page-2 .projects-container-back .project-title-back {
+  position: relative;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+  color: #252934;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.App .Projects .project-card-container .project-card-page-2 .projects-container-back .flip-back-button-container {
+  position: relative;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: button;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.App .Projects .project-card-container .project-card-page-2 .projects-container-back .flip-back-button-container .flip-back-button {
+  border-radius: 50%;
+  color: white;
+  background-color: #f24e4e;
+  padding: 0.2rem;
+  font-size: 2.2rem;
 }
 
 .App .Projects .project-card-container .project-card-page-2 .projects-container-back .project-information-container {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 12px;
-  -webkit-box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
-          box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
   overflow-y: scroll;
-  width: 90%;
-  height: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: info;
 }
 
 .App .Projects .project-card-container .project-card-page-2 .projects-container-back .project-information-container .project-information-text {
   overflow-y: scroll;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  text-align: left;
+  width: 100%;
 }
 
 .App .Projects .project-card-container .project-card-page-2 .projects-container-back .project-information-container .project-information-image {
@@ -686,34 +720,22 @@
   margin-bottom: 2rem;
 }
 
+.App .Projects .project-card-container .project-card-page-2 .projects-container-back .project-information-container .project-information-image-rectangle {
+  -webkit-box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: 90%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
 .App .Projects .project-card-container .project-card-page-2 .projects-container-back .project-information-container .project-information-video {
   -webkit-box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   width: 90%;
   height: auto;
-}
-
-.App .Projects .project-card-container .project-card-page-2 .projects-container-back .flip-back-button-container {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.App .Projects .project-card-container .project-card-page-2 .projects-container-back .flip-back-button-container .flip-back-button {
-  border-radius: 50%;
-  color: white;
-  background-color: #f24e4e;
-  padding: 0.2rem;
-  font-size: 2.2rem;
-  margin: 0.5rem;
-  z-index: 1000;
+  margin-bottom: 2rem;
 }
 
 .App .Contact {

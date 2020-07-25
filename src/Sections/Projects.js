@@ -34,20 +34,20 @@ const Projects = () => {
                 />
                 <ProjectCard
                 isHypersonic = {true}
-                projectTitle={'hypersonic thermal management'}
+                projectTitle={'hypersonic aircraft design'}
                 projectLanguages={'Python, SolidWorks, Ansys Fluent'}
                 imageSrc = {honeycombImage}
                 enlargedImageSrc = {honeycombImage}
+                />
+                <ProjectCard
+                projectTitle={'satellite attitude control'}
+                projectLanguages={'Matlab, Simulink'}
                 />
                 <ProjectCard
                 projectTitle={'artificial neural network'}
                 projectLanguages={'Python, TensorFlow, Django, React'}
                 imageSrc = {neuralnetworkImage}
                 enlargedImageSrc = {neuralnetworkImage}
-                />
-                <ProjectCard
-                projectTitle={'satellite attitude control'}
-                projectLanguages={'Matlab, Simulink'}
                 />
                 <ProjectCard
                 projectTitle={'rolls-royce design simulation'}
