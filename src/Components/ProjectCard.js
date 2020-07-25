@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { MdZoomOutMap, MdRotateLeft } from "react-icons/md";
 
+import MarsRoverMoreInfo from './MoreInfoComponents/MarsRoverMoreInfo'; 
+import UavMoreInfo from './MoreInfoComponents/UavMoreInfo';
+import AerospaceSiteMoreInfo from './MoreInfoComponents/AerospaceSiteMoreInfo';
+import HypersonicMoreInfo from './MoreInfoComponents/HypersonicMoreInfo';
+
 const ProjectCard = (props) => {
     const [isFlipped, setIsFlipped] = useState(false);
     const [isEnlarged, setIsEnlarged] = useState(false);
@@ -38,12 +43,10 @@ const ProjectCard = (props) => {
                 opacity,
                 height,
                 transform: transform.interpolate(t => `${t} rotateX(180deg)`) }}>
-                <div className="project-information-container">
-                    <p className="project-information-text">
-                        {props.projectInfo}
-                    </p>
-                    { props.isMarsRover ? <video width="100%" height="auto" src={props.videoSrc} controls></video> : null }
-                </div>
+                    {props.isMarsRover ? <MarsRoverMoreInfo /> : null}
+                    {props.isUav ? <UavMoreInfo /> : null}
+                    {props.isAerospaceSite ? <AerospaceSiteMoreInfo /> : null}
+                    {props.isHypersonic ? <HypersonicMoreInfo /> : null}
                 <div className="flip-back-button-container">
                     <MdRotateLeft className="flip-back-button" onClick={() => setIsFlipped(!isFlipped)} />
                 </div>

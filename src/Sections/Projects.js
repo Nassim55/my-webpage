@@ -8,69 +8,58 @@ import uavImage from '../Images/uav.jpg';
 import honeycombImage from '../Images/honeycombs.jpg';
 import neuralnetworkImage from '../Images/neuralnetwork.svg';
 
-import marsroverVideo from '../Videos/mars_rover.mov';
-
-import {uavText, hypersonicText, aerospaceText} from '../Components/projectTexts';
-
 const Projects = () => {
     return (
         <div className="Projects">
             <SectionTitleGrouping sectionTitle={"Projects"}/>
             <div className="project-card-container">
                 <ProjectCard 
+                isMarsRover = {true}
                 projectTitle={'autonomous mars rover'}
                 projectLanguages={'SolidWorks, Matlab, LabView'}
-                projectInfo = {hypersonicText}
                 imageSrc = {marsroverImage}
                 enlargedImageSrc = {marsRoverAnnotatedImage}
-                videoSrc = {marsroverVideo}
-                isMarsRover = {true}
                 />
                 <ProjectCard
+                isUav = {true}
                 projectTitle={'unmanned aerial vehicle'}
                 projectLanguages={'SolidWorks, Matlab'}
-                projectInfo = {uavText}
                 imageSrc = {uavImage}
                 enlargedImageSrc = {uavImage}
                 />
                 <ProjectCard
+                isAerospaceSite = {true}
                 projectTitle={'aerospace eng. interactive learning site'}
                 projectLanguages={'Placeholder'}
-                projectInfo = {aerospaceText}
                 />
                 <ProjectCard
+                isHypersonic = {true}
                 projectTitle={'hypersonic thermal management'}
                 projectLanguages={'Python, SolidWorks, Ansys Fluent'}
-                projectInfo = {hypersonicText}
                 imageSrc = {honeycombImage}
                 enlargedImageSrc = {honeycombImage}
                 />
                 <ProjectCard
                 projectTitle={'artificial neural network'}
                 projectLanguages={'Python, TensorFlow, Django, React'}
-                projectInfo = {hypersonicText}
                 imageSrc = {neuralnetworkImage}
                 enlargedImageSrc = {neuralnetworkImage}
                 />
                 <ProjectCard
                 projectTitle={'satellite attitude control'}
                 projectLanguages={'Matlab, Simulink'}
-                projectInfo = {hypersonicText}
                 />
                 <ProjectCard
                 projectTitle={'rolls-royce design simulation'}
                 projectLanguages={'Placeholder'}
-                projectInfo = {hypersonicText}
                 />
                 <ProjectCard
                 projectTitle={'placeholder'}
                 projectLanguages={'Placeholder'}
-                projectInfo = {hypersonicText}
                 />
                 <ProjectCard
                 projectTitle={'placeholder'}
                 projectLanguages={'Placeholder'}
-                projectInfo = {hypersonicText}
                 />
             </div>
         </div>

@@ -658,6 +658,11 @@
 }
 
 .App .Projects .project-card-container .project-card-page-2 .projects-container-back .project-information-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  -webkit-box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
   overflow-y: scroll;
   width: 90%;
   height: 100%;
@@ -670,6 +675,23 @@
   padding-left: 2rem;
   padding-right: 2rem;
   text-align: left;
+}
+
+.App .Projects .project-card-container .project-card-page-2 .projects-container-back .project-information-container .project-information-image {
+  -webkit-box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 75%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.App .Projects .project-card-container .project-card-page-2 .projects-container-back .project-information-container .project-information-video {
+  -webkit-box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: 90%;
+  height: auto;
 }
 
 .App .Projects .project-card-container .project-card-page-2 .projects-container-back .flip-back-button-container {

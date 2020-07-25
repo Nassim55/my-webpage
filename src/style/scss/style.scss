@@ -426,6 +426,10 @@
                     justify-content: start;
                     align-items: center;
                     .project-information-container {
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                        border-radius: 12px;
+                        box-shadow: 4px 7px 13px 3px rgba(0, 0, 0,0.1);
                         overflow-y: scroll;
                         width: 90%;
                         height: 100%;
@@ -436,6 +440,19 @@
                             padding-left: 2rem;;
                             padding-right: 2rem;
                             text-align: left;
+                        }
+                        .project-information-image {
+                            box-shadow: 4px 7px 13px 3px rgba(0, 0, 0,0.1);
+                            border-radius: 50%;
+                            width: 75%;
+                            height: auto;
+                            margin-bottom: 2rem;
+                        }
+                        .project-information-video {
+                            box-shadow: 4px 7px 13px 3px rgba(0, 0, 0,0.1);
+                            border-radius: 12px;
+                            width: 90%;
+                            height: auto;
                         }
                     }
                     .flip-back-button-container {
