@@ -56,15 +56,7 @@ const ProjectCard = (props) => {
                 zIndex: zIndex.interpolate(o => 1 - o),
                 opacity: opacity.interpolate(o => 1 - o),
                 transform }}>
-                <div className="expand-image-icon-container">
-                    <MdZoomOutMap
-                    className="expand-image-icon"
-                    onClick={() => {
-                        setIsEnlarged(!isEnlarged);
-                        document.querySelector('.project-card-container').style.visibility = 'hidden';
-                    }} />
-                </div>
-                <img className="project-image-front" src={props.imageSrc} />
+                <img className="project-image-front" id={props.imageId} src={props.imageSrc} />
                 <div className="project-title-front">
                     {props.projectTitle}
                 </div>
@@ -85,3 +77,15 @@ const ProjectCard = (props) => {
 }
 
 export default ProjectCard
+
+
+/* 
+<div className="expand-image-icon-container">
+    <MdZoomOutMap
+    className="expand-image-icon"
+    onClick={() => {
+        setIsEnlarged(!isEnlarged);
+        document.querySelector('.project-card-container').style.visibility = 'hidden';
+    }} />
+</div>
+*/

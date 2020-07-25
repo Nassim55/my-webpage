@@ -594,6 +594,12 @@
   max-width: 100%;
 }
 
+.App .Projects .project-card-container .project-card-page-2 .projects-container-front #work-in-progress {
+  height: auto;
+  width: 90%;
+  margin-bottom: 4rem;
+}
+
 .App .Projects .project-card-container .project-card-page-2 .projects-container-front .learn-more-button-container {
   position: relative;
   height: 16%;

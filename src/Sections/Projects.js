@@ -7,6 +7,9 @@ import marsRoverAnnotatedImage from '../Images/marsroverAnnotated.jpg';
 import uavImage from '../Images/uav.jpg';
 import honeycombImage from '../Images/honeycombs.jpg';
 import neuralnetworkImage from '../Images/neuralnetwork.svg';
+import attitudeControlImage from '../Images/attitudeControl.jpg';
+import turbineImage from '../Images/turbineNoBackground.jpg';
+import wipImage from '../Images/WIP.jpg';
 
 const Projects = () => {
     return (
@@ -31,6 +34,8 @@ const Projects = () => {
                 isAerospaceSite = {true}
                 projectTitle={'aerospace eng. interactive learning site'}
                 projectLanguages={'React, Python, Django'}
+                imageSrc = {wipImage}
+                imageId = {'work-in-progress'}
                 />
                 <ProjectCard
                 isHypersonic = {true}
@@ -42,6 +47,12 @@ const Projects = () => {
                 <ProjectCard
                 projectTitle={'satellite attitude control'}
                 projectLanguages={'Matlab, Simulink'}
+                imageSrc = {attitudeControlImage}
+                />
+                <ProjectCard
+                projectTitle={'Hydroelectric Turbine'}
+                projectLanguages={'SolidWorks'}
+                imageSrc = {turbineImage}
                 />
                 <ProjectCard
                 projectTitle={'artificial neural network'}
@@ -54,12 +65,10 @@ const Projects = () => {
                 projectLanguages={'Witness Simulation Modelling'}
                 />
                 <ProjectCard
-                projectTitle={'Hydroelectric Turbine'}
-                projectLanguages={'SolidWorks'}
-                />
-                <ProjectCard
                 projectTitle={'Random RUn'}
                 projectLanguages={'React Native'}
+                imageSrc = {wipImage}
+                imageId = {'work-in-progress'}
                 />
             </div>
         </div>
