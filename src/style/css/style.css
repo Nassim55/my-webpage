@@ -741,6 +741,7 @@
   border-radius: 12px;
   width: 90%;
   height: auto;
+  max-height: 200px;
   margin-bottom: 2rem;
 }
 

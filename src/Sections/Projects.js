@@ -50,6 +50,7 @@ const Projects = () => {
                 imageSrc = {attitudeControlImage}
                 />
                 <ProjectCard
+                isHydroelectric = {true}
                 projectTitle={'Hydroelectric Turbine'}
                 projectLanguages={'SolidWorks'}
                 imageSrc = {turbineImage}
