@@ -131,8 +131,8 @@
 .App .About {
   position: relative;
   width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,6 +186,12 @@
   background: #252934;
   height: 4px;
   width: 70px;
+}
+
+@media all and (max-width: 768px) {
+  .App .About .about-content-container {
+    max-width: 500px;
+  }
 }
 
 .App .About .about-content-container .profile-picture-contents-intro-container {
@@ -437,6 +443,12 @@
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   width: 100%;
   overflow-y: scroll;
+}
+
+@media all and (max-width: 768px) {
+  .App .Projects .project-card-container {
+    max-width: 500px;
+  }
 }
 
 .App .Projects .project-card-container .project-card-page-2 {

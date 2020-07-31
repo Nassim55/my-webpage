@@ -99,8 +99,8 @@
     .About {
         position: relative;
         width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -131,6 +131,9 @@
             }
         }
         .about-content-container {
+            @media all and (max-width: 768px) {
+                max-width: 500px;    
+            }
             .profile-picture-contents-intro-container {
                 margin-top: 0.8rem;
                 position: relative;
@@ -288,6 +291,9 @@
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             width: 100%;
             overflow-y: scroll;
+            @media all and (max-width: 768px) {
+                max-width: 500px;    
+            }
             .project-card-page-2 {
                 position: relative;
                 width: 100%;
