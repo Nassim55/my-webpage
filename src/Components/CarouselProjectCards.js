@@ -7,7 +7,7 @@ import { useDrag } from 'react-use-gesture'
 
 
 const CarouselProjectCards = (props) => {
-    const to = i => ({ x: 0, y: i * -4, scale: 1, rot: -12 + Math.random() * 24, delay: i * 100 });
+    const to = i => ({ x: 0, y: i * -4, scale: 1, rot: -10 + Math.random() * 20, delay: i * 100 });
     const from = i => ({ x: 0, rot: 0, scale: 1.5, y: -1000 });
 
     const trans = (r, s) => `perspective(1500px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`;
@@ -23,8 +23,6 @@ const CarouselProjectCards = (props) => {
     
     // Create a gesture, we're interested in down-state, delta (current-pos - click-pos), direction and velocity
     const bind = useDrag(({ args: [index], down, movement: [mx, my], direction: [xDir], velocity }) => {
-        console.log(my)        
-
         // If you flick hard enough it should trigger the card to fly out
         const trigger = velocity > 0.2;
 
@@ -37,8 +35,6 @@ const CarouselProjectCards = (props) => {
         set(i => {
             // We're only interested in changing spring-data for the current spring
             if (index !== i) return;
-
-            console.log(-15 + Math.random() * 30)
 
             const isGone = gone.has(index);
 
@@ -55,7 +51,10 @@ const CarouselProjectCards = (props) => {
 
             return { x, y, rot, scale, delay: undefined, config: { friction: 50, tension: down ? 800 : isGone ? 200 : 500 } };
         });
-        if (!down && gone.size === props.languageLogos.length) setTimeout(() => gone.clear() || set(i => to(i)), 600);
+        if (!down && gone.size === props.languageLogos.length) {
+            setTimeout(() => gone.clear() || set(i => to(i)), 600);
+            document.querySelector('.Projects').scrollIntoView({ behavior: 'smooth'});
+        }
     });
 
     return (

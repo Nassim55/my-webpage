@@ -68,7 +68,10 @@ const ProjectCard = (props) => {
                 <div className="learn-more-button-container">
                     <div 
                     className="learn-more-button"
-                    onClick={() => setIsFlipped(!isFlipped)}>
+                    onClick={() => {
+                        setIsFlipped(!isFlipped);
+                        document.querySelector(`#${props.projectId}`).scrollIntoView({ behavior: 'smooth'});
+                    }}>
                         Learn More
                     </div>
                 </div>

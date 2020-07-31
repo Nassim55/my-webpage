@@ -17,13 +17,15 @@ const Projects = () => {
             <SectionTitleGrouping sectionTitle={"Projects"}/>
             <div className="project-card-container">
                 <ProjectCard 
+                projectId = {'mars-rover'}
                 isMarsRover = {true}
-                projectTitle={'autonomous mars rover'}
-                projectLanguages={'SolidWorks, Matlab, LabView'}
+                projectTitle = {'autonomous mars rover'}
+                projectLanguages = {'SolidWorks, Matlab, LabView'}
                 imageSrc = {marsroverImage}
                 enlargedImageSrc = {marsRoverAnnotatedImage}
                 />
                 <ProjectCard
+                projectId = {'uav'}
                 isUav = {true}
                 projectTitle={'unmanned aerial vehicle'}
                 projectLanguages={'SolidWorks, Matlab'}
@@ -31,13 +33,15 @@ const Projects = () => {
                 enlargedImageSrc = {uavImage}
                 />
                 <ProjectCard
+                projectId = {'aerospace-site'}
                 isAerospaceSite = {true}
-                projectTitle={'aerospace eng. interactive learning site'}
+                projectTitle={'aerospace eng. interactive site'}
                 projectLanguages={'React, Python, Django'}
                 imageSrc = {wipImage}
                 imageId = {'work-in-progress'}
                 />
                 <ProjectCard
+                projectId = {'hypersonic-design'}
                 isHypersonic = {true}
                 projectTitle={'hypersonic aircraft design'}
                 projectLanguages={'Python, SolidWorks, Ansys Fluent'}
@@ -45,28 +49,33 @@ const Projects = () => {
                 enlargedImageSrc = {honeycombImage}
                 />
                 <ProjectCard
+                projectId = {'satellite'}
                 projectTitle={'satellite attitude control'}
                 projectLanguages={'Matlab, Simulink'}
                 imageSrc = {attitudeControlImage}
                 />
                 <ProjectCard
+                projectId = {'hydroelectric-turbine'}
                 isHydroelectric = {true}
                 projectTitle={'Hydroelectric Turbine'}
                 projectLanguages={'SolidWorks'}
                 imageSrc = {turbineImage}
                 />
                 <ProjectCard
+                projectId = {'neural-network'}
                 projectTitle={'artificial neural network'}
                 projectLanguages={'Python, TensorFlow, Django, React'}
                 imageSrc = {neuralnetworkImage}
                 enlargedImageSrc = {neuralnetworkImage}
                 />
                 <ProjectCard
+                projectId = {'rolls-royce'}
                 projectTitle={'rolls-royce design simulation'}
                 projectLanguages={'Witness Simulation Modelling'}
                 />
                 <ProjectCard
-                projectTitle={'Random RUn'}
+                projectId = {'random-run'}
+                projectTitle={'Random Run'}
                 projectLanguages={'React Native'}
                 imageSrc = {wipImage}
                 imageId = {'work-in-progress'}

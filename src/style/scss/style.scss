@@ -11,6 +11,7 @@
 .App {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -24,14 +25,7 @@
     ::-webkit-scrollbar {
         display: none;
     }
-    @media all and (min-width: 480px) {
-        display: grid;
-        grid:  100vh 100vh / 40% 60%;
-        grid-template-areas: 
-            "intro intro"
-            "about projects";
-    }
-    @media all and (min-width: 769px) {
+    @media all and (min-width: 768px) {
         display: grid;
         grid:  100vh 100vh / 30% 70%;
         grid-template-areas: 
@@ -61,7 +55,7 @@
         background-color: #252934;
         width: 100%;
         height: 100vh;
-        @media all and (min-width: 480px) {
+        @media all and (min-width: 768px) {
             grid-area: intro;
         }
         .profile-paragraph {
@@ -104,14 +98,16 @@
     }
     .About {
         position: relative;
-        background-color: #fff;
         width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
         overflow-x: hidden;
         height: max-content;
-        @media all and (min-width: 480px) {
+        overflow: hidden;
+        @media all and (min-width: 768px) {
             grid-area: about;
             height: 100%;
         }
@@ -120,10 +116,7 @@
             flex-direction: column;
             align-items: center;
             height: max-content;
-            margin-top: 0.8rem;
-            @media all and (min-width: 480px) {
-                margin-left: 1.5rem;
-            }
+            padding: 1rem;
             .section-title {
                 font-family: 'Raleway', sans-serif;
                 font-weight: 600;
@@ -138,21 +131,11 @@
             }
         }
         .about-content-container {
-            @media all and (min-width: 480px) {
-                box-shadow: 4px 7px 13px 3px rgba(0, 0, 0,0.1);
-                border-radius: 12px;
-                margin-left: 1.5rem;
-                margin-right: 1rem;
-                margin-top: 1rem;
-                margin-bottom: 1rem;
-                padding: 3.73%;
-                overflow: hidden;
-            }
             .profile-picture-contents-intro-container {
+                margin-top: 0.8rem;
                 position: relative;
                 display: flex;
                 justify-content: space-between;
-                padding: 4%;
                 height: max-content;
                 max-width: 370px;
                 .profile-picture-contents-container {
@@ -172,7 +155,7 @@
                         box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
                         border-radius: 12px;
                         padding: 7.5%;
-                        @media all and (min-width: 480px) {
+                        @media all and (min-width: 768px) {
                             display: none;
                         }
                         .SectionTitleGrouping {
@@ -232,15 +215,21 @@
                 position: relative;
                 display: flex;
                 justify-content: center;
-                height: 225px;
+                align-items: center;
+                height: 275px;
                 width: 100%;
-                margin-top: 1.75rem;
-                margin-bottom: 2.5rem;
-                padding-top: 1rem;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                @media all and (min-width: 768px) {
+                    box-shadow: 4px 7px 13px 3px rgba(0, 0, 0,0.1);
+                    border-radius: 12px;
+                    padding-top: 2rem;
+                    overflow: hidden;
+                }
                 .swipe-card {
                     background-color: #ffffff;
                     position: absolute;
-                    height: 100%;
+                    height: 225px;
                     width: 150px;
                     border-radius: 12px;
                     box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
@@ -272,7 +261,7 @@
         flex-direction: column;
         align-items: center;
         height: max-content;
-        @media all and (min-width: 480px) {
+        @media all and (min-width: 768px) {
             grid-area: projects;
             height: 100%;
         }
@@ -280,7 +269,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 0.8rem;
+            padding: 1rem;
             .section-title {
                 font-family: 'Raleway', sans-serif;
                 font-weight: 600;
@@ -295,30 +284,10 @@
             }
         }
         .project-card-container {
-            display: flex;
-            flex-direction: column;
-            @media all and (min-width: 768px) and (orientation: landscape) {
-                display: grid;
-                grid:  1fr 1fr 1fr 1fr / 1fr 1fr;
-                overflow-y: scroll;
-                margin-top: 1rem;
-            }
-            @media all and (min-width: 768px) and (orientation: portrait) {
-                margin-top: 1rem;
-                overflow-y: scroll;
-            }
-            @media all and (min-width: 1024px) {
-                display: grid;
-                grid:  1fr 1fr 1fr 1fr / 1fr 1fr;
-                overflow-y: scroll;
-                margin-top: 1rem;
-            }
-            @media all and (min-width: 1366px) {
-                display: grid;
-                grid:  1fr 1fr 1fr / 1fr 1fr 1fr;
-                overflow-y: scroll;
-                margin-top: 1rem;
-            }
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            width: 100%;
+            overflow-y: scroll;
             .project-card-page-2 {
                 position: relative;
                 width: 100%;
@@ -411,6 +380,7 @@
                             padding-bottom: 0.15rem;
                             padding-left: 0.8rem;
                             padding-right: 0.8rem;
+                            cursor: pointer;
                         }
                     }
                     .expand-image-icon-container {
@@ -457,6 +427,7 @@
                             background-color: #f24e4e;
                             padding: 0.2rem;
                             font-size: 2.2rem;
+                            cursor: pointer;
                         }
                     }
                     .project-information-container {
@@ -506,7 +477,7 @@
         width: 100%;
         height: 40vh;
         overflow: hidden;
-        @media all and (min-width: 480px) {
+        @media all and (min-width: 768px) {
             display: none;
         }
         .SectionTitleGrouping {
