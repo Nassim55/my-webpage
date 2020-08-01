@@ -424,6 +424,9 @@
           align-items: center;
   padding: 1rem;
   border: solid;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .App .Projects .SectionTitleGrouping .section-title {
