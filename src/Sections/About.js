@@ -85,7 +85,7 @@ const About = () => {
                                 I'm an Aerospace Engineering graduate from the University
                                 of Leeds. Interested in software engineering that 
                                 focuses on machine learning and data science.
-                                Swipe the card stack below to see technologies I'm familiar with.
+                                Swipe the card stack to see technologies I'm familiar with.
                                 <span className="quotation-marks">&nbsp;&nbsp;&nbsp;"</span>
                             </p>
                         </animated.div>

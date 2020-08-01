@@ -11,18 +11,18 @@ const Contact = () => {
                 <SocialIcon
                 className="social-icons"
                 url="mailto:nassim.chenouf@outlook.com"
-                bgColor="#ffffff"
-                fgColor="#F24E4E" />
+                fgColor="#ffffff"
+                bgColor="#F24E4E" />
                 <SocialIcon
                 className="social-icons"
                 url="https://www.linkedin.com/in/nassim-chenouf-2b7845135/"
-                bgColor="#ffffff"
-                fgColor="#F24E4E" />
+                fgColor="#ffffff"
+                bgColor="#F24E4E" />
                 <SocialIcon
                 className="social-icons"
                 url="https://github.com/Nassim55"
-                bgColor="#ffffff"
-                fgColor="#F24E4E" />
+                fgColor="#ffffff"
+                bgColor="#F24E4E" />
             </div>
         </div>
     );

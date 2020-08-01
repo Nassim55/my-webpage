@@ -28,8 +28,8 @@
   .App {
     display: -ms-grid;
     display: grid;
-    grid: 100vh 100vh / 30% 70%;
-        grid-template-areas: "intro intro" "about projects";
+    grid: 100vh 80vh 20vh / 30% 70%;
+        grid-template-areas: "intro intro" "about projects" "contact projects";
   }
 }
 
@@ -37,7 +37,7 @@
   .App {
     display: -ms-grid;
     display: grid;
-    grid: 100vh 90vh 10vh / 25% 75%;
+    grid: 100vh 80vh 20vh / 25% 75%;
         grid-template-areas: "intro intro" "about projects" "contact projects";
   }
 }
@@ -135,7 +135,6 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  overflow: hidden;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -195,7 +194,7 @@
     border: 2.5px dashed #ccc;
     border-radius: 12px;
     padding: 1rem;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 }
 
@@ -370,6 +369,7 @@
           justify-content: space-between;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  cursor: pointer;
 }
 
 .App .About .about-container .about-content-container-no-title .technology-cards-container .swipe-card .swipe-card-image {
@@ -416,6 +416,7 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  padding-bottom: 3rem;
 }
 
 .App .Projects .projects-container .SectionTitleGrouping {
@@ -451,7 +452,6 @@
   -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   width: 100%;
-  overflow-y: scroll;
 }
 
 @media all and (max-width: 768px) {
@@ -464,6 +464,12 @@
   .App .Projects .projects-container .project-card-container {
     border: 2.5px dashed #ccc;
     border-radius: 12px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .App .Projects .projects-container .project-card-container {
+    overflow-y: scroll;
   }
 }
 
@@ -698,29 +704,36 @@
   display: none;
 }
 
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   .App .Contact {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
     grid-area: contact;
-    -ms-flex-item-align: end;
-        align-self: end;
+    height: 100%;
+    padding-bottom: 3rem;
   }
 }
 
 .App .Contact .SectionTitleGrouping {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1rem;
+  display: inline-block;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+  margin: 1rem;
 }
 
 @media all and (min-width: 1024px) {
@@ -730,7 +743,6 @@
 }
 
 .App .Contact .SectionTitleGrouping .section-title {
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 2rem;
   text-transform: uppercase;
@@ -739,8 +751,12 @@
 
 .App .Contact .SectionTitleGrouping .section-title-underline {
   background: #252934;
-  height: 4px;
+  height: 3px;
   width: 70px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .App .Contact .social-icons-container {
@@ -750,10 +766,19 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 55%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   border-radius: 12px;
-  padding: 1rem;
-  margin-bottom: 15px;
-  background-color: #252934;
+  padding: 0.5rem;
+  border: 2.5px dashed #ccc;
+  border-radius: 12px;
+}
+
+.App .Contact .social-icons-container .social-icons {
+  margin: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */
