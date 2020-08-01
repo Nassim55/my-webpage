@@ -107,26 +107,25 @@
         .about-container {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: center;;
             .SectionTitleGrouping {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                display: inline-block;
                 height: max-content;
+                width: 100%;
                 margin: 1rem;
                 .section-title {
-                    font-family: 'Raleway', sans-serif;
                     font-weight: 600;
                     font-size: 2rem;
                     text-transform: uppercase;
                     color: #252934;
                 }
                 .section-title-underline {
-                    display: inline-block;
                     background: #252934;
                     height: 3px;
                     width: 70px;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%)
                 }
             }
             .about-content-container-no-title {
@@ -271,26 +270,26 @@
             position: relative;
             display: flex;
             flex-direction: column;
+            align-items: center;
             height: 100vh;
             .SectionTitleGrouping {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                display: inline-block;
                 height: max-content;
+                width: 100%;
                 margin: 1rem;
                 .section-title {
-                    font-family: 'Raleway', sans-serif;
                     font-weight: 600;
                     font-size: 2rem;
                     text-transform: uppercase;
                     color: #252934;
                 }
                 .section-title-underline {
-                    display: inline-block;
                     background: #252934;
                     height: 3px;
                     width: 70px;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%)
                 }
             }
             .project-card-container {
