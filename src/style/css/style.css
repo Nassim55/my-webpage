@@ -739,7 +739,7 @@
   display: none;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1025px) {
   .App .Contact {
     display: -webkit-box;
     display: -ms-flexbox;
