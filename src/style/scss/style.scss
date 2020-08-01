@@ -111,7 +111,6 @@
                 align-items: center;
                 height: max-content;
                 padding: 1rem;
-                border: solid;
                 .section-title {
                     font-family: 'Raleway', sans-serif;
                     font-weight: 600;
@@ -274,8 +273,7 @@
             flex-direction: column;
             align-items: center;
             padding: 1rem;
-            border: solid;
-            height: max-content;
+            height: fit-content;
             .section-title {
                 position: relative;
                 font-family: 'Raleway', sans-serif;
@@ -283,14 +281,12 @@
                 font-size: 2rem;
                 text-transform: uppercase;
                 color: #252934;
-                border: solid red;
             }
             .section-title-underline {
                 position: relative;
                 background: #252934;
                 height: 4px;
                 width: 70px;
-                border: solid red;
             }
         }
         .project-card-container {
