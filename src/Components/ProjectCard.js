@@ -38,10 +38,10 @@ const ProjectCard = (props) => {
             }
 
             <animated.div className="c projects-container-back" style={{ zIndex, opacity, height, transform: transform.interpolate(t => `${t} rotateX(180deg)`)}}>
-                <div className="project-title-back">{props.projectTitle}</div>
                 <div className="flip-back-button-container">
                     <MdRotateLeft className="flip-back-button" onClick={() => setIsFlipped(!isFlipped)} />
                 </div>
+                <div className="project-title-back">{props.projectTitle}</div>
                 
                 {props.isMarsRover ? <MarsRoverMoreInfo /> : null}
                 {props.isUav ? <UavMoreInfo /> : null}

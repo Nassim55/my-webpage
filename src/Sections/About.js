@@ -53,47 +53,49 @@ const About = () => {
 
     return (
         <div className="About">
-            <SectionTitleGrouping sectionTitle={"About"}/>
-            <div className="about-content-container">
-                <div className="profile-picture-contents-intro-container" ref={ref}>
-                    <animated.div className="profile-picture-contents-container"
-                    style={{
-                        transform: x.interpolate(x => `translate3d(${x}px, 0, 0)`)
-                    }}>
-                        <img className="profile-picture" src={myImage} alt="profile-picture" />
-                        <div className="contents-container">
-                            <SectionTitleGrouping sectionTitle={"Contents"}/>   
-                            <Link activeClass="active" to="Projects" spy={true} smooth={true} duration={250}>
-                                <div className="navigation-button">
-                                    Projects
-                                </div>
-                            </Link>
-                            <Link activeClass="active" to="Contact" spy={true} smooth={true} duration={250}>
-                                <div className="navigation-button">
-                                    Contact
-                                </div>
-                            </Link>
-                        </div>
-                    </animated.div>
-                    <animated.div className="profile-paragraph-container"
-                    style={{
-                        transform: x.interpolate(x => `translate3d(${-x}px, 0, 0)`)
-                    }}>
-                        <p>
-                            <span className="quotation-marks">"&nbsp;&nbsp;&nbsp;</span>
-                            I'm an Aerospace Engineering graduate from the University
-                            of Leeds. Interested in software engineering that 
-                            focuses on the application of machine learning and data science.
-                            Swipe the card stack below to see the technologies I'm familiar with.
-                            <span className="quotation-marks">&nbsp;&nbsp;&nbsp;"</span>
-                        </p>
-                    </animated.div>
-                </div>
-                <div className="technology-cards-container">
-                    <CarouselProjectCards 
-                    languageTitles={['SolidWorks', 'Matlab', 'Git', 'SASS', 'CSS', 'HTML', 'Django', 'Scikit-Learn', 'TensorFlow', 'React', 'JavaScript', 'Python']}
-                    languageLogos={[solidworksLogo, matlabLogo, gitLogo, sassLogo, cssLogo, htmlLogo, djangoLogo, scikitLearnLogo, tensorflowLogo, reactLogo, javascriptLogo , pythonLogo]}
-                    />
+            <div className='about-container'>
+                <SectionTitleGrouping sectionTitle={"About"}/>
+                <div className="about-content-container-no-title">
+                    <div className="profile-picture-contents-intro-container" ref={ref}>
+                        <animated.div className="profile-picture-contents-container"
+                        style={{
+                            transform: x.interpolate(x => `translate3d(${x}px, 0, 0)`)
+                        }}>
+                            <img className="profile-picture" src={myImage} alt="profile-picture" />
+                            <div className="contents-container">
+                                <SectionTitleGrouping sectionTitle={"Contents"}/>   
+                                <Link activeClass="active" to="Projects" spy={true} smooth={true} duration={250}>
+                                    <div className="navigation-button">
+                                        Projects
+                                    </div>
+                                </Link>
+                                <Link activeClass="active" to="Contact" spy={true} smooth={true} duration={250}>
+                                    <div className="navigation-button">
+                                        Contact
+                                    </div>
+                                </Link>
+                            </div>
+                        </animated.div>
+                        <animated.div className="profile-paragraph-container"
+                        style={{
+                            transform: x.interpolate(x => `translate3d(${-x}px, 0, 0)`)
+                        }}>
+                            <p>
+                                <span className="quotation-marks">"&nbsp;&nbsp;&nbsp;</span>
+                                I'm an Aerospace Engineering graduate from the University
+                                of Leeds. Interested in software engineering that 
+                                focuses on the application of machine learning and data science.
+                                Swipe the card stack below to see the technologies I'm familiar with.
+                                <span className="quotation-marks">&nbsp;&nbsp;&nbsp;"</span>
+                            </p>
+                        </animated.div>
+                    </div>
+                    <div className="technology-cards-container">
+                        <CarouselProjectCards 
+                        languageTitles={['SolidWorks', 'Matlab', 'Git', 'SASS', 'CSS', 'HTML', 'Django', 'Scikit-Learn', 'TensorFlow', 'React', 'JavaScript', 'Python']}
+                        languageLogos={[solidworksLogo, matlabLogo, gitLogo, sassLogo, cssLogo, htmlLogo, djangoLogo, scikitLearnLogo, tensorflowLogo, reactLogo, javascriptLogo , pythonLogo]}
+                        />
+                    </div>
                 </div>
             </div>
         </div>

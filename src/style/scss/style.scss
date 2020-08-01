@@ -25,16 +25,9 @@
     ::-webkit-scrollbar {
         display: none;
     }
-    @media all and (min-width: 768px) {
+    @media all and (min-width: 1024px) {
         display: grid;
         grid:  100vh 100vh / 30% 70%;
-        grid-template-areas: 
-            "intro intro"
-            "about projects";
-    }
-    @media all and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
-        display: grid;
-        grid:  100vh 100vh / 45% 55%;
         grid-template-areas: 
             "intro intro"
             "about projects";
@@ -55,7 +48,7 @@
         background-color: #252934;
         width: 100%;
         height: 100vh;
-        @media all and (min-width: 768px) {
+        @media all and (min-width: 1024px) {
             grid-area: intro;
         }
         .profile-paragraph {
@@ -104,153 +97,150 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        overflow-x: hidden;
         height: max-content;
         overflow: hidden;
-        @media all and (min-width: 768px) {
+        @media all and (min-width: 1024px) {
             grid-area: about;
             height: 100%;
         }
-        .SectionTitleGrouping {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: max-content;
-            padding: 1rem;
-            .section-title {
-                font-family: 'Raleway', sans-serif;
-                font-weight: 600;
-                font-size: 2rem;
-                text-transform: uppercase;
-                color: #252934;
-            }
-            .section-title-underline {
-                background: #252934;
-                height: 4px;
-                width: 70px;
-            }
-        }
-        .about-content-container {
-            @media all and (max-width: 768px) {
-                max-width: 500px;    
-            }
-            .profile-picture-contents-intro-container {
-                margin-top: 0.8rem;
-                position: relative;
+        .about-container {
+            .SectionTitleGrouping {
                 display: flex;
-                justify-content: space-between;
-                height: max-content;
-                max-width: 370px;
-                .profile-picture-contents-container {
-                    width: 30%;
-                    max-width: 150px;
-                    margin-right: 4%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    .profile-picture {
-                        width: 100%;
-                        border-radius: 50%;
-                        box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
-                    }
-                    .contents-container{
-                        margin-top: 1rem;
-                        box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
-                        border-radius: 12px;
-                        padding: 7.5%;
-                        @media all and (min-width: 768px) {
-                            display: none;
-                        }
-                        .SectionTitleGrouping {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                            margin-bottom: 0.75rem;
-                            .section-title{
-                                font-size: 1.1rem;
-                                font-weight: 600;
-                                text-transform: uppercase;
-                            }
-    
-                            .section-title-underline {
-                                background: #252934;
-                                height: 2px;
-                                width: 60px;
-                            }
-                        }
-                        .navigation-button {
-                            margin-top: 0.5rem;
-                            color: white;
-                            background-color: #f24e4e;
-                            font-weight: 500;
-                            font-size: 1.1rem;
-                            border-radius: 1.625rem;
-                            height: 2.2rem;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            padding-top: 0.15rem;
-                            padding-bottom: 0.15rem;
-                        }
-                    }
-                }
-                .profile-paragraph-container {
-                    width: 70%;
-                    height: max-content;
-                    font-family: 'Raleway', sans-serif;
-                    color: #252934;
-                    text-align: left;
-                    padding: 3.73%;
-                    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
-                    border-radius: 12px;
-                    box-shadow: 4px 7px 13px 3px rgba(0, 0, 0,0.1);
-                    font-size: 2rem;
-                    .quotation-marks {
-                        white-space: nowrap;
-                        color: #f24e4e;
-                        font-size: 1.6rem;
-                        font-weight: 900;
-                    }
-                }
-            }
-            .technology-cards-container {
-                position: relative;
-                display: flex;
-                justify-content: center;
+                flex-direction: column;
                 align-items: center;
-                height: 275px;
-                width: 100%;
-                margin-top: 3rem;
-                margin-bottom: 3rem;
+                height: max-content;
+                padding: 1rem;
+                .section-title {
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 600;
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                    color: #252934;
+                }
+                .section-title-underline {
+                    background: #252934;
+                    height: 4px;
+                    width: 70px;
+                }
+            }
+            .about-content-container-no-title {
+                max-width: 400px;
                 @media all and (min-width: 768px) {
-                    box-shadow: 4px 7px 13px 3px rgba(0, 0, 0,0.1);
+                    border: 1px dashed #ccc;
                     border-radius: 12px;
-                    padding-top: 2rem;
+                    padding: 1rem;
                     overflow: hidden;
                 }
-                .swipe-card {
-                    background-color: #ffffff;
-                    position: absolute;
-                    height: 225px;
-                    width: 150px;
-                    border-radius: 12px;
-                    box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
-                    overflow: hidden;
+                .profile-picture-contents-intro-container {
+                    position: relative;
                     display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    .swipe-card-image {
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        background-position: center center;
-                        margin-top: 1.5em;
-                        height: 70%;
-                        width: 90%;
+                    justify-content: space-between;
+                    height: max-content;
+                    max-width: 400px;
+                    .profile-picture-contents-container {
+                        width: 30%;
+                        max-width: 150px;
+                        margin-right: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        .profile-picture {
+                            width: 100%;
+                            border-radius: 50%;
+                            box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
+                        }
+                        .contents-container{
+                            margin-top: 1rem;
+                            box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
+                            border-radius: 12px;
+                            padding: 7.5%;
+                            @media all and (min-width: 1024px) {
+                                display: none;
+                            }
+                            .SectionTitleGrouping {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                margin-bottom: 0.75rem;
+                                .section-title{
+                                    font-size: 1.1rem;
+                                    font-weight: 600;
+                                    text-transform: uppercase;
+                                }
+        
+                                .section-title-underline {
+                                    background: #252934;
+                                    height: 2px;
+                                    width: 60px;
+                                }
+                            }
+                            .navigation-button {
+                                margin-top: 0.5rem;
+                                color: white;
+                                background-color: #f24e4e;
+                                font-weight: 500;
+                                font-size: 1.1rem;
+                                border-radius: 1.625rem;
+                                height: 2.2rem;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding-top: 0.15rem;
+                                padding-bottom: 0.15rem;
+                            }
+                        }
                     }
-                    .swipe-card-title {
-                        font-size: fontSize(projectTitleBack);
-                        font-weight: fontWeight(projectTitleBack);
+                    .profile-paragraph-container {
+                        width: 70%;
+                        height: max-content;
+                        font-family: 'Raleway', sans-serif;
+                        color: #252934;
+                        text-align: left;
+                        padding: 3.73%;
+                        transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+                        border-radius: 12px;
+                        box-shadow: 4px 7px 13px 3px rgba(0, 0, 0,0.1);
+                        font-size: 2rem;
+                        .quotation-marks {
+                            white-space: nowrap;
+                            color: #f24e4e;
+                            font-size: 1.6rem;
+                            font-weight: 900;
+                        }
+                    }
+                }
+                .technology-cards-container {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 275px;
+                    width: 100%;
+                    padding-top: 3rem;
+                    .swipe-card {
+                        background-color: #ffffff;
+                        position: absolute;
+                        height: 225px;
+                        width: 150px;
+                        border-radius: 12px;
+                        box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
+                        overflow-x: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .swipe-card-image {
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            margin-top: 1.5em;
+                            height: 70%;
+                            width: 90%;
+                        }
+                        .swipe-card-title {
+                            font-size: fontSize(projectTitleBack);
+                            font-weight: fontWeight(projectTitleBack);
+                        }
                     }
                 }
             }
@@ -265,6 +255,10 @@
         align-items: center;
         height: max-content;
         @media all and (min-width: 768px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        @media all and (min-width: 1024px) {
             grid-area: projects;
             height: 100%;
         }
@@ -287,12 +281,20 @@
             }
         }
         .project-card-container {
+            position: relative;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             width: 100%;
             overflow-y: scroll;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
             @media all and (max-width: 768px) {
-                max-width: 500px;    
+                max-width: 400px;
+            }
+            @media all and (min-width: 768px) {
+                border: 1px dashed #ccc;
+                border-radius: 12px;
+                padding: 1rem;    
             }
             .project-card-page-2 {
                 position: relative;
@@ -404,29 +406,28 @@
                 }
                 .projects-container-back {
                     position: relative;
-                    display: grid;
-                    grid:  auto auto / 85% 15%;
-                    grid-template-areas: 
-                        "title button"
-                        "info info";
+                    display: flex;
+                    flex-direction: column;
+                    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
                     .project-title-back {
                         position: relative;
-                        grid-area: title;
                         color: #252934;
                         font-weight: 600;
                         text-transform: uppercase;
                         display: flex;
                         justify-content: center;
-                        align-items: flex-end;
-                        margin-left: 1rem;
-                        margin-bottom: 1rem;
+                        align-items: center;
+                        width: 100%;
+                        border-bottom: 1px dashed #ccc;
+                        padding: 1rem;
                     }
                     .flip-back-button-container {
                         position: relative;
-                        grid-area: button;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         margin-top: 1rem;
-                        margin-right: 1rem;
-                        margin-bottom: 1rem;
+                        width: 100%;
                         .flip-back-button {
                             border-radius: 50%;
                             color: white;
@@ -442,7 +443,6 @@
                         padding-bottom: 1rem;
                         margin-left: 1rem;
                         margin-right: 1rem;
-                        grid-area: info;
                         .project-information-text {
                             overflow-y: scroll;
                             width: 100%;
@@ -483,7 +483,7 @@
         width: 100%;
         height: 40vh;
         overflow: hidden;
-        @media all and (min-width: 768px) {
+        @media all and (min-width: 1024px) {
             display: none;
         }
         .SectionTitleGrouping {
