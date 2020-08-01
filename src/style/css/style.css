@@ -147,13 +147,37 @@
   }
 }
 
+.App .About .about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .App .About .about-container .SectionTitleGrouping {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   margin: 1rem;
-  border: solid;
 }
 
 .App .About .about-container .SectionTitleGrouping .section-title {
@@ -165,8 +189,9 @@
 }
 
 .App .About .about-container .SectionTitleGrouping .section-title-underline {
+  display: inline-block;
   background: #252934;
-  height: 4px;
+  height: 3px;
   width: 70px;
 }
 
@@ -400,12 +425,23 @@
 }
 
 .App .Projects .projects-container .SectionTitleGrouping {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   margin: 1rem;
-  border: solid;
 }
 
 .App .Projects .projects-container .SectionTitleGrouping .section-title {
@@ -417,8 +453,9 @@
 }
 
 .App .Projects .projects-container .SectionTitleGrouping .section-title-underline {
+  display: inline-block;
   background: #252934;
-  height: 4px;
+  height: 3px;
   width: 70px;
 }
 
@@ -429,7 +466,6 @@
   -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   width: 100%;
-  margin-top: 1rem;
   overflow-y: scroll;
 }
 

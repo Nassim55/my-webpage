@@ -105,11 +105,16 @@
             height: 100%;
         }
         .about-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .SectionTitleGrouping {
-                display: inline-block;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 height: max-content;
                 margin: 1rem;
-                border: solid;
                 .section-title {
                     font-family: 'Raleway', sans-serif;
                     font-weight: 600;
@@ -118,8 +123,9 @@
                     color: #252934;
                 }
                 .section-title-underline {
+                    display: inline-block;
                     background: #252934;
-                    height: 4px;
+                    height: 3px;
                     width: 70px;
                 }
             }
@@ -267,10 +273,12 @@
             flex-direction: column;
             height: 100vh;
             .SectionTitleGrouping {
-                display: inline-block;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 height: max-content;
                 margin: 1rem;
-                border: solid;
                 .section-title {
                     font-family: 'Raleway', sans-serif;
                     font-weight: 600;
@@ -279,8 +287,9 @@
                     color: #252934;
                 }
                 .section-title-underline {
+                    display: inline-block;
                     background: #252934;
-                    height: 4px;
+                    height: 3px;
                     width: 70px;
                 }
             }
@@ -289,7 +298,6 @@
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
                 width: 100%;
-                margin-top: 1rem;
                 overflow-y: scroll;
                 @media all and (max-width: 768px) {
                     max-width: 400px;
