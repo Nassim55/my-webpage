@@ -451,6 +451,9 @@
       -ms-flex-pack: center;
           justify-content: center;
   border: solid;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .App .Projects .projects-container .SectionTitleGrouping .section-title {
@@ -463,8 +466,11 @@
 
 .App .Projects .projects-container .SectionTitleGrouping .section-title-underline {
   background: #252934;
-  height: 4px;
-  width: 70px;
+  height: 0.3rem;
+  width: 5rem;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .App .Projects .projects-container .project-card-container {

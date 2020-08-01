@@ -285,6 +285,7 @@
                 align-items: center;
                 justify-content: center;
                 border: solid;
+                height: fit-content;
                 .section-title {
                     font-family: 'Raleway', sans-serif;
                     font-weight: 600;
@@ -294,8 +295,9 @@
                 }
                 .section-title-underline {
                     background: #252934;
-                    height: 4px;
-                    width: 70px;
+                    height: 0.3rem;
+                    width: 5rem;
+                    align-items: stretch;
                 }
             }
             .project-card-container {
