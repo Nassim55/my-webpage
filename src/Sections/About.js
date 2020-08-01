@@ -80,12 +80,12 @@ const About = () => {
                         style={{
                             transform: x.interpolate(x => `translate3d(${-x}px, 0, 0)`)
                         }}>
-                            <p>
+                            <p className='profile-paragraph'>
                                 <span className="quotation-marks">"&nbsp;&nbsp;&nbsp;</span>
                                 I'm an Aerospace Engineering graduate from the University
                                 of Leeds. Interested in software engineering that 
-                                focuses on the application of machine learning and data science.
-                                Swipe the card stack below to see the technologies I'm familiar with.
+                                focuses on machine learning and data science.
+                                Swipe the card stack below to see technologies I'm familiar with.
                                 <span className="quotation-marks">&nbsp;&nbsp;&nbsp;"</span>
                             </p>
                         </animated.div>
