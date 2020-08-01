@@ -162,6 +162,7 @@
   height: -moz-max-content;
   height: max-content;
   padding: 1rem;
+  border: solid;
 }
 
 .App .About .about-container .SectionTitleGrouping .section-title {
@@ -379,7 +380,6 @@
 
 .App .Projects {
   position: relative;
-  background-color: #fff;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -411,6 +411,7 @@
 }
 
 .App .Projects .SectionTitleGrouping {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,20 +423,25 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem;
+  border: solid;
 }
 
 .App .Projects .SectionTitleGrouping .section-title {
+  position: relative;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 2rem;
   text-transform: uppercase;
   color: #252934;
+  border: solid red;
 }
 
 .App .Projects .SectionTitleGrouping .section-title-underline {
+  position: relative;
   background: #252934;
   height: 4px;
   width: 70px;
+  border: solid red;
 }
 
 .App .Projects .project-card-container {
