@@ -268,14 +268,12 @@
             height: 100%;
         }
         .SectionTitleGrouping {
-            position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
+            height: max-content;
             padding: 1rem;
-            height: fit-content;
             .section-title {
-                position: relative;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 600;
                 font-size: 2rem;
@@ -283,7 +281,6 @@
                 color: #252934;
             }
             .section-title-underline {
-                position: relative;
                 background: #252934;
                 height: 4px;
                 width: 70px;
