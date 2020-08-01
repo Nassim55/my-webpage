@@ -409,7 +409,10 @@
   }
 }
 
-.App .Projects .SectionTitleGrouping {
+.App .Projects .projects-container {
+  position: relative;
+  width: 100%;
+  height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,13 +423,32 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.App .Projects .projects-container .SectionTitleGrouping {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 1rem;
+  width: 100%;
 }
 
-.App .Projects .SectionTitleGrouping .section-title {
+.App .Projects .projects-container .SectionTitleGrouping .section-title {
+  position: relative;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 2rem;
@@ -434,13 +456,14 @@
   color: #252934;
 }
 
-.App .Projects .SectionTitleGrouping .section-title-underline {
+.App .Projects .projects-container .SectionTitleGrouping .section-title-underline {
+  position: relative;
   background: #252934;
   height: 4px;
   width: 70px;
 }
 
-.App .Projects .project-card-container {
+.App .Projects .projects-container .project-card-container {
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -448,24 +471,23 @@
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   width: 100%;
   overflow-y: scroll;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 2%;
 }
 
 @media all and (max-width: 768px) {
-  .App .Projects .project-card-container {
+  .App .Projects .projects-container .project-card-container {
     max-width: 400px;
   }
 }
 
 @media all and (min-width: 768px) {
-  .App .Projects .project-card-container {
+  .App .Projects .projects-container .project-card-container {
     border: 2.5px dashed #ccc;
     border-radius: 12px;
   }
 }
 
-.App .Projects .project-card-container .project-card-page-2 {
+.App .Projects .projects-container .project-card-container .project-card-page-2 {
   position: relative;
   width: 100%;
   padding: 0.8rem;
@@ -480,34 +502,7 @@
           justify-content: center;
 }
 
-.App .Projects .project-card-container .project-card-page-2 .container-project-image-expanded {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-color: white;
-  visibility: visible;
-  height: 100vh;
-  width: 100vw;
-}
-
-.App .Projects .project-card-container .project-card-page-2 .container-project-image-expanded .project-image-expanded {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 999;
-  width: auto;
-  height: 90%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  overflow: hidden;
-  visibility: visible;
-}
-
-.App .Projects .project-card-container .project-card-page-2 .c {
+.App .Projects .projects-container .project-card-container .project-card-page-2 .c {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -527,7 +522,7 @@
           box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
 }
 
-.App .Projects .project-card-container .project-card-page-2 .projects-container-front {
+.App .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-front {
   position: absolute;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -537,14 +532,14 @@
           justify-content: flex-end;
 }
 
-.App .Projects .project-card-container .project-card-page-2 .projects-container-front .project-languages {
+.App .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-front .project-languages {
   font-size: 0.8rem;
   font-weight: 500;
   color: #F24E4E;
   height: 8%;
 }
 
-.App .Projects .project-card-container .project-card-page-2 .projects-container-front .project-title-front {
+.App .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-front .project-title-front {
   position: relative;
   color: #252934;
   font-size: 0.9rem;
@@ -563,20 +558,20 @@
   height: 8%;
 }
 
-.App .Projects .project-card-container .project-card-page-2 .projects-container-front .project-image-front {
+.App .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-front .project-image-front {
   position: relative;
   height: 68%;
   width: auto;
   max-width: 100%;
 }
 
-.App .Projects .project-card-container .project-card-page-2 .projects-container-front #work-in-progress {
+.App .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-front #work-in-progress {
   height: auto;
   width: 90%;
   margin-bottom: 4rem;
 }
 
-.App .Projects .project-card-container .project-card-page-2 .projects-container-front .learn-more-button-container {
+.App .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-front .learn-more-button-container {
   position: relative;
   height: 16%;
   display: -webkit-box;
@@ -590,7 +585,7 @@
           align-items: center;
 }
 
-.App .Projects .project-card-container .project-card-page-2 .projects-container-front .learn-more-button-container .learn-more-button {
+.App .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-front .learn-more-button-container .learn-more-button {
   color: white;
   background-color: #f24e4e;
   font-weight: 500;
@@ -612,7 +607,7 @@
   cursor: pointer;
 }
 
-.App .Projects .project-card-container .project-card-page-2 .projects-container-front .expand-image-icon-container {
+.App .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-front .expand-image-icon-container {
   position: absolute;
   width: 100%;
   top: 0;
@@ -624,13 +619,13 @@
           justify-content: flex-end;
 }
 
-.App .Projects .project-card-container .project-card-page-2 .projects-container-front .expand-image-icon-container .expand-image-icon {
+.App .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-front .expand-image-icon-container .expand-image-icon {
   font-size: 2rem;
   margin: 0.5rem;
   z-index: 1000;
 }
 
-.App .Projects .project-card-container .project-card-page-2 .projects-container-back {
+.App .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -642,7 +637,7 @@
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
-.App .Projects .project-card-container .project-card-page-2 .projects-container-back .project-title-back {
+.App .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .project-title-back {
   position: relative;
   color: #252934;
   font-weight: 600;
@@ -661,7 +656,7 @@
   padding: 1rem;
 }
 
-.App .Projects .project-card-container .project-card-page-2 .projects-container-back .flip-back-button-container {
+.App .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .flip-back-button-container {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -676,7 +671,7 @@
   width: 100%;
 }
 
-.App .Projects .project-card-container .project-card-page-2 .projects-container-back .flip-back-button-container .flip-back-button {
+.App .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .flip-back-button-container .flip-back-button {
   border-radius: 50%;
   color: white;
   background-color: #f24e4e;
@@ -685,7 +680,7 @@
   cursor: pointer;
 }
 
-.App .Projects .project-card-container .project-card-page-2 .projects-container-back .project-information-container {
+.App .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .project-information-container {
   overflow-y: scroll;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -693,12 +688,12 @@
   margin-right: 1rem;
 }
 
-.App .Projects .project-card-container .project-card-page-2 .projects-container-back .project-information-container .project-information-text {
+.App .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .project-information-container .project-information-text {
   overflow-y: scroll;
   width: 100%;
 }
 
-.App .Projects .project-card-container .project-card-page-2 .projects-container-back .project-information-container .project-information-image {
+.App .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .project-information-container .project-information-image {
   -webkit-box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -707,7 +702,7 @@
   margin-bottom: 2rem;
 }
 
-.App .Projects .project-card-container .project-card-page-2 .projects-container-back .project-information-container .project-information-image-rectangle {
+.App .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .project-information-container .project-information-image-rectangle {
   -webkit-box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
@@ -716,7 +711,7 @@
   margin-bottom: 2rem;
 }
 
-.App .Projects .project-card-container .project-card-page-2 .projects-container-back .project-information-container .project-information-video {
+.App .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .project-information-container .project-information-video {
   -webkit-box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
