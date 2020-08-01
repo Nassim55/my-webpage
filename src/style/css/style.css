@@ -382,6 +382,7 @@
 
 .App .Projects {
   position: relative;
+  height: 100vh;
 }
 
 @media all and (min-width: 768px) {
@@ -394,14 +395,11 @@
 @media all and (min-width: 1024px) {
   .App .Projects {
     grid-area: projects;
-    height: 100%;
   }
 }
 
 .App .Projects .projects-container {
   position: relative;
-  width: 100%;
-  height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,9 +407,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 100vh;
 }
 
 .App .Projects .projects-container .SectionTitleGrouping {
