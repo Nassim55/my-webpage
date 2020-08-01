@@ -164,7 +164,7 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  margin: 0.5rem;
+  margin: 1rem;
 }
 
 .App .About .about-container .SectionTitleGrouping .section-title {
@@ -173,6 +173,12 @@
   font-size: 2rem;
   text-transform: uppercase;
   color: #252934;
+}
+
+.App .About .about-container .SectionTitleGrouping .section-title-underline {
+  background: #252934;
+  height: 4px;
+  width: 70px;
 }
 
 .App .About .about-container .about-content-container-no-title {
@@ -376,23 +382,6 @@
 
 .App .Projects {
   position: relative;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
 }
 
 @media all and (min-width: 768px) {
@@ -423,9 +412,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
 }
 
 .App .Projects .projects-container .SectionTitleGrouping {
@@ -445,7 +431,7 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  margin: 0.5rem;
+  margin: 1rem;
 }
 
 .App .Projects .projects-container .SectionTitleGrouping .section-title {
@@ -454,6 +440,12 @@
   font-size: 2rem;
   text-transform: uppercase;
   color: #252934;
+}
+
+.App .Projects .projects-container .SectionTitleGrouping .section-title-underline {
+  background: #252934;
+  height: 4px;
+  width: 70px;
 }
 
 .App .Projects .projects-container .project-card-container {
