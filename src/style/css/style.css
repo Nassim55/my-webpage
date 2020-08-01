@@ -165,7 +165,8 @@
   height: -moz-max-content;
   height: max-content;
   width: 100%;
-  margin: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0.2rem;
 }
 
 .App .About .about-container .SectionTitleGrouping .section-title {
@@ -416,7 +417,7 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 .App .Projects .projects-container .SectionTitleGrouping {
@@ -425,7 +426,8 @@
   height: -moz-max-content;
   height: max-content;
   width: 100%;
-  margin: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0.2rem;
 }
 
 .App .Projects .projects-container .SectionTitleGrouping .section-title {
@@ -723,7 +725,7 @@
     width: 100%;
     grid-area: contact;
     height: 100%;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
   }
 }
 
