@@ -450,9 +450,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: 100px;
   margin: 1rem;
   border: solid;
 }
