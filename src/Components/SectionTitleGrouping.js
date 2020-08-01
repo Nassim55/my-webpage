@@ -5,8 +5,7 @@ const SectionTitleGrouping = (props) => {
         <div className="SectionTitleGrouping">
             <div className="section-title">
                 {props.sectionTitle}
-            </div>
-            <div className="section-title-underline"></div> 
+            </div> 
         </div>
     );
 };

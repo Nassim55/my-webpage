@@ -111,18 +111,13 @@
                 align-items: center;
                 justify-content: center;
                 height: max-content;
-                margin: 1rem;
+                margin: 0.5rem;
                 .section-title {
                     font-family: 'Raleway', sans-serif;
                     font-weight: 600;
                     font-size: 2rem;
                     text-transform: uppercase;
                     color: #252934;
-                }
-                .section-title-underline {
-                    background: #252934;
-                    height: 4px;
-                    width: 70px;
                 }
             }
             .about-content-container-no-title {
@@ -277,27 +272,19 @@
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
-            border: solid;
             .SectionTitleGrouping {
-                position: relative;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                border: solid;
-                height: fit-content;
+                height: max-content;
+                margin: 0.5rem;
                 .section-title {
                     font-family: 'Raleway', sans-serif;
                     font-weight: 600;
                     font-size: 2rem;
                     text-transform: uppercase;
                     color: #252934;
-                }
-                .section-title-underline {
-                    background: #252934;
-                    height: 0.3rem;
-                    width: 5rem;
-                    align-items: stretch;
                 }
             }
             .project-card-container {

@@ -164,7 +164,7 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .App .About .about-container .SectionTitleGrouping .section-title {
@@ -173,12 +173,6 @@
   font-size: 2rem;
   text-transform: uppercase;
   color: #252934;
-}
-
-.App .About .about-container .SectionTitleGrouping .section-title-underline {
-  background: #252934;
-  height: 4px;
-  width: 70px;
 }
 
 .App .About .about-container .about-content-container-no-title {
@@ -432,11 +426,9 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  border: solid;
 }
 
 .App .Projects .projects-container .SectionTitleGrouping {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -450,10 +442,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: solid;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0.5rem;
 }
 
 .App .Projects .projects-container .SectionTitleGrouping .section-title {
@@ -462,15 +454,6 @@
   font-size: 2rem;
   text-transform: uppercase;
   color: #252934;
-}
-
-.App .Projects .projects-container .SectionTitleGrouping .section-title-underline {
-  background: #252934;
-  height: 0.3rem;
-  width: 5rem;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
 }
 
 .App .Projects .projects-container .project-card-container {
