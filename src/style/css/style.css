@@ -158,10 +158,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   margin: 1rem;
+  border: solid;
 }
 
 .App .About .about-container .SectionTitleGrouping .section-title {
@@ -390,6 +394,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -423,6 +430,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border: solid;
 }
 
 .App .Projects .projects-container .SectionTitleGrouping {
@@ -436,10 +447,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   margin: 1rem;
+  border: solid;
 }
 
 .App .Projects .projects-container .SectionTitleGrouping .section-title {
