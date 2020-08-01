@@ -451,6 +451,7 @@
   -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   width: 100%;
+  margin-top: 1rem;
   overflow-y: scroll;
 }
 
