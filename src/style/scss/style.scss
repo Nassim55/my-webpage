@@ -488,6 +488,7 @@
             display: none;
         }
         @media all and (min-width: 1024px) {
+            display: flex;
             grid-area: contact;
             align-self: end;
         }

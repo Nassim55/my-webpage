@@ -746,9 +746,11 @@
 
 @media all and (min-width: 1024px) {
   .App .Contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     grid-area: contact;
     -ms-flex-item-align: end;
-        -ms-grid-row-align: end;
         align-self: end;
   }
 }
