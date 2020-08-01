@@ -110,7 +110,7 @@
                 flex-direction: column;
                 align-items: center;
                 height: max-content;
-                padding: 1rem;
+                margin: 1rem;
                 .section-title {
                     font-family: 'Raleway', sans-serif;
                     font-weight: 600;
@@ -279,7 +279,7 @@
                 flex-direction: column;
                 align-items: center;
                 height: max-content;
-                padding: 1rem;
+                margin: 1rem;
                 .section-title {
                     font-family: 'Raleway', sans-serif;
                     font-weight: 600;
@@ -299,7 +299,6 @@
                 grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
                 width: 100%;
                 overflow-y: scroll;
-                margin-bottom: 2%;
                 @media all and (max-width: 768px) {
                     max-width: 400px;
                 }
@@ -378,18 +377,6 @@
                                 padding-left: 0.8rem;
                                 padding-right: 0.8rem;
                                 cursor: pointer;
-                            }
-                        }
-                        .expand-image-icon-container {
-                            position: absolute;
-                            width: 100%;
-                            top: 0;
-                            display: flex;
-                            justify-content: flex-end;
-                            .expand-image-icon {
-                                font-size: 2rem;
-                                margin: 0.5rem;
-                                z-index: 1000;
                             }
                         }
                     }

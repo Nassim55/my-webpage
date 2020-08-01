@@ -161,7 +161,7 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding: 1rem;
+  margin: 1rem;
 }
 
 .App .About .about-container .SectionTitleGrouping .section-title {
@@ -439,7 +439,7 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding: 1rem;
+  margin: 1rem;
 }
 
 .App .Projects .projects-container .SectionTitleGrouping .section-title {
@@ -464,7 +464,6 @@
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   width: 100%;
   overflow-y: scroll;
-  margin-bottom: 2%;
 }
 
 @media all and (max-width: 768px) {
@@ -598,24 +597,6 @@
   padding-left: 0.8rem;
   padding-right: 0.8rem;
   cursor: pointer;
-}
-
-.App .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-front .expand-image-icon-container {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.App .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-front .expand-image-icon-container .expand-image-icon {
-  font-size: 2rem;
-  margin: 0.5rem;
-  z-index: 1000;
 }
 
 .App .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back {
