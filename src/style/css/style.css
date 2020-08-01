@@ -165,7 +165,6 @@
   height: -moz-max-content;
   height: max-content;
   margin: 1rem;
-  border: solid;
 }
 
 .App .About .about-container .SectionTitleGrouping .section-title {
@@ -437,6 +436,7 @@
 }
 
 .App .Projects .projects-container .SectionTitleGrouping {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -450,8 +450,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100px;
-  margin: 1rem;
   border: solid;
 }
 

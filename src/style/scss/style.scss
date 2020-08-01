@@ -112,7 +112,6 @@
                 justify-content: center;
                 height: max-content;
                 margin: 1rem;
-                border: solid;
                 .section-title {
                     font-family: 'Raleway', sans-serif;
                     font-weight: 600;
@@ -280,12 +279,11 @@
             justify-content: flex-start;
             border: solid;
             .SectionTitleGrouping {
+                position: relative;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                height: 100px;
-                margin: 1rem;
                 border: solid;
                 .section-title {
                     font-family: 'Raleway', sans-serif;
