@@ -27,7 +27,7 @@
     }
     @media all and (min-width: 1024px) {
         display: grid;
-        grid:  100vh 80vh 20vh / 30% 70%;
+        grid:  100vh auto auto / 30% 70%;
         grid-template-areas: 
             "intro intro"
             "about projects"
@@ -35,7 +35,7 @@
     }
     @media all and (min-width: 1366px) {
         display: grid;
-        grid:  100vh 80vh 20vh / 25% 75%;
+        grid:  100vh minmax(auto, 85vh) minmax(auto, 15vh) / minmax(auto, 350px) minmax(auto, 1200px);
         grid-template-areas: 
             "intro intro"
             "about projects"
@@ -98,8 +98,10 @@
         flex-direction: column;
         align-items: center;
         height: max-content;
+        overflow: hidden;
         padding-left: 1rem;
         padding-right: 1rem;
+        border: solid;
         @media all and (min-width: 1024px) {
             grid-area: about;
             height: 100%;
@@ -112,8 +114,7 @@
                 display: inline-block;
                 height: max-content;
                 width: 100%;
-                margin-bottom: 1rem;
-                margin-top: 0.2rem;
+                margin: 1rem;
                 .section-title {
                     font-weight: 600;
                     font-size: 2rem;
@@ -260,13 +261,14 @@
     }
     .Projects {
         position: relative;
-        height: 100vh;
+        border: solid;
         @media all and (min-width: 768px) {
             padding-left: 1rem;
             padding-right: 1rem;
         }
         @media all and (min-width: 1024px) {
             grid-area: projects;
+            height: 100vh;
         }
         .projects-container {
             position: relative;
@@ -274,13 +276,13 @@
             flex-direction: column;
             align-items: center;
             height: 100vh;
+            border: solid red;
             padding-bottom: 1rem;
             .SectionTitleGrouping {
                 display: inline-block;
                 height: max-content;
                 width: 100%;
-                margin-bottom: 1rem;
-                margin-top: 0.2rem;
+                margin: 1rem;
                 .section-title {
                     font-weight: 600;
                     font-size: 2rem;
@@ -301,13 +303,13 @@
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
                 width: 100%;
-                
                 @media all and (max-width: 768px) {
                     max-width: 400px;
                 }
                 @media all and (min-width: 768px) {
                     border: 2.5px dashed #ccc;
                     border-radius: 12px;
+                    height: auto;
                 }
                 @media all and (min-width: 1024px) {
                     overflow-y: scroll;
@@ -462,7 +464,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        display: none;;
+        display: none;
+        border: solid;
         @media all and (min-width: 1024px) {
             position: relative;
             display: flex;

@@ -28,7 +28,7 @@
   .App {
     display: -ms-grid;
     display: grid;
-    grid: 100vh 80vh 20vh / 30% 70%;
+    grid: 100vh auto auto / 30% 70%;
         grid-template-areas: "intro intro" "about projects" "contact projects";
   }
 }
@@ -37,7 +37,7 @@
   .App {
     display: -ms-grid;
     display: grid;
-    grid: 100vh 80vh 20vh / 25% 75%;
+    grid: 100vh minmax(auto, 85vh) minmax(auto, 15vh)/minmax(auto, 350px) minmax(auto, 1200px);
         grid-template-areas: "intro intro" "about projects" "contact projects";
   }
 }
@@ -135,8 +135,10 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  overflow: hidden;
   padding-left: 1rem;
   padding-right: 1rem;
+  border: solid;
 }
 
 @media all and (min-width: 1024px) {
@@ -165,8 +167,7 @@
   height: -moz-max-content;
   height: max-content;
   width: 100%;
-  margin-bottom: 1rem;
-  margin-top: 0.2rem;
+  margin: 1rem;
 }
 
 .App .About .about-container .SectionTitleGrouping .section-title {
@@ -388,7 +389,7 @@
 
 .App .Projects {
   position: relative;
-  height: 100vh;
+  border: solid;
 }
 
 @media all and (min-width: 768px) {
@@ -401,6 +402,7 @@
 @media all and (min-width: 1024px) {
   .App .Projects {
     grid-area: projects;
+    height: 100vh;
   }
 }
 
@@ -417,6 +419,7 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  border: solid red;
   padding-bottom: 1rem;
 }
 
@@ -426,8 +429,7 @@
   height: -moz-max-content;
   height: max-content;
   width: 100%;
-  margin-bottom: 1rem;
-  margin-top: 0.2rem;
+  margin: 1rem;
 }
 
 .App .Projects .projects-container .SectionTitleGrouping .section-title {
@@ -466,6 +468,7 @@
   .App .Projects .projects-container .project-card-container {
     border: 2.5px dashed #ccc;
     border-radius: 12px;
+    height: auto;
   }
 }
 
@@ -704,6 +707,7 @@
       -ms-flex-align: center;
           align-items: center;
   display: none;
+  border: solid;
 }
 
 @media all and (min-width: 1024px) {
