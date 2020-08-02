@@ -133,6 +133,7 @@
                             padding: 1rem;
                             overflow: hidden;
                             justify-content: space-between;
+                            margin-bottom: 1rem;
                         }
                         .profile-picture-contents-intro-container {
                             position: relative;
@@ -222,14 +223,15 @@
                             margin: 1rem 0 0 0;
                             @media all and (min-width: 1024px) {
                                 height: 210px;
-                                margin: 2.5rem 0 0.2rem 0;
+                                padding-top: 1rem;
+                                margin: 1rem 0 0 0;
                             }
                             .swipe-card {
                                 position: relative;
                                 background-color: #ffffff;
                                 position: absolute;
-                                height: 200px;
-                                width: 135px;
+                                height: 190px;
+                                width: 128.25px;
                                 border-radius: 12px;
                                 box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
                                 display: flex;

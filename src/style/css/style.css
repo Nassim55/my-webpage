@@ -216,6 +216,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-bottom: 1rem;
   }
 }
 
@@ -362,7 +363,8 @@
 @media all and (min-width: 1024px) {
   .App .desktop-page .container-about-projects-contact .About .about-container .about-content-container-no-title .technology-cards-container {
     height: 210px;
-    margin: 2.5rem 0 0.2rem 0;
+    padding-top: 1rem;
+    margin: 1rem 0 0 0;
   }
 }
 
@@ -370,8 +372,8 @@
   position: relative;
   background-color: #ffffff;
   position: absolute;
-  height: 200px;
-  width: 135px;
+  height: 190px;
+  width: 128.25px;
   border-radius: 12px;
   -webkit-box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
