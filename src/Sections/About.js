@@ -21,6 +21,8 @@ import solidworksLogo from '../Images/solidworks.svg';
 
 import { Link } from "react-scroll";
 
+import Contact from './Contact';
+
 const useOnScreen = (options) => {
     const ref = useRef();
     const [visible, setVisible] = useState(false);
@@ -62,19 +64,6 @@ const About = () => {
                             transform: x.interpolate(x => `translate3d(${x}px, 0, 0)`)
                         }}>
                             <img className="profile-picture" src={myImage} alt="profile-picture" />
-                            <div className="contents-container">
-                                <SectionTitleGrouping sectionTitle={"Contents"}/>   
-                                <Link activeClass="active" to="Projects" spy={true} smooth={true} duration={250}>
-                                    <div className="navigation-button">
-                                        Projects
-                                    </div>
-                                </Link>
-                                <Link activeClass="active" to="Contact" spy={true} smooth={true} duration={250}>
-                                    <div className="navigation-button">
-                                        Contact
-                                    </div>
-                                </Link>
-                            </div>
                         </animated.div>
                         <animated.div className="profile-paragraph-container"
                         style={{
@@ -96,6 +85,7 @@ const About = () => {
                         languageLogos={[solidworksLogo, matlabLogo, gitLogo, sassLogo, cssLogo, htmlLogo, djangoLogo, scikitLearnLogo, tensorflowLogo, reactLogo, javascriptLogo , pythonLogo]}
                         />
                     </div>
+                    <Contact />
                 </div>
             </div>
         </div>

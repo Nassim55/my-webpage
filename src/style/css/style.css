@@ -101,43 +101,6 @@
 
 .App .desktop-page .container-about-projects-contact {
   position: relative;
-  width: 100%;
-}
-
-@media all and (min-width: 1024px) and (max-width: 1366px) {
-  .App .desktop-page .container-about-projects-contact {
-    height: 100vh;
-    display: -ms-grid;
-    display: grid;
-    grid: auto auto / 30% 70%;
-        grid-template-areas: "about projects" "contact projects";
-  }
-}
-
-@media all and (min-width: 1366px) {
-  .App .desktop-page .container-about-projects-contact {
-    height: 100vh;
-    display: -ms-grid;
-    display: grid;
-    grid: minmax(auto, 85vh) minmax(auto, 15vh)/minmax(auto, 350px) minmax(auto, 1200px);
-        grid-template-areas: "about projects" "contact projects";
-  }
-}
-
-@media all and (min-width: 1920px) {
-  .App .desktop-page .container-about-projects-contact {
-    height: auto;
-    max-height: 100vh;
-    display: -ms-grid;
-    display: grid;
-    grid: auto auto/minmax(auto, 350px) minmax(auto, 1200px);
-        grid-template-areas: "about projects" "contact projects";
-  }
-}
-
-.App .desktop-page .container-about-projects-contact .About {
-  position: relative;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,20 +111,47 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  overflow: hidden;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
 }
 
 @media all and (min-width: 1024px) {
+  .App .desktop-page .container-about-projects-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.App .desktop-page .container-about-projects-contact .About {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 400px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0 1rem 0 1rem;
+}
+
+@media all and (min-width: 769px) {
   .App .desktop-page .container-about-projects-contact .About {
-    grid-area: about;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 100vh;
+    max-width: 350px;
   }
 }
 
@@ -205,15 +195,26 @@
 }
 
 .App .desktop-page .container-about-projects-contact .About .about-container .about-content-container-no-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 400px;
+  height: 100%;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 400px) {
   .App .desktop-page .container-about-projects-contact .About .about-container .about-content-container-no-title {
     border: 2.5px dashed #ccc;
     border-radius: 12px;
     padding: 1rem;
     overflow: hidden;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -354,13 +355,13 @@
           align-items: center;
   height: 275px;
   width: 100%;
-  padding-top: 3.5rem;
+  margin: 1rem 0 0 0;
 }
 
 @media all and (min-width: 1024px) {
   .App .desktop-page .container-about-projects-contact .About .about-container .about-content-container-no-title .technology-cards-container {
-    height: 220px;
-    margin-top: 1.5rem;
+    height: 210px;
+    margin: 2.5rem 0 0.2rem 0;
   }
 }
 
@@ -404,25 +405,69 @@
   font-weight: 500;
 }
 
+.App .desktop-page .container-about-projects-contact .About .about-container .about-content-container-no-title .Contact {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+@media all and (max-width: 399px) {
+  .App .desktop-page .container-about-projects-contact .About .about-container .about-content-container-no-title .Contact {
+    display: none;
+  }
+}
+
+.App .desktop-page .container-about-projects-contact .About .about-container .about-content-container-no-title .Contact .social-icons-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 12px;
+  padding: 0.5rem;
+  border: 2.5px dashed #ccc;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.App .desktop-page .container-about-projects-contact .About .about-container .about-content-container-no-title .Contact .social-icons-container .social-icons {
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
 .App .desktop-page .container-about-projects-contact .Projects {
   position: relative;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  width: 100%;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 400px) {
   .App .desktop-page .container-about-projects-contact .Projects {
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-}
-
-@media all and (min-width: 1024px) {
-  .App .desktop-page .container-about-projects-contact .Projects {
-    grid-area: projects;
-    height: auto;
-    max-height: 100vh;
+    height: 100vh;
+    max-width: 1200px;
   }
 }
 
@@ -438,13 +483,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: auto;
   padding-bottom: 1rem;
 }
 
 @media all and (min-width: 769px) {
   .App .desktop-page .container-about-projects-contact .Projects .projects-container {
-    max-height: 100vh;
+    height: 100vh;
   }
 }
 
@@ -483,13 +527,13 @@
   width: 100%;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 400px) {
   .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container {
     max-width: 400px;
   }
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 400px) {
   .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container {
     border: 2.5px dashed #ccc;
     border-radius: 12px;
@@ -728,64 +772,20 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: none;
-}
-
-@media all and (min-width: 1024px) {
-  .App .desktop-page .container-about-projects-contact .Contact {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    grid-area: contact;
-    padding-bottom: 1rem;
-  }
-}
-
-.App .desktop-page .container-about-projects-contact .Contact .SectionTitleGrouping {
-  display: inline-block;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
   width: 100%;
-  margin: 1rem;
+  margin-bottom: 1rem;
 }
 
-@media all and (min-width: 1024px) {
-  .App .desktop-page .container-about-projects-contact .Contact .SectionTitleGrouping {
+@media all and (min-width: 400px) {
+  .App .desktop-page .container-about-projects-contact .Contact {
     display: none;
   }
-}
-
-.App .desktop-page .container-about-projects-contact .Contact .SectionTitleGrouping .section-title {
-  font-weight: 600;
-  font-size: 2rem;
-  text-transform: uppercase;
-  color: #252934;
-}
-
-.App .desktop-page .container-about-projects-contact .Contact .SectionTitleGrouping .section-title-underline {
-  background: #252934;
-  height: 3px;
-  width: 70px;
-  position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 
 .App .desktop-page .container-about-projects-contact .Contact .social-icons-container {
@@ -805,9 +805,11 @@
   padding: 0.5rem;
   border: 2.5px dashed #ccc;
   border-radius: 12px;
+  background-color: white;
 }
 
 .App .desktop-page .container-about-projects-contact .Contact .social-icons-container .social-icons {
   margin: 0.5rem;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

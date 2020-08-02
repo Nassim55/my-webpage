@@ -6,7 +6,6 @@ import SectionTitleGrouping from '../Components/SectionTitleGrouping';
 const Contact = () => {
     return (
         <div className="Contact">
-            <SectionTitleGrouping sectionTitle={"Contact"}/>
             <div className="social-icons-container">
                 <SocialIcon
                 className="social-icons"
