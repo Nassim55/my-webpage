@@ -145,6 +145,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  overflow-x: hidden;
   padding: 0 1rem 0 1rem;
 }
 

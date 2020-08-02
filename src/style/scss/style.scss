@@ -92,6 +92,7 @@
                 align-items: center;
                 max-width: 400px;
                 height: fit-content;
+                overflow-x: hidden;
                 padding: 0 1rem 0 1rem;
                 @media all and (min-width: 769px) { 
                     height: 100vh;
