@@ -72,7 +72,7 @@ const About = () => {
                             <p className='profile-paragraph'>
                                 <span className="quotation-marks">"&nbsp;&nbsp;&nbsp;</span>
                                 I'm an Aerospace Engineering graduate from the University
-                                of Leeds. Interested in software engineering that 
+                                of Leeds. Interested in creative software engineering that 
                                 focuses on machine learning and data science.
                                 Swipe the card stack to see technologies I'm familiar with.
                                 <span className="quotation-marks">&nbsp;&nbsp;&nbsp;"</span>
