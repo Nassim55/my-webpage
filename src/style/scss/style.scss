@@ -133,7 +133,6 @@
                             padding: 1rem;
                             overflow: hidden;
                             justify-content: space-between;
-                            margin-bottom: 1rem;
                         }
                         .profile-picture-contents-intro-container {
                             position: relative;
@@ -152,47 +151,6 @@
                                     width: 100%;
                                     border-radius: 50%;
                                     box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
-                                }
-                                .contents-container{
-                                    margin-top: 1rem;
-                                    box-shadow: 5px 6px 10px 3px rgba(0, 0, 0,0.1);
-                                    border-radius: 12px;
-                                    padding: 7.5%;
-                                    @media all and (min-width: 1024px) {
-                                        display: none;
-                                    }
-                                    .SectionTitleGrouping {
-                                        display: flex;
-                                        flex-direction: column;
-                                        justify-content: center;
-                                        align-items: center;
-                                        margin-bottom: 0.75rem;
-                                        .section-title{
-                                            font-size: 1.1rem;
-                                            font-weight: 600;
-                                            text-transform: uppercase;
-                                        }
-                
-                                        .section-title-underline {
-                                            background: #252934;
-                                            height: 2px;
-                                            width: 60px;
-                                        }
-                                    }
-                                    .navigation-button {
-                                        margin-top: 0.5rem;
-                                        color: white;
-                                        background-color: #f24e4e;
-                                        font-weight: 500;
-                                        font-size: 1.1rem;
-                                        border-radius: 1.625rem;
-                                        height: 2.2rem;
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        padding-top: 0.15rem;
-                                        padding-bottom: 0.15rem;
-                                    }
                                 }
                             }
                             .profile-paragraph-container {
@@ -223,7 +181,7 @@
                             margin: 1rem 0 0 0;
                             @media all and (min-width: 1024px) {
                                 height: 210px;
-                                padding-top: 1rem;
+                                padding-top: 2.5rem;
                                 margin: 2rem 0 1rem 0;
                             }
                             .swipe-card {
@@ -270,12 +228,12 @@
                                 width: fit-content;
                                 height: fit-content;
                                 border-radius: 12px;
-                                padding: 0.5rem;
+                                padding: 0.25rem;
                                 border: 2.5px dashed #ccc;
                                 border-radius: 12px;
                                 background-color: white;
                                 .social-icons {
-                                    margin: 0.5rem;
+                                    margin: 0.25rem;
                                     cursor: pointer;
                                 }
                             }
