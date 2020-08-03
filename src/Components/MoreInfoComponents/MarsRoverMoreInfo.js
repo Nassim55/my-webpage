@@ -11,15 +11,17 @@ const paragraph1 = `Team project involving the design and build of an autonomous
 
 const paragraph2 = `Temperatures on the surface of Mars can drop to minus 107 degrees Centigrade. As such 
     it was not possible to use traditional rubber wheels due to their glass-like characteristics at low 
-    temperatures. A minimalist aluminium alloy design was employed providing reduced weight and 
+    temperatures. A minimalist aluminium alloy wheel was designed providing reduced weight and 
     sufficient structural integrity. To provide grip on rough and uneven surfaces, U-shaped runners were 
-    designed to sit on the wheel edges. Additionally, the large wheel diameter was chosen in order to avoid
-    the buggy struggling with bumps.`;
+    designed to sit on the wheel edges. Additionally, a relatively large wheel diameter was chosen in order to avoid
+    the buggy struggling with bumps. Take a look at the CAD model of the wheel design.`;
 
-const paragraph3 = `A butterfly style minimalist suspension system was designed allowing independent 
-    oscillations in each of the four wheels. To avoid fouling, the DC motors were...`;
+const paragraph3 = `A simple to manufacture butterfly style suspension system was designed allowing independent 
+    oscillations in each of the four wheels, this can be seen in the CAD model below. Not only did this design enhance
+    the engineering characteristics of the rover, it also complemented the overall aesthetics of the design.`;
 
-
+const paragraph4 = `A comparison between the SolidWorks model designed and the actual rover manufactured by the team
+    in the lab can be seen below. `
 
 const MarsRoverMoreInfo = () => {
     return (
@@ -30,7 +32,7 @@ const MarsRoverMoreInfo = () => {
             <img className="project-information-image" src={marsRoverWheels} />
             <p className="project-information-text">{paragraph3}</p>
             <img className="project-information-image-rectangle" src={marsRoverMotors} />
-            <p className="project-information-text">{paragraph3}</p>
+            <p className="project-information-text">{paragraph4}</p>
             <img className="project-information-image-rectangle" src={marsroverImage} />
             <img className="project-information-image-rectangle" src={realMarsroverImage} />
         </div>
