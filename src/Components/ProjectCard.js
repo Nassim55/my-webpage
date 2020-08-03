@@ -42,6 +42,9 @@ const ProjectCard = (props) => {
                     <MdRotateLeft className="flip-back-button" onClick={() => setIsFlipped(!isFlipped)} />
                 </div>
                 <div className="project-title-back">{props.projectTitle}</div>
+                <div className="project-languages">
+                    {props.projectLanguages}
+                </div>
                 
                 {props.isMarsRover ? <MarsRoverMoreInfo /> : null}
                 {props.isUav ? <UavMoreInfo /> : null}
@@ -61,9 +64,6 @@ const ProjectCard = (props) => {
                 <img className="project-image-front" id={props.imageId} src={props.imageSrc} />
                 <div className="project-title-front">
                     {props.projectTitle}
-                </div>
-                <div className="project-languages">
-                    {props.projectLanguages}
                 </div>
                 <div className="learn-more-button-container">
                     <div 
