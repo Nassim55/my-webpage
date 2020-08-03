@@ -207,10 +207,11 @@
   height: 100%;
 }
 
-@media all and (min-width: 400px) {
+@media all and (min-width: 415px) {
   .App .desktop-page .container-about-projects-contact .About .about-container .about-content-container-no-title {
-    border: 2.5px dashed #ccc;
-    border-radius: 12px;
+    border-radius: 6px;
+    -webkit-box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     margin-bottom: 1rem;
     overflow: hidden;
@@ -253,8 +254,8 @@
 .App .desktop-page .container-about-projects-contact .About .about-container .about-content-container-no-title .profile-picture-contents-intro-container .profile-picture-contents-container .profile-picture {
   width: 100%;
   border-radius: 50%;
-  -webkit-box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
-          box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .App .desktop-page .container-about-projects-contact .About .about-container .about-content-container-no-title .profile-picture-contents-intro-container .profile-paragraph-container {
@@ -268,9 +269,8 @@
   padding: 3.73%;
   -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
-  border-radius: 12px;
-  -webkit-box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
-          box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  border: 2.5px dashed #ccc;
 }
 
 .App .desktop-page .container-about-projects-contact .About .about-container .about-content-container-no-title .profile-picture-contents-intro-container .profile-paragraph-container .quotation-marks {
@@ -308,8 +308,6 @@
   position: relative;
   background-color: #ffffff;
   position: absolute;
-  height: 190px;
-  width: 128.25px;
   border-radius: 12px;
   -webkit-box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.1);
@@ -328,7 +326,16 @@
           justify-content: space-between;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  height: 220px;
+  width: 148.5px;
   cursor: pointer;
+}
+
+@media all and (min-width: 1024px) {
+  .App .desktop-page .container-about-projects-contact .About .about-container .about-content-container-no-title .technology-cards-container .swipe-card {
+    height: 190px;
+    width: 128.25px;
+  }
 }
 
 .App .desktop-page .container-about-projects-contact .About .about-container .about-content-container-no-title .technology-cards-container .swipe-card .swipe-card-image {
@@ -474,8 +481,6 @@
 
 @media all and (min-width: 400px) {
   .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container {
-    border: 2.5px dashed #ccc;
-    border-radius: 12px;
     height: auto;
   }
 }
@@ -516,7 +521,7 @@
   height: 240px;
   width: 90%;
   max-width: 350px;
-  border-radius: 12px;
+  border-radius: 6px;
   -webkit-box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 4px 7px 13px 3px rgba(0, 0, 0, 0.1);
 }
@@ -742,7 +747,7 @@
   border-radius: 12px;
   padding: 0.5rem;
   border: 2.5px dashed #ccc;
-  border-radius: 12px;
+  border-radius: 6px;
   background-color: white;
 }
 
