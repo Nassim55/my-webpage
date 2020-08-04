@@ -153,6 +153,14 @@
   display: none;
 }
 
+@media all and (min-width: 1024px) {
+  .App .desktop-page .container-about-projects-contact .About {
+    min-height: 100vh;
+    min-width: 350px;
+    max-width: 350px;
+  }
+}
+
 @media all and (min-width: 1025px) {
   .App .desktop-page .container-about-projects-contact .About {
     height: 100vh;
