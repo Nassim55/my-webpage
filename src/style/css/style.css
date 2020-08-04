@@ -153,7 +153,7 @@
   display: none;
 }
 
-@media all and (min-width: 769px) {
+@media all and (min-width: 1025px) {
   .App .desktop-page .container-about-projects-contact .About {
     height: 100vh;
     min-width: 450px;

@@ -19,6 +19,7 @@ const Projects = () => {
                 <div className="project-card-container">
                     <ProjectCard 
                     projectId = {'mars-rover'}
+                    projectIdFocus = {'mars-rover-focus'}
                     isMarsRover = {true}
                     projectTitle = {'autonomous mars rover'}
                     projectLanguages = {'SolidWorks, Matlab, LabView'}
@@ -27,6 +28,7 @@ const Projects = () => {
                     />
                     <ProjectCard
                     projectId = {'uav'}
+                    projectIdFocus = {'uav-focus'}
                     isUav = {true}
                     projectTitle={'unmanned aerial vehicle'}
                     projectLanguages={'SolidWorks, Matlab'}
@@ -35,6 +37,7 @@ const Projects = () => {
                     />
                     <ProjectCard
                     projectId = {'aerospace-site'}
+                    projectIdFocus = {'aerospace-site-focus'}
                     isAerospaceSite = {true}
                     projectTitle={'aerospace eng. interactive site'}
                     projectLanguages={'React, Python, Django'}
@@ -43,6 +46,7 @@ const Projects = () => {
                     />
                     <ProjectCard
                     projectId = {'hypersonic-design'}
+                    projectIdFocus = {'hypersonic-design-focus'}
                     isHypersonic = {true}
                     projectTitle={'hypersonic aircraft design'}
                     projectLanguages={'Python, SolidWorks, Ansys Fluent'}
@@ -51,12 +55,14 @@ const Projects = () => {
                     />
                     <ProjectCard
                     projectId = {'satellite'}
+                    projectIdFocus = {'satellite-focus'}
                     projectTitle={'satellite attitude control'}
                     projectLanguages={'Matlab, Simulink'}
                     imageSrc = {attitudeControlImage}
                     />
                     <ProjectCard
                     projectId = {'hydroelectric-turbine'}
+                    projectIdFocus = {'hydroelectric-turbine-focus'}
                     isHydroelectric = {true}
                     projectTitle={'Hydroelectric Turbine'}
                     projectLanguages={'SolidWorks'}
@@ -64,6 +70,7 @@ const Projects = () => {
                     />
                     <ProjectCard
                     projectId = {'neural-network'}
+                    projectIdFocus = {'neural-network-focus'}
                     projectTitle={'artificial neural network'}
                     projectLanguages={'Python, TensorFlow, Django, React'}
                     imageSrc = {neuralnetworkImage}
@@ -71,11 +78,13 @@ const Projects = () => {
                     />
                     <ProjectCard
                     projectId = {'rolls-royce'}
+                    projectIdFocus = {'rolls-royce-focus'}
                     projectTitle={'rolls-royce design simulation'}
                     projectLanguages={'Witness Simulation Modelling'}
                     />
                     <ProjectCard
                     projectId = {'random-run'}
+                    projectIdFocus = {'random-run-focus'}
                     projectTitle={'Random Run'}
                     projectLanguages={'React Native'}
                     imageSrc = {wipImage}

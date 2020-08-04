@@ -37,7 +37,7 @@ const ProjectCard = (props) => {
                 : null 
             }
 
-            <animated.div className="c projects-container-back" style={{ zIndex, opacity, height, transform: transform.interpolate(t => `${t} rotateX(180deg)`)}}>
+            <animated.div id={props.projectIdFocus} className="c projects-container-back" style={{ zIndex, opacity, height, transform: transform.interpolate(t => `${t} rotateX(180deg)`)}}>
                 <div className="flip-back-button-container">
                     <MdRotateLeft className="flip-back-button" onClick={() => setIsFlipped(!isFlipped)} />
                 </div>
@@ -71,6 +71,7 @@ const ProjectCard = (props) => {
                     onClick={() => {
                         setIsFlipped(!isFlipped);
                         document.querySelector(`#${props.projectId}`).scrollIntoView({ behavior: 'smooth'});
+                        document.querySelector(`#${props.projectIdFocus}`).focus();
                     }}>
                         Learn More
                     </div>
