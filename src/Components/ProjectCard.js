@@ -16,7 +16,7 @@ const ProjectCard = (props) => {
     const { zIndex, transform, opacity, height, width } = useSpring({
         zIndex: isFlipped ? 1 : 0,
         opacity: isFlipped ? 1 : 0,
-        height: isFlipped ? '480px' : '240px',
+        height: isFlipped ? '550px' : '240px',
         transform: `perspective(600px) rotateX(${isFlipped ? 180 : 0}deg)`,
         config: { mass: 12, tension: 500, friction: 80 }
     });
