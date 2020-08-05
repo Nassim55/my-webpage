@@ -423,7 +423,7 @@
                                     align-items: center;
                                     margin-top: 1rem;
                                     width: 100%;
-                                    border: solid;
+                                    padding: 0.5rem 0 0.5rem 0;
                                     .flip-back-button {
                                         border-radius: 50%;
                                         color: white;
@@ -440,7 +440,6 @@
                                     padding-bottom: 0.5rem;
                                     border-bottom: 2.5px dashed #ccc;
                                     height: max-content;
-                                    border: solid;
                                 }
                                 .project-title-back {
                                     position: relative;
@@ -451,10 +450,8 @@
                                     justify-content: center;
                                     align-items: center;
                                     width: 100%;
-                                    margin-top: 0.5rem;
                                     height: max-content;
-                                    border: solid;
-                                    padding: 1rem;
+                                    padding: 0.5rem 0 0.5rem 0;
                                 }
                                 .project-information-container {
                                     overflow-y: scroll;
@@ -462,7 +459,6 @@
                                     padding-bottom: 1rem;
                                     margin-left: 1rem;
                                     margin-right: 1rem;
-                                    border: solid;
                                     .project-information-text {
                                         overflow-y: scroll;
                                         width: 100%;

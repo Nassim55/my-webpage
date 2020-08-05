@@ -689,7 +689,7 @@
           align-items: center;
   margin-top: 1rem;
   width: 100%;
-  border: solid;
+  padding: 0.5rem 0 0.5rem 0;
 }
 
 .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .flip-back-button-container .flip-back-button {
@@ -710,7 +710,6 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  border: solid;
 }
 
 .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .project-title-back {
@@ -728,12 +727,10 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  margin-top: 0.5rem;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  border: solid;
-  padding: 1rem;
+  padding: 0.5rem 0 0.5rem 0;
 }
 
 .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .project-information-container {
@@ -742,7 +739,6 @@
   padding-bottom: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  border: solid;
 }
 
 .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .project-information-container .project-information-text {
