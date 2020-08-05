@@ -447,7 +447,7 @@
 
 .App .desktop-page .container-about-projects-contact .Projects .projects-container ::-webkit-scrollbar {
   all: unset;
-  width: 5px;
+  width: 2.5px;
   height: 0;
 }
 
@@ -653,7 +653,7 @@
 
 .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back ::-webkit-scrollbar {
   all: unset;
-  width: 5px;
+  width: 2.5px;
   height: 0;
 }
 
@@ -689,9 +689,6 @@
           align-items: center;
   margin-top: 1rem;
   width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
   border: solid;
 }
 
@@ -744,6 +741,7 @@
   padding-bottom: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
+  border: solid;
 }
 
 .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .project-information-container .project-information-text {

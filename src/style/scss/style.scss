@@ -273,7 +273,7 @@
                     padding-bottom: 1rem;
                     ::-webkit-scrollbar {
                         all: unset;
-                        width: 5px;
+                        width: 2.5px;
                         height: 0;
                     }
                     ::-webkit-scrollbar-track {
@@ -399,7 +399,7 @@
                                 background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
                                 ::-webkit-scrollbar {
                                     all: unset;
-                                    width: 5px;
+                                    width: 2.5px;
                                     height: 0;
                                 }
                                 ::-webkit-scrollbar-track {
@@ -423,7 +423,6 @@
                                     align-items: center;
                                     margin-top: 1rem;
                                     width: 100%;
-                                    height: max-content;
                                     border: solid;
                                     .flip-back-button {
                                         border-radius: 50%;
@@ -455,6 +454,8 @@
                                     margin-top: 0.5rem;
                                     height: max-content;
                                     border: solid;
+                                    :after, :before {
+                                        box-sizing: border-box;
                                 }
                                 .project-information-container {
                                     overflow-y: scroll;
@@ -462,6 +463,7 @@
                                     padding-bottom: 1rem;
                                     margin-left: 1rem;
                                     margin-right: 1rem;
+                                    border: solid;
                                     .project-information-text {
                                         overflow-y: scroll;
                                         width: 100%;
