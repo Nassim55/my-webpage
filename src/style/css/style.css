@@ -692,6 +692,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  border: solid;
 }
 
 .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .flip-back-button-container .flip-back-button {
@@ -712,6 +713,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  border: solid;
 }
 
 .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .project-title-back {
@@ -733,6 +735,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  border: solid;
 }
 
 .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .project-information-container {
