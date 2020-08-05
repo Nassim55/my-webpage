@@ -733,6 +733,7 @@
   height: -moz-max-content;
   height: max-content;
   border: solid;
+  padding: 1rem;
 }
 
 .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .project-information-container {

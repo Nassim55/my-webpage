@@ -454,8 +454,7 @@
                                     margin-top: 0.5rem;
                                     height: max-content;
                                     border: solid;
-                                    :after, :before {
-                                        box-sizing: border-box;
+                                    padding: 1rem;
                                 }
                                 .project-information-container {
                                     overflow-y: scroll;
