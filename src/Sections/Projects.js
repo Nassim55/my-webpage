@@ -9,6 +9,7 @@ import honeycombImage from '../Images/honeycombs.jpg';
 import neuralnetworkImage from '../Images/neuralnetwork.svg';
 import attitudeControlImage from '../Images/attitudeControl.jpg';
 import turbineImage from '../Images/turbineNoBackground.jpg';
+import rollsroyceImage from '../Images/rollsRoyce.JPG';
 import wipImage from '../Images/WIP.jpg';
 
 const Projects = () => {
@@ -56,6 +57,7 @@ const Projects = () => {
                     <ProjectCard
                     projectId = {'satellite'}
                     projectIdFocus = {'satellite-focus'}
+                    isSatellite = {true}
                     projectTitle={'satellite attitude control'}
                     projectLanguages={'Matlab, Simulink'}
                     imageSrc = {attitudeControlImage}
@@ -79,8 +81,10 @@ const Projects = () => {
                     <ProjectCard
                     projectId = {'rolls-royce'}
                     projectIdFocus = {'rolls-royce-focus'}
+                    isRollsRoyce = {true}
                     projectTitle={'rolls-royce design simulation'}
                     projectLanguages={'Witness Simulation Modelling'}
+                    imageSrc = {rollsroyceImage}
                     />
                     <ProjectCard
                     projectId = {'random-run'}
