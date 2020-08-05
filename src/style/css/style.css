@@ -693,7 +693,6 @@
   margin-top: 1rem;
   width: 100%;
   padding: 0.25rem 0 1rem 0;
-  border: solid;
 }
 
 .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .flip-back-button-container .flip-back-button {
@@ -714,7 +713,6 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  border: solid;
 }
 
 .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .project-title-back {
@@ -736,15 +734,11 @@
   height: -moz-max-content;
   height: max-content;
   padding: 0.5rem 0 0.5rem 0;
-  border: solid;
 }
 
 .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .project-information-container {
   overflow-y: scroll;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
   border: solid;
 }
 
@@ -759,7 +753,6 @@
   border-radius: 50%;
   width: 75%;
   height: auto;
-  margin-bottom: 2rem;
 }
 
 .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .project-information-container .project-information-image-rectangle {
@@ -768,7 +761,6 @@
   border-radius: 12px;
   width: 90%;
   height: auto;
-  margin-bottom: 2rem;
 }
 
 .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .project-information-container .project-information-video {
@@ -778,7 +770,6 @@
   width: 90%;
   height: auto;
   max-height: 200px;
-  margin-bottom: 2rem;
 }
 
 .App .desktop-page .container-about-projects-contact .Contact {

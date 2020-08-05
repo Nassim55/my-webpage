@@ -425,7 +425,6 @@
                                     margin-top: 1rem;
                                     width: 100%;
                                     padding: 0.25rem 0 1rem 0;
-                                    border: solid;
                                     .flip-back-button {
                                         border-radius: 50%;
                                         color: white;
@@ -442,7 +441,6 @@
                                     padding-bottom: 0.5rem;
                                     border-bottom: 2.5px dashed #ccc;
                                     height: max-content;
-                                    border: solid;
                                 }
                                 .project-title-back {
                                     position: relative;
@@ -455,14 +453,10 @@
                                     width: 100%;
                                     height: max-content;
                                     padding: 0.5rem 0 0.5rem 0;
-                                    border: solid;
                                 }
                                 .project-information-container {
                                     overflow-y: scroll;
-                                    padding-top: 1rem;
-                                    padding-bottom: 1rem;
-                                    margin-left: 1rem;
-                                    margin-right: 1rem;
+                                    padding: 1rem 0.5rem 1rem 0.5rem;
                                     border: solid;
                                     .project-information-text {
                                         overflow-y: scroll;
@@ -473,14 +467,14 @@
                                         border-radius: 50%;
                                         width: 75%;
                                         height: auto;
-                                        margin-bottom: 2rem;
+                                        
                                     }
                                     .project-information-image-rectangle {
                                         box-shadow: 2px 2px 10px 3px rgba(0, 0, 0,0.1);
                                         border-radius: 12px;
                                         width: 90%;
                                         height: auto;
-                                        margin-bottom: 2rem;
+                                        
                                     }
                                     .project-information-video {
                                         box-shadow: 2px 2px 10px 3px rgba(0, 0, 0,0.1);
@@ -488,7 +482,6 @@
                                         width: 90%;
                                         height: auto;
                                         max-height: 200px;
-                                        margin-bottom: 2rem;
                                     }
                                 }
                             }
