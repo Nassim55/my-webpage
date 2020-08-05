@@ -38,14 +38,15 @@ const ProjectCard = (props) => {
             }
 
             <animated.div id={props.projectIdFocus} className="c projects-container-back" style={{ zIndex, opacity, height, transform: transform.interpolate(t => `${t} rotateX(180deg)`)}}>
-                <div className="flip-back-button-container">
-                    <MdRotateLeft className="flip-back-button" onClick={() => setIsFlipped(!isFlipped)} />
-                </div>
-                <div className="project-title-back">{props.projectTitle}</div>
-                <div className="project-languages">
-                    {props.projectLanguages}
-                </div>
-                
+                <div className='back-top-section-grouping'>
+                    <div className="flip-back-button-container">
+                        <MdRotateLeft className="flip-back-button" onClick={() => setIsFlipped(!isFlipped)} />
+                    </div>
+                    <div className="project-title-back">{props.projectTitle}</div>
+                    <div className="project-languages">
+                        {props.projectLanguages}
+                    </div>
+                </div>        
                 {props.isMarsRover ? <MarsRoverMoreInfo /> : null}
                 {props.isUav ? <UavMoreInfo /> : null}
                 {props.isAerospaceSite ? <AerospaceSiteMoreInfo /> : null}

@@ -417,49 +417,50 @@
                                 ::-webkit-scrollbar-thumb:hover {
                                     background: rgba(0,0,0,0.55);
                                 }
-                                .flip-back-button-container {
-                                    position: relative;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    margin-top: 1rem;
-                                    width: 100%;
-                                    padding: 0.25rem 0 1rem 0;
-                                    .flip-back-button {
-                                        border-radius: 50%;
-                                        color: white;
-                                        background-color: #f24e4e;
-                                        padding: 0.2rem;
-                                        font-size: 2.2rem;
-                                        cursor: pointer;
+                                .back-top-section-grouping {
+                                    height: max-content;
+                                    .flip-back-button-container {
+                                        position: relative;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin-top: 1rem;
+                                        width: 100%;
+                                        padding: 0.25rem 0 0.5rem 0;
+                                        .flip-back-button {
+                                            border-radius: 50%;
+                                            color: white;
+                                            background-color: #f24e4e;
+                                            padding: 0.2rem;
+                                            font-size: 2.2rem;
+                                            cursor: pointer;
+                                        }
                                     }
-                                }
-                                .project-languages {
-                                    font-size: 0.8rem;
-                                    font-weight: 500;
-                                    color: #F24E4E;
-                                    padding-bottom: 0.5rem;
-                                    border-bottom: 2.5px dashed #ccc;
-                                    height: max-content;
-                                }
-                                .project-title-back {
-                                    position: relative;
-                                    color: #252934;
-                                    font-weight: 600;
-                                    text-transform: uppercase;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    width: 100%;
-                                    height: max-content;
-                                    padding: 0.5rem 0 0.5rem 0;
+                                    .project-languages {
+                                        font-size: 0.8rem;
+                                        font-weight: 500;
+                                        color: #F24E4E;
+                                        padding-bottom: 0.5rem;
+                                        border-bottom: 2.5px dashed #ccc;
+                                        height: max-content;
+                                    }
+                                    .project-title-back {
+                                        position: relative;
+                                        color: #252934;
+                                        font-weight: 600;
+                                        text-transform: uppercase;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        width: 100%;
+                                        height: max-content;
+                                    }
                                 }
                                 .project-information-container {
                                     overflow-y: scroll;
                                     padding: 1rem 0.5rem 1rem 0.5rem;
-                                    border: solid;
+
                                     .project-information-text {
-                                        overflow-y: scroll;
                                         width: 100%;
                                     }
                                     .project-information-image {
@@ -467,14 +468,14 @@
                                         border-radius: 50%;
                                         width: 75%;
                                         height: auto;
-                                        
+                                        margin-bottom: 2rem;
                                     }
                                     .project-information-image-rectangle {
                                         box-shadow: 2px 2px 10px 3px rgba(0, 0, 0,0.1);
                                         border-radius: 12px;
                                         width: 90%;
                                         height: auto;
-                                        
+                                        margin-bottom: 2rem;
                                     }
                                     .project-information-video {
                                         box-shadow: 2px 2px 10px 3px rgba(0, 0, 0,0.1);
@@ -482,6 +483,7 @@
                                         width: 90%;
                                         height: auto;
                                         max-height: 200px;
+                                        margin-bottom: 2rem;
                                     }
                                 }
                             }
