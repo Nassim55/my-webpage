@@ -423,7 +423,7 @@
                                     align-items: center;
                                     margin-top: 1rem;
                                     width: 100%;
-                                    height: fit-content;
+                                    height: max-content;
                                     border: solid;
                                     .flip-back-button {
                                         border-radius: 50%;
@@ -440,7 +440,7 @@
                                     color: #F24E4E;
                                     padding-bottom: 0.5rem;
                                     border-bottom: 2.5px dashed #ccc;
-                                    height: fit-content;
+                                    height: max-content;
                                     border: solid;
                                 }
                                 .project-title-back {
@@ -453,7 +453,7 @@
                                     align-items: center;
                                     width: 100%;
                                     margin-top: 0.5rem;
-                                    height: fit-content;
+                                    height: max-content;
                                     border: solid;
                                 }
                                 .project-information-container {

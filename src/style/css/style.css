@@ -689,9 +689,9 @@
           align-items: center;
   margin-top: 1rem;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   border: solid;
 }
 
@@ -710,9 +710,9 @@
   color: #F24E4E;
   padding-bottom: 0.5rem;
   border-bottom: 2.5px dashed #ccc;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   border: solid;
 }
 
@@ -732,9 +732,9 @@
           align-items: center;
   width: 100%;
   margin-top: 0.5rem;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   border: solid;
 }
 
