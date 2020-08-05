@@ -623,7 +623,6 @@
 
 .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-front .learn-more-button-container .learn-more-button {
   color: #252934;
-  background-color: #white;
   border: 2px dashed #ccc;
   font-weight: 500;
   text-transform: upper;
@@ -677,6 +676,44 @@
   background: rgba(0, 0, 0, 0.55);
 }
 
+.App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .flip-back-button-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .flip-back-button-container .flip-back-button {
+  border-radius: 50%;
+  color: white;
+  background-color: #f24e4e;
+  padding: 0.2rem;
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+.App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .project-languages {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #F24E4E;
+  padding-bottom: 0.5rem;
+  border-bottom: 2.5px dashed #ccc;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .project-title-back {
   position: relative;
   color: #252934;
@@ -693,39 +730,9 @@
           align-items: center;
   width: 100%;
   margin-top: 0.5rem;
-}
-
-.App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .flip-back-button-container {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 1rem;
-  width: 100%;
-}
-
-.App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .flip-back-button-container .flip-back-button {
-  border-radius: 50%;
-  color: white;
-  background-color: #f24e4e;
-  padding: 0.2rem;
-  font-size: 2.2rem;
-  cursor: pointer;
-}
-
-.App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .project-languages {
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: #F24E4E;
-  height: 8%;
-  padding-bottom: 0.5rem;
-  border-bottom: 2.5px dashed #ccc;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-back .project-information-container {
