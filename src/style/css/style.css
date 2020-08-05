@@ -624,6 +624,7 @@
 .App .desktop-page .container-about-projects-contact .Projects .projects-container .project-card-container .project-card-page-2 .projects-container-front .learn-more-button-container .learn-more-button {
   color: #252934;
   border: 2px dashed #ccc;
+  border-radius: 6px;
   font-weight: 500;
   text-transform: upper;
   display: -webkit-box;
