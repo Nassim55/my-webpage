@@ -8,7 +8,9 @@ import AerospaceSiteMoreInfo from './MoreInfoComponents/AerospaceSiteMoreInfo';
 import HypersonicMoreInfo from './MoreInfoComponents/HypersonicMoreInfo';
 import SatelliteMoreInfo from './MoreInfoComponents/SatelliteMoreInfo';
 import HydroelectricMoreInfo from './MoreInfoComponents/HydroelectricMoreInfo';
+import SentimentAnalysisMoreInfo from './MoreInfoComponents/SentimentAnalysisMoreInfo';
 import RollsRoyceMoreInfo from './MoreInfoComponents/RollsRoyceMoreInfo';
+import RandomRunMoreInfo from './MoreInfoComponents/RandomRunMoreInfo';
 
 const ProjectCard = (props) => {
     const [isFlipped, setIsFlipped] = useState(false);
@@ -55,7 +57,9 @@ const ProjectCard = (props) => {
                 {props.isHypersonic ? <HypersonicMoreInfo /> : null}
                 {props.isSatellite ? <SatelliteMoreInfo /> : null}
                 {props.isHydroelectric ? <HydroelectricMoreInfo /> : null}
+                {props.isSentimentAnalysis ? <SentimentAnalysisMoreInfo /> : null}
                 {props.isRollsRoyce ? <RollsRoyceMoreInfo /> : null}
+                {props.isRandomRun ? <RandomRunMoreInfo /> : null}
             </animated.div>
 
             <animated.div

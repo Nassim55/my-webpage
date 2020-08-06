@@ -73,7 +73,8 @@ const Projects = () => {
                     <ProjectCard
                     projectId = {'neural-network'}
                     projectIdFocus = {'neural-network-focus'}
-                    projectTitle={'artificial neural network'}
+                    isSentimentAnalysis = {true}
+                    projectTitle={'Sentiment Analysis NLP'}
                     projectLanguages={'Python, TensorFlow, Django, React'}
                     imageSrc = {neuralnetworkImage}
                     enlargedImageSrc = {neuralnetworkImage}
@@ -89,6 +90,7 @@ const Projects = () => {
                     <ProjectCard
                     projectId = {'random-run'}
                     projectIdFocus = {'random-run-focus'}
+                    isRandomRun = {true}
                     projectTitle={'Random Run'}
                     projectLanguages={'React Native'}
                     imageSrc = {wipImage}
