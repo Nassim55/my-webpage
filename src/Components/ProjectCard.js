@@ -17,7 +17,7 @@ const ProjectCard = (props) => {
     const [isEnlarged, setIsEnlarged] = useState(false);
 
 
-    const { zIndex, transform, opacity, height, width } = useSpring({
+    const { zIndex, transform, opacity, height } = useSpring({
         zIndex: isFlipped ? 1 : 0,
         opacity: isFlipped ? 1 : 0,
         height: isFlipped ? '550px' : '240px',
@@ -66,7 +66,6 @@ const ProjectCard = (props) => {
             className="c projects-container-front"
             id="ml-sarcasm-project-container-front"
             style={{
-                width,
                 zIndex: zIndex.interpolate(o => 1 - o),
                 opacity: opacity.interpolate(o => 1 - o),
                 transform }}>
@@ -91,16 +90,4 @@ const ProjectCard = (props) => {
     );
 }
 
-export default ProjectCard
-
-
-/* 
-<div className="expand-image-icon-container">
-    <MdZoomOutMap
-    className="expand-image-icon"
-    onClick={() => {
-        setIsEnlarged(!isEnlarged);
-        document.querySelector('.project-card-container').style.visibility = 'hidden';
-    }} />
-</div>
-*/
+export default ProjectCard;
