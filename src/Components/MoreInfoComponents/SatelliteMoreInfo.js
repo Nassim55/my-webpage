@@ -2,8 +2,8 @@ import React from 'react';
 import satelliteImage from '../../Images/attitudeControl.jpg';
 
 const paragraph1 = `Attitude control theory is used by engineers to determine the position of a satellite in three
-    dimensional space. Attitude control systems are critical in the development of satellites, even small errors can
-    compound resulting in significant deviation from the intended orbit.` 
+    dimensional space. Attitude control systems are critical in the development of satellites, where even small errors
+    can compound resulting in significant deviation from the intended orbit.` 
 
 const paragraph2 = `An attitude control system is comprised of three main components: sensors, actuators, and a 
     control algorithm. On-board sensors, such as a gyroscope, are used to record the current attitude of the satellite.
