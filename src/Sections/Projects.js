@@ -23,7 +23,7 @@ const Projects = () => {
                     projectIdFocus = {'random-run-focus'}
                     isRandomRun = {true}
                     projectTitle={'Random Run'}
-                    projectLanguages={'React Native'}
+                    projectLanguages={'React Native, Python, Flask'}
                     imageSrc = {wipImage}
                     imageId = {'work-in-progress'}
                     />

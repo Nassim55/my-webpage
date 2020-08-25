@@ -15,11 +15,14 @@ const paragraph2 = `Random Run will be a mobile application designed to solve th
     experience. See the video below for an example of how the current version of this app works, note that this app is
     still in development and this example may not reflect the finalised production version:`;
 
-const paragraph3 = `React Native is being used for development on the front-end. Python has been used on the back end 
+const paragraph3 = `React Native is being used for development on the front-end. Python has been used on the back-end 
     to develop the initial route finding algorithm and the subsequent route optimisation algorithm. The Python framework
-    Flask has been used to connect client side requests to back-end algorithms. Mapbox API's have been implemented as
+    Flask has been used to connect client-side requests to the algorithms on the back-end server. Mapbox API's have been implemented as
     opposed to Google Maps due to their cheaper API call cost. This makes sense from a business perspective should this
-    app become popular once released on the app store.`;
+    app become popular once released on the app store. Following the initial release of this app I intend to improve 
+    the route generation algorithm further by developing a machine learning solution to determine which types of routes
+    users are choosing to run and which routes they are rejecting. This is likely to involve the development of an
+    artificial neural network to determine this as the solution is too nuanced to be solved by other means.`;
 
 const RandomRunMoreInfo = () => {
     return (

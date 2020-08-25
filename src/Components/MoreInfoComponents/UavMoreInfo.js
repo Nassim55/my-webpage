@@ -5,7 +5,7 @@ import NoseUav from '../../Images/NoseUav.jpg';
 const paragraph1 = `Multidisciplinary aerospace vehicle design team project involving the 
     design of an unmanned aerial vehicle, commonly known as a UAV. The aim of this project was to 
     design a UAV that could provide a solution to a current real-world problem. My team chose to develop
-    at a UAV concept that could be used by emergency services such as search and rescue teams, 
+    a UAV concept that could be used by emergency services such as search and rescue teams, 
     coastguards, and police forces.`;
 
 const paragraph2 = `Through this concept my team were able to show that it was possible for a UAV to rapidly deliver life
