@@ -18,6 +18,15 @@ const Projects = () => {
             <div className='projects-container'>
                 <SectionTitleGrouping sectionTitle={"Projects"}/>
                 <div className="project-card-container">
+                    <ProjectCard
+                    projectId = {'random-run'}
+                    projectIdFocus = {'random-run-focus'}
+                    isRandomRun = {true}
+                    projectTitle={'Random Run'}
+                    projectLanguages={'React Native'}
+                    imageSrc = {wipImage}
+                    imageId = {'work-in-progress'}
+                    />
                     <ProjectCard 
                     projectId = {'mars-rover'}
                     projectIdFocus = {'mars-rover-focus'}
@@ -86,15 +95,6 @@ const Projects = () => {
                     projectTitle={'rolls-royce design simulation'}
                     projectLanguages={'Witness Simulation Modelling'}
                     imageSrc = {rollsroyceImage}
-                    />
-                    <ProjectCard
-                    projectId = {'random-run'}
-                    projectIdFocus = {'random-run-focus'}
-                    isRandomRun = {true}
-                    projectTitle={'Random Run'}
-                    projectLanguages={'React Native'}
-                    imageSrc = {wipImage}
-                    imageId = {'work-in-progress'}
                     />
                 </div>
             </div>

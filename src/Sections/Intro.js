@@ -29,8 +29,8 @@ const useOnScreen = (options) => {
 
 const Intro = () => {
     const [ref, visible] = useOnScreen();
-    const { x } = useSpring({
-        x: ref.current ? 0 : -1000
+    const { y } = useSpring({
+        y: ref.current ? 0 : -1000
     });
 
     const AnimatedIntroButton = animated(IntroButton);
@@ -39,7 +39,7 @@ const Intro = () => {
         <div className="Intro" ref={ref}>
             <animated.p
             className="profile-paragraph"
-            style={{transform: x.interpolate(x => `translate3d(0, ${x}px, 0)`)}}>
+            style={{transform: y.interpolate(y => `translate3d(0, ${y}px, 0)`)}}>
                 Hello, I'm <span className="my-name">Nassim</span>.<br /> Welcome to my project portfolio site!
             </animated.p>
             <AnimatedIntroButton />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
-import { MdZoomOutMap, MdRotateLeft } from "react-icons/md";
+import { MdRotateLeft } from "react-icons/md";
 
 import MarsRoverMoreInfo from './MoreInfoComponents/MarsRoverMoreInfo'; 
 import UavMoreInfo from './MoreInfoComponents/UavMoreInfo';
