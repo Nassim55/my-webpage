@@ -20,7 +20,7 @@ const paragraph3 = `A simple to manufacture butterfly style suspension system wa
     oscillations in each of the four wheels, this can be seen in the CAD model below. Not only did this design enhance
     the engineering characteristics of the rover, it also complemented the overall aesthetics of the design.`;
 
-const paragraph4 = `A comparison between the SolidWorks model designed and the actual rover manufactured by the team
+const paragraph4 = `A comparison between the SolidWorks model designed and the actual rover manufactured
     in the lab can be seen below. `
 
 const MarsRoverMoreInfo = () => {
