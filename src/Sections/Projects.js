@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ProjectCard from '../Components/ProjectCard';
 import SectionTitleGrouping from '../Components/SectionTitleGrouping';
 
+import RandomRunImage from '../Images/Random_Run_Image.png'; 
 import marsroverImage from '../Images/marsrover.jpg';
 import marsRoverAnnotatedImage from '../Images/marsroverAnnotated.jpg';
 import uavImage from '../Images/uav.jpg';
@@ -24,8 +25,7 @@ const Projects = () => {
                     isRandomRun = {true}
                     projectTitle={'Random Run'}
                     projectLanguages={'React Native, Python, Django, PostgreSQL'}
-                    imageSrc = {wipImage}
-                    imageId = {'work-in-progress'}
+                    imageSrc = {RandomRunImage}
                     />
                     <ProjectCard 
                     projectId = {'mars-rover'}
