@@ -5,7 +5,7 @@ const paragraph1 = `In the current climate, running as a low-cost form of exerci
     Likewise, the demand for high quality running applications such as Strava is following this trend. Among other
     reasons, running is popular due to its relative ease, low-cost, and cardiovascular benefits. Often, the same
     route will be ran daily due to either convenience, time constraints, or progress monitoring. However, running a
-    similar know route every day can easily cause loss of interest after the initial increased fitness benefits diminish.`;
+    similar known route every day can easily cause loss of interest after the initial increased fitness benefits diminish.`;
 
 const paragraph2 = `Random Run is a mobile application designed to solve this problem. Before starting a run, users
     will be able to input the number of miles they wish to run and further optional values such as the maximum radius
@@ -17,7 +17,7 @@ const paragraph2 = `Random Run is a mobile application designed to solve this pr
 
 const paragraph3 = `React Native is being used for development on the front-end. Python has been used on the back-end 
     to develop the initial route finding algorithm and the subsequent route optimisation algorithm. Django and the Django
-    REST Framework has been used to link client-side requests the server-side data model. A relational postgreSQL database has
+    REST Framework has been used to link client-side requests to the server-side data model. A relational postgreSQL database has
     been developed on the back-end to allow for user authentication and the ability to save routes. Mapbox API's have
     been implemented as opposed to Google Maps due to their cheaper API call cost. This makes sense from a business 
     perspective should this app become popular once released on the app store. Following the initial release of this 
