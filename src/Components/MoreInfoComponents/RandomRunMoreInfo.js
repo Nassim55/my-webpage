@@ -32,7 +32,7 @@ const RandomRunMoreInfo = () => {
             <p className="project-information-text">{paragraph1}</p>
             <p className="project-information-text">{paragraph2}</p>
             <video className="project-information-video" controls>
-                <source src={RandomRunExampleVideo} type="video/mp4" />
+                <source src={RandomRunExampleVideo} type="video/mp4" codecs="avc1.4d002a, mp4a.40.2" />
                 Your browser does not support the video tag.
             </video>
             <p className="project-information-text">{paragraph3}</p>
