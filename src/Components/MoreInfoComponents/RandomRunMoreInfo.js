@@ -1,5 +1,5 @@
 import React from 'react';
-import RandomRunExampleVideo from '../../Videos/RandomRun.mov';
+import RandomRunExampleVideo from '../../Videos/RandomRun.mp4';
 
 const paragraph1 = `In the current climate, running as a low-cost form of exercise is becoming increasingly popular.
     Likewise, the demand for high quality running applications such as Strava is following this trend. Among other
