@@ -31,7 +31,9 @@ const RandomRunMoreInfo = () => {
         <div className="project-information-container">
             <p className="project-information-text">{paragraph1}</p>
             <p className="project-information-text">{paragraph2}</p>
-            <video className="project-information-video" src={RandomRunExampleVideo} controls></video>
+            <video className="project-information-video" controls>
+                <source src={RandomRunExampleVideo} type="video/mp4" />
+            </video>
             <p className="project-information-text">{paragraph3}</p>
         </div>
     );
