@@ -1,5 +1,5 @@
 import React from 'react';
-import RandomRunExampleVideo from '../../Videos/RandomRun.mp4';
+import RandomRunExampleVideo from '../../Videos/RandomRun.mov';
 
 const paragraph1 = `In the current climate, running as a low-cost form of exercise is becoming increasingly popular.
     Likewise, the demand for high quality running applications such as Strava is following this trend. Among other
@@ -31,9 +31,7 @@ const RandomRunMoreInfo = () => {
         <div className="project-information-container">
             <p className="project-information-text">{paragraph1}</p>
             <p className="project-information-text">{paragraph2}</p>
-            <video className="project-information-video" controls>
-                <source src={RandomRunExampleVideo} type="video/mp4" />
-            </video>
+            <video className="project-information-video" src={RandomRunExampleVideo} controls />
             <p className="project-information-text">{paragraph3}</p>
         </div>
     );
