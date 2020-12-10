@@ -1,6 +1,5 @@
 import React from 'react';
-import RandomRunExampleVideoMP4 from '../../Videos/RandomRun.mov';
-import RandomRunExampleVideoWEBM from '../../Videos/RandomRun.webm';
+import RandomRunExampleVideo from '../../Videos/RandomRun.mp4';
 
 const paragraph1 = `In the current climate, running as a low-cost form of exercise is becoming increasingly popular.
     Likewise, the demand for high quality running applications such as Strava is following this trend. Among other
@@ -33,8 +32,7 @@ const RandomRunMoreInfo = () => {
             <p className="project-information-text">{paragraph1}</p>
             <p className="project-information-text">{paragraph2}</p>
             <video className="project-information-video" controls>
-                <source src={RandomRunExampleVideoWEBM} type="video/webm" />
-                <source src={RandomRunExampleVideoMP4} type="video/mp4" />
+                <source src={RandomRunExampleVideo} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <p className="project-information-text">{paragraph3}</p>
